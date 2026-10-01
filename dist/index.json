@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "updated": "2026-10-01",
+  "latest_apk": {
+    "version_name": "0.1.0",
+    "version_code": 1,
+    "abi": "arm64-v8a",
+    "min_sdk": 26,
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.0/koteloader-0.1.0.apk",
+    "sha256": "17d846c7bf1d5c7e64658c3f4bc169023d7e046057cddbf94b8e80cd25c31d33",
+    "size": 36068718,
+    "notes": "Первый релиз: онлайн-обновления, темы KSU, иконка."
+  },
+  "modules": []
+}
