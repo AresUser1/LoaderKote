@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "updated": "2026-10-01",
+  "updated": "2026-10-08",
   "latest_apk": {
-    "version_name": "0.1.0",
-    "version_code": 1,
+    "version_name": "0.1.1",
+    "version_code": 2,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.0/koteloader-0.1.0.apk",
-    "sha256": "17d846c7bf1d5c7e64658c3f4bc169023d7e046057cddbf94b8e80cd25c31d33",
-    "size": 36068718,
-    "notes": "Первый релиз: онлайн-обновления, темы KSU, иконка."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.1/koteloader-0.1.1.apk",
+    "sha256": "8a50ab5ea0bd59281556ea9352ae1d616b7385f5ef6a3002879195a0e951acbf",
+    "size": 10930230,
+    "notes": "Обновление 0.1.1: фикс ввода в HUD (префикс, настройки), настройка расположения кнопок (сверху/снизу/сбоку) и размеров HUD, автобэкап сессии и модулей при переустановке, проверка совместимости версий модулей."
   },
   "modules": []
 }
