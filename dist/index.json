@@ -2,14 +2,14 @@
   "schema": 1,
   "updated": "2026-10-08",
   "latest_apk": {
-    "version_name": "0.1.4",
-    "version_code": 5,
+    "version_name": "0.1.5",
+    "version_code": 6,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.4/koteloader-0.1.4.apk",
-    "sha256": "c05d2be243091f98493c2c2a3bc11165a79faa07e7675cdabc1c2e4ecab2f6c7",
-    "size": 10974633,
-    "notes": "Релиз 0.1.4: Репозиторий модулей (онлайн-каталог с живым поиском и 1-клик установкой), убран дубликат плавающего HUD из Обзора, четкие границы карточек в темных/AMOLED темах, быстрый поиск по модулям."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.5/koteloader-0.1.5.apk",
+    "sha256": "ba79bf581315bd92d3cf2d42a4ab5f092fadf41eaff90c13d4760208c78470fe",
+    "size": 10974817,
+    "notes": "Релиз 0.1.5: Репозиторий модулей (онлайн-каталог с поиском и установкой в 1 клик), убран дубликат плавающего HUD из Обзора, четкие границы карточек в темных/AMOLED темах, мгновенное обнаружение OTA-обновлений без задержки кэша CDN."
   },
   "modules": []
 }
