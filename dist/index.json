@@ -2,14 +2,14 @@
   "schema": 1,
   "updated": "2026-10-08",
   "latest_apk": {
-    "version_name": "0.1.2",
-    "version_code": 3,
+    "version_name": "0.1.3",
+    "version_code": 4,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.2/koteloader-0.1.2.apk",
-    "sha256": "5f52bbefe1186a6ff9b3f2d474055edcf99cb57d0cec1c341fa32eeed02dd726",
-    "size": 10955764,
-    "notes": "Релиз 0.1.2: Резервное копирование и экспорт/импорт (модули и настройки разом в ZIP или по отдельности в JSON), фикс редактирования сообщений себе в Избранном, мгновенный реконнект без падений при смене сети (Wi-Fi <-> моб. данные), фикс прокрутки настроек модулей."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.3/koteloader-0.1.3.apk",
+    "sha256": "8000af535c3145889bd7327eb05efc4c401586c3a6b62085f84ea072e0ddf8c5",
+    "size": 10956706,
+    "notes": "Релиз 0.1.3: Обновленный дизайн карточек экспорта и импорта (без обрезки текста и кнопок), резервное копирование всех модулей и настроек в ZIP/JSON, фикс Избранного и реконнекта сети."
   },
   "modules": []
 }
