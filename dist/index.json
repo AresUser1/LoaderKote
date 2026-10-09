@@ -2,15 +2,15 @@
   "schema": 1,
   "updated": "2026-10-09",
   "latest_apk": {
-    "version_name": "0.1.9",
-    "version_code": 10,
+    "version_name": "0.2.0",
+    "version_code": 11,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.9/koteloader-0.1.9.apk",
-    "sha256": "d46bcf0edebf16fda2f8d44f911c16517b27502225cfceb553d9e279cf6102e5",
-    "size": 10998707,
-    "notes": "Версия 0.1.9: Интерактивный инлайн-режим для русских шашек (via-bot). Сетевая игра PvP между любыми участниками чата, свободный выбор стороны (белые/чёрные), серии взятий в один клик, летающие дамки, взятие назад, ничья, сдача и реванш со сменой сторон на инлайн-кнопках Telegram."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.0/koteloader-0.2.0.apk",
+    "sha256": "2ed0bbafd04ee8da43cd6778874934227bf9b8539e1e68141298506f713cc837",
+    "size": 11034484,
+    "notes": "Версия 0.2.0: Универсальная поддержка инлайн-кнопок и колбэков для любых сторонних C/Lua модулей через персонального бота-помощника в libkotogram и JNI-мосте. Нативный модуль русских шашек checkers.so полностью перенесён на C с поддержкой PvP для всех участников чата."
   },
   "modules": []
 }
