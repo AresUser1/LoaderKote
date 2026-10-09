@@ -12,5 +12,12 @@
     "size": 11034484,
     "notes": "Версия 0.2.0: Универсальная поддержка инлайн-кнопок и колбэков для любых сторонних C/Lua модулей через персонального бота-помощника в libkotogram и JNI-мосте. Нативный модуль русских шашек checkers.so полностью перенесён на C с поддержкой PvP для всех участников чата."
   },
+  "sdk": {
+    "version": "0.2.0",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.0/kote-module-sdk.zip",
+    "sha256": "2e722c1b4495e24385582fe0c30c6520e5b92cab8f0794397b32226f5bbd1fee",
+    "size": 51669,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK): заголовочные файлы module_abi.h, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
+  },
   "modules": []
 }

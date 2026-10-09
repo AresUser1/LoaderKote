@@ -19,15 +19,26 @@
 
 ## 📥 Быстрый старт и скачивание
 
-| Релиз | Версия | Архитектура | Ссылка для загрузки |
-| :--- | :---: | :---: | :--- |
-| **KoteLoader Release** | **`v0.2.0`** | `arm64-v8a` | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.2.0/koteloader-0.2.0.apk) |
+| Файл | Версия | Описание | Ссылка для загрузки |
+| :--- | :---: | :--- | :--- |
+| 📱 **KoteLoader APK** | **`v0.2.0`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.2.0/koteloader-0.2.0.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.2.0`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.2.0/kote-module-sdk.zip) |
 
-### Инструкция по установке:
+### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader-0.2.0.apk`** по ссылке выше.
 2. Откройте файл и подтвердите установку в Android (разрешите установку из вашего браузера/проводника).
 3. При первом запуске войдите в свой аккаунт Telegram по номеру телефона или через QR-код.
 4. Разрешите приложению отображение **«Поверх других приложений»** (необходимо для работы наэкранного плавающего HUD).
+
+### 🧰 Инструкция для разработчиков модулей (SDK):
+1. Скачайте архив **`kote-module-sdk.zip`** и распакуйте его на ПК или сервере.
+2. Внутри находится всё необходимое для написания модулей:
+   - `include/module_abi.h` — заголовочный файл C-API (ABI 3).
+   - `README.md` и `LUA_GUIDE.md` — подробная документация по созданию нативных C и Lua модулей, инлайн-кнопок и колбэков.
+   - `build.sh`, `Makefile`, `build.bat` — готовые скрипты сборки под Android NDK (`arm64-v8a`), Linux и Windows.
+   - `examples/` и `src/` — рабочие примеры и шаблон нового модуля (`my_module.c`).
+3. Для сборки выполните `./build.sh` — готовые файлы `.so` появятся в папке `out/`.
+4. Отправьте файл `.so` или `.lua` в «Избранное» Telegram и ответьте на него командой `.install` для мгновенной установки!
 
 > [!TIP]
 > **Автообновления (OTA):** Приложение умеет обновляться автоматически! Вам не нужно вручную проверять этот репозиторий: во вкладке **«Модули»** или **«Настройки»** нажмите кнопку **«Обновления»**, чтобы проверить и установить свежую версию в один тап.
@@ -160,9 +171,9 @@ end
 
 ## 🔗 Экосистема проектов
 
-* 💻 **[AresUser1/Kotogram](https://github.com/AresUser1/Kotogram)** — Официальный монорепозиторий исходного кода: C++20 MTProto библиотека, Android-приложение, Module SDK и документация.
-* 🧰 **[Module SDK](https://github.com/AresUser1/Kotogram/tree/main/kote_module_sdk)** — Инструменты, заголовочные файлы ABI 3 и компилятор для создания собственных модулей на C/C++.
-* 📚 **[Руководство по Lua](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md)** — Подробный гайд по написанию Lua-скриптов с примерами работы с медиа, базой данных и форматированием.
+* 🐾 **[AresUser1/KoteModules](https://github.com/AresUser1/KoteModules)** — Официальный репозиторий модулей Kotogram: каталог готовых `.so` модулей, исходники и манифест `index.json`.
+* 🧰 **[Kote Module SDK Kit (ZIP)](https://github.com/AresUser1/LoaderKote/releases/latest/download/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, компилятор, шаблоны и примеры под Android, Linux и Windows.
+* 💻 **[AresUser1/Kotogram](https://github.com/AresUser1/Kotogram)** — Основной репозиторий ядра и клиента Kotogram.
 
 ---
 
