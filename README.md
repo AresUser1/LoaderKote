@@ -21,10 +21,10 @@
 
 | Релиз | Версия | Архитектура | Ссылка для загрузки |
 | :--- | :---: | :---: | :--- |
-| **KoteLoader Release** | **`v0.1.6`** | `arm64-v8a` | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.1.6/koteloader-0.1.6.apk) |
+| **KoteLoader Release** | **`v0.1.7`** | `arm64-v8a` | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.1.7/koteloader-0.1.7.apk) |
 
 ### Инструкция по установке:
-1. Скачайте файл **`koteloader-0.1.6.apk`** по ссылке выше.
+1. Скачайте файл **`koteloader-0.1.7.apk`** по ссылке выше.
 2. Откройте файл и подтвердите установку в Android (разрешите установку из вашего браузера/проводника).
 3. При первом запуске войдите в свой аккаунт Telegram по номеру телефона или через QR-код.
 4. Разрешите приложению отображение **«Поверх других приложений»** (необходимо для работы наэкранного плавающего HUD).
