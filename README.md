@@ -94,21 +94,10 @@ https://raw.githubusercontent.com/AresUser1/KoteModules/main/index.json
 | Модуль | Тип | Команды | Описание |
 | :--- | :---: | :--- | :--- |
 | **♟️ [checkers](https://github.com/AresUser1/KoteModules/blob/main/modules/checkers.so)** | `Native .so` | `.checkers`, `.шашки`, `.checkersend` | Шашки онлайн-PvP между игроками, выбор цвета, дамки, пат, реванш. |
-| **🎵 [music](https://github.com/AresUser1/KoteModules/blob/main/modules/music.so)** | `Native .so` | `.mus <запрос> [--yt]`, `.musyt`, `.musclean` | Плеер музыки: быстрые боты (@lybot, @vkmusic_bot) + прямой YouTube (--yt). |
 | **📥 [copymessage](https://github.com/AresUser1/KoteModules/blob/main/modules/copymessage.so)** | `Native .so` | `.copy`, `.hcopy` | Копирование текста и медиа из защищенных чатов/каналов в «Избранное». |
-| **🏷️ [tagger](https://github.com/AresUser1/KoteModules/blob/main/modules/tagger.so)** | `Native .so` | `.tag`, `.itag`, `.etag`, `.stoptag` | Теггер участников чата с вайтлистами, кастомными никами и задержкой. |
-| **📥 [tt_dl](https://github.com/AresUser1/KoteModules/blob/main/modules/tt_dl.so)** | `Native .so` | `.tt <ссылка/reply>`, `.tt_caption` | TikTok Downloader: скачивание видео без водяного знака с потоковым плеером. |
-| **🚀 [spam](https://github.com/AresUser1/KoteModules/blob/main/modules/spam.so)** | `Native .so` | `.spam`, `.fastspam`, `.stopspam` | Нативный быстрый спаммер с форматированием и мгновенной отменой. |
-| **🔍 [shazam](https://github.com/AresUser1/KoteModules/blob/main/modules/shazam.lua)** | `Lua` | `.music`, `.lyrics`, `.shazam` | Распознавание музыки по аудио/войсу, поиск текстов песен и треков. |
-| **📝 [notes](https://github.com/AresUser1/KoteModules/blob/main/modules/notes.lua)** | `Lua` | `.save`, `.note`, `.notes`, `.delnote` | Заметки и сниппеты в SQLite с макросами ({name}, {time}, {date}, {ping}). |
-| **🌐 [translator](https://github.com/AresUser1/KoteModules/blob/main/modules/translator.lua)** | `Lua` | `.tr`, `.autotr`, `.detect` | Переводчик через Google Translate с автоопределением языка и автопереводом. |
-| **👁️ [antidel](https://github.com/AresUser1/KoteModules/blob/main/modules/antidel.lua)** | `Lua` | `.antidel`, `.deleted`, `.history` | Anti-Delete: мониторинг и восстановление удалённых и отредактированных сообщений. |
-| **🗑️ [purge](https://github.com/AresUser1/KoteModules/blob/main/modules/purge.lua)** | `Lua` | `.purge`, `.purgeme`, `.purgeuser` | Хирургическая и массовая зачистка сообщений в чатах. |
-| **🔨 [banall](https://github.com/AresUser1/KoteModules/blob/main/modules/banall.lua)** | `Lua` | `.banall`, `.kickall`, `.unbanall` | Массовое администрирование чата с автоудалением сообщений нарушителей. |
-| **🔔 [remind](https://github.com/AresUser1/KoteModules/blob/main/modules/remind.lua)** | `Lua` | `.remind`, `.reminds`, `.delremind` | Планировщик напоминаний и отложенных задач (10m, 2h, 1d). |
-| **🧪 [test_files](https://github.com/AresUser1/KoteModules/blob/main/modules/test_files.so)** | `Native .so` | `.tfinfo`, `.tfcache`, `.tfmem`, `.tfrel` | Тесты отправки файлов из кэша приложения, памяти и относительных путей. |
+| **🎵 [music](https://github.com/AresUser1/KoteModules/blob/main/modules/music.so)** | `Native .so` | `.mus <запрос> [--yt]`, `.musyt`, `.musclean` | Плеер музыки: быстрые боты (@lybot, @vkmusic_bot) + прямой YouTube (--yt). |
 
-Полный каталог доступен в репозитории [AresUser1/KoteModules](https://github.com/AresUser1/KoteModules).
+Официальный репозиторий: [AresUser1/KoteModules](https://github.com/AresUser1/KoteModules).
 
 ### Как установить модуль:
 1. **Через приложение**: откройте вкладку **«Модули»** → **«Репозиторий»**, вставьте ссылку на каталог выше и нажмите «Установить».
