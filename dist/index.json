@@ -15,8 +15,8 @@
   "sdk": {
     "version": "0.2.4",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.4/kote-module-sdk.zip",
-    "sha256": "daafe28674569d4a3f399ea59027c339cc4ea2b7d1e167f219e33fd10ad16db7",
-    "size": 97244,
+    "sha256": "dce6639b9e7b7a5b62e3141f694a4a87ec6d3a4f4747efe56bafcd355302ad59",
+    "size": 58328,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK): заголовочные файлы module_abi.h, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
   },
   "modules": [
