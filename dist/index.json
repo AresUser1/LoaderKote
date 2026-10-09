@@ -2,15 +2,15 @@
   "schema": 1,
   "updated": "2026-10-09",
   "latest_apk": {
-    "version_name": "0.1.5",
-    "version_code": 6,
-    "patch": 1,
+    "version_name": "0.1.6",
+    "version_code": 7,
+    "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.5/koteloader-0.1.5.apk",
-    "sha256": "b1c4c904d22c03ee34d91438de240e3af108f03c34d9a7ace5a7da287eecfd88",
-    "size": 10981086,
-    "notes": "Релиз 0.1.5 (Hotfix): Поддержка микро-патчей и хотфиксов без поднятия versionCode, мгновенное онлайн-обновление модулей в 1 клик прямо в приложении без переустановки APK, кнопка принудительной переустановки текущей сборки."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.6/koteloader-0.1.6.apk",
+    "sha256": "70cc02b7bdb09b582b96d9ece57807c0aa6b111d0c0cc55133ffffcb3a6fc3fa",
+    "size": 10981670,
+    "notes": "Релиз 0.1.6: Официальный каталог модулей перенесен в KoteModules (https://github.com/AresUser1/KoteModules) и установлен основным репозиторием по умолчанию. Добавлены нативные модули (.so) русские шашки (Checkers PvP между любыми участниками с выбором цвета) и CopyMessage."
   },
   "modules": []
 }
