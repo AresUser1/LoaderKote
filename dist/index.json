@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "latest_apk": {
-    "version_name": "0.2.4",
-    "version_code": 14,
-    "patch": 1,
+    "version_name": "0.2.5",
+    "version_code": 15,
+    "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.4/koteloader-0.2.4.apk",
-    "sha256": "d257e95874c5faf98c492802eaaf7bc9aa72f146dfb0fbdd31aae8cc407360aa",
-    "size": 11081727,
-    "notes": "Версия 0.2.4 (hotfix 1): Обновление движка проверки .so из Git, резолв реплаев в вочкерах для RP, очистка дефолтных действий и улучшение форматирования."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.5/koteloader-0.2.5.apk",
+    "sha256": "1acae2b8c628966f82c88f74995ac7ccde500af515c22cc6e5da237e76c180cb",
+    "size": 11094742,
+    "notes": "Версия 0.2.5: Исправлена отправка файлов в модулях с on_callback (модули больше не форсируются в режим инлайн-бота, файлы всегда загружаются юзерботом с диска через sendMedia). Инлайн-кнопки (c_button) делегируются боту изолированно только для сообщений с кнопками. Команда .cfg теперь проверяет права владельца (OWNER) и не реагирует на чужие вызовы."
   },
   "sdk": {
-    "version": "0.2.4",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.4/kote-module-sdk.zip",
+    "version": "0.2.5",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.5/kote-module-sdk.zip",
     "sha256": "cb83a96f6dc6674ebdc1d289ef1fee57911e7d24b417ff9da98eea5c2e83153f",
     "size": 57970,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK): заголовочные файлы module_abi.h, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
