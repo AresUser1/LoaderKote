@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-09",
   "latest_apk": {
-    "version_name": "0.2.3",
-    "version_code": 13,
+    "version_name": "0.2.4",
+    "version_code": 14,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.3/koteloader-0.2.3.apk",
-    "sha256": "5cf7d0ccaa1dd9a1c50d69ac4a9ada9dd94d37cfccbb9189ec4cf432350ed2d1",
-    "size": 11073929,
-    "notes": "Версия 0.2.3: Добавлена полноценная поддержка MTProto FakeTLS (ee-секреты со SNI domain fronting, обход DPI) и dd-секретов (padded intermediate). Автоматический парсинг ссылок tg://proxy и https://t.me/proxy в настройках прокси."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.4/koteloader-0.2.4.apk",
+    "sha256": "3d39350c51566ce74351c24c0dc75e1f30c075396c397736b36fc21382291ea1",
+    "size": 11075735,
+    "notes": "Версия 0.2.4: Исправлено автоматическое удаление поискового сообщения при отправке музыки через инлайн-ботов. Добавлен нативный модуль ролевых команд Role-Play (rp.so)."
   },
   "sdk": {
-    "version": "0.2.1",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.1/kote-module-sdk.zip",
-    "sha256": "14797c7c4f0aa975be4fbbdb871c9992802ec676c9f6e385ef89078df5386bc5",
-    "size": 22428,
+    "version": "0.2.4",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.4/kote-module-sdk.zip",
+    "sha256": "daafe28674569d4a3f399ea59027c339cc4ea2b7d1e167f219e33fd10ad16db7",
+    "size": 97244,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK): заголовочные файлы module_abi.h, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
   },
   "modules": [
@@ -112,10 +112,93 @@
           "usage": ""
         }
       ],
-      "size": 59120,
-      "sha256": "595610a19dadb7b75329baa817647851bbd1f6cb1e41dd2b92ccf869179b7c98",
+      "size": 75936,
+      "sha256": "03e52356b436d92f8a1ced8d7becf9ad0a0e579f5ba765828de84d85632e9e14",
       "url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/music.so",
       "git_url": "https://github.com/AresUser1/KoteModules/blob/main/src/music.cpp",
+      "license": "MIT",
+      "min_host_version": 12
+    },
+    {
+      "id": "rp",
+      "name": "rp",
+      "display_name": "Role-Play (РП команды)",
+      "author": "Kote",
+      "description": "Полнофункциональный ролевой модуль: гибкая система действий (.обнять, .кусь, .поцеловать и т.д.), кастомные РП-ники (.setrpnick), создание собственных РП-команд (.addrp), права доступа и кастомные эмодзи.",
+      "version": "2.8.0",
+      "kind": "so",
+      "abi": "arm64-v8a",
+      "commands": [
+        {
+          "name": "rp",
+          "doc": "Управление RP-модулем в чате (on/off/access)",
+          "usage": "[on|off|access]"
+        },
+        {
+          "name": "addrp",
+          "doc": "Добавить новую RP-команду",
+          "usage": "<алиасы>|<действие>|<эмодзи>"
+        },
+        {
+          "name": "delrp",
+          "doc": "Удалить RP-команду",
+          "usage": "<алиас|all|prem|simple>"
+        },
+        {
+          "name": "rplist",
+          "doc": "Список всех доступных RP-команд",
+          "usage": ""
+        },
+        {
+          "name": "setrpnick",
+          "doc": "Установить RP-ник пользователю",
+          "usage": "[-g] [@user] <ник>"
+        },
+        {
+          "name": "delrpnick",
+          "doc": "Удалить или скрыть RP-ник",
+          "usage": "[-g] [@user]"
+        },
+        {
+          "name": "rpnick",
+          "doc": "Посмотреть текущие RP-ники",
+          "usage": "[@user]"
+        },
+        {
+          "name": "addrpcreator",
+          "doc": "Назначить создателя RP-команд",
+          "usage": "[@user]"
+        },
+        {
+          "name": "delrpcreator",
+          "doc": "Снять права создателя RP-команд",
+          "usage": "[@user]"
+        },
+        {
+          "name": "listrpcreators",
+          "doc": "Список создателей RP-команд",
+          "usage": ""
+        },
+        {
+          "name": "setrpemoji",
+          "doc": "Настроить кастомный эмодзи для ключа",
+          "usage": "<KEY> <ID/эмодзи> [fallback]"
+        },
+        {
+          "name": "delrpemoji",
+          "doc": "Сбросить эмодзи ключа к дефолту",
+          "usage": "<KEY>"
+        },
+        {
+          "name": "rpemojis",
+          "doc": "Список статических RP-эмодзи",
+          "usage": ""
+        }
+      ],
+      "size": 147280,
+      "sha256": "e91758e0108a32165332cb312cc488b44e29b511f2d8eca3c4fd0456163adbfe",
+      "url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/rp.so",
+      "git_url": "https://github.com/AresUser1/KoteModules/blob/main/src/rp.cpp",
       "license": "MIT",
       "min_host_version": 12
     }
