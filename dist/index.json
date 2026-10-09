@@ -2,15 +2,15 @@
   "schema": 1,
   "updated": "2026-10-09",
   "latest_apk": {
-    "version_name": "0.1.7",
-    "version_code": 8,
+    "version_name": "0.1.8",
+    "version_code": 9,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.7/koteloader-0.1.7.apk",
-    "sha256": "dff6c5c46fd29ca5522308a0e91c4d1cd04e07e25a4fd5bf15e505800e1de81a",
-    "size": 10982162,
-    "notes": "Хотфикс 0.1.7: Устранение краша при запуске из-за дубликатов репозитория/кэша модулей. Добавлена автоматическая очистка дубликатов и устаревших репозиториев, дедупликация кэша модулей, безопасные составные ключи в списках Compose и защита инициализации ядра."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.1.8/koteloader-0.1.8.apk",
+    "sha256": "d8825f614a02b11d6a5b8462fc5b25c18f1fb56317b34eac51570113b7824729",
+    "size": 10983500,
+    "notes": "Хотфикс 0.1.8: Устранение краша NullPointerException при инициализации MainViewModel из-за порядка декларации StateFlow. Добавлена встроенная система логирования крашей CrashLogger, сохраняющая подробный отчет в txt-файл на телефон (папка Download/KoteLoader_Backup и Download/)."
   },
   "modules": []
 }
