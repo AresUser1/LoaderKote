@@ -2,190 +2,21 @@
   "schema": 1,
   "updated": "2026-10-10",
   "latest_apk": {
-    "version_name": "0.2.8",
-    "version_code": 18,
+    "version_name": "0.2.9",
+    "version_code": 19,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.8/koteloader-0.2.8.apk",
-    "sha256": "a432467209f156937a5c3f5aa8051bf5c67a6f65695ab470b41e1cb8fe5a1841",
-    "size": 11143184,
-    "notes": "Версия 0.2.8: Добавлен покрас инлайн-кнопок — модули могут задавать цвет кнопки (синий/красный/зелёный) и кастом-эмодзи иконку через c_button_ex. Обновлён SDK (ABI 3) с документацией и примером по цветным кнопкам."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.9/koteloader-0.2.9.apk",
+    "sha256": "0bd3892b90f9c9c2ea56dee3280a5aa344911d8ce4b7d79bce3fa7b404c51645",
+    "size": 11145293,
+    "notes": "Версия 0.2.9: фоновые уведомления об обновлениях. Приложение само проверяет новые версии в фоне и присылает уведомление, когда выходит обновление — больше не нужно вручную жать «Проверить». Тап по уведомлению открывает экран обновления с Changelog."
   },
   "sdk": {
-    "version": "0.2.8",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.8/kote-module-sdk.zip",
-    "sha256": "8596ceaa4ea83cc141bb69945e438218c8d34c6ec930d3de626372e44eb01a4b",
-    "size": 60444,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.2.8): заголовочные файлы module_abi.h с c_button_ex и KOTO_BTN_*, руководство по покрасу инлайн-кнопок и кастом-эмодзи иконкам, гибридным кнопкам и нативным файлам, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
-  },
-  "modules": [
-    {
-      "id": "checkers",
-      "name": "checkers",
-      "display_name": "Шашки (Checkers PvP)",
-      "author": "Kote",
-      "description": "Русские шашки: полноценный PvP между любыми игроками в чате, свободный выбор белых/чёрных, серии ударов в 1 клик, дамки, пат, ничья и реванш.",
-      "version": "2.1.0",
-      "kind": "so",
-      "abi": "arm64-v8a",
-      "commands": [
-        {
-          "name": "checkers",
-          "doc": "Начать игру в русские шашки (инлайн)",
-          "usage": "[white|black]"
-        },
-        {
-          "name": "шашки",
-          "doc": "Начать игру в русские шашки (псевдоним)",
-          "usage": "[white|black]"
-        },
-        {
-          "name": "checkersend",
-          "doc": "Список активных партий или завершение игры по ID",
-          "usage": "[id]"
-        }
-      ],
-      "size": 27464,
-      "sha256": "0b8c4c20ce52fde42bb8e06bfcba93509b4110da5f64021701425f22d62a5fc2",
-      "url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/checkers.so",
-      "git_url": "https://github.com/AresUser1/KoteModules/blob/main/src/checkers.c",
-      "license": "MIT",
-      "min_host_version": 1
-    },
-    {
-      "id": "copymessage",
-      "name": "copymessage",
-      "display_name": "CopyMessage",
-      "author": "Kote",
-      "description": "Сохранение текста и медиафайлов из защищенных чатов/каналов с запретом пересылки в Избранное (.copy и .hcopy).",
-      "version": "1.3.0",
-      "kind": "so",
-      "abi": "arm64-v8a",
-      "commands": [
-        {
-          "name": "copy",
-          "doc": "Копирование сообщения в Избранное с отчетом",
-          "usage": "[в ответ на сообщение]"
-        },
-        {
-          "name": "hcopy",
-          "doc": "Тихое копирование сообщения в Избранное",
-          "usage": "[в ответ на сообщение]"
-        }
-      ],
-      "size": 7944,
-      "sha256": "90bec6af5594b7180db9ba103c19b22ff9999b507241e89ff379d0da101db2d4",
-      "url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/copymessage.so",
-      "git_url": "https://github.com/AresUser1/KoteModules/blob/main/src/copymessage.c",
-      "license": "MIT",
-      "min_host_version": 1
-    },
-    {
-      "id": "music",
-      "name": "music",
-      "display_name": "YouTube Music Player",
-      "author": "Kote",
-      "description": "Поиск и отправка музыки: быстрый поиск через ботов (@lybot, @vkmusic_bot) по умолчанию либо напрямую с YouTube через флаг --yt или команду .musyt с качеством M4A/AAC в Telegram плеер.",
-      "version": "2.3.0",
-      "kind": "so",
-      "abi": "arm64-v8a",
-      "commands": [
-        {
-          "name": "mus",
-          "doc": "Поиск музыки через ботов или YouTube (--yt)",
-          "usage": "<запрос> [--yt]"
-        },
-        {
-          "name": "musyt",
-          "doc": "Прямой поиск и скачивание аудио с YouTube",
-          "usage": "<запрос или ссылка>"
-        },
-        {
-          "name": "musconfig",
-          "doc": "Информация и конфигурация музыкального модуля",
-          "usage": ""
-        },
-        {
-          "name": "musclean",
-          "doc": "Очистить кэш скачанных треков на устройстве",
-          "usage": ""
-        }
-      ],
-      "size": 76032,
-      "sha256": "89466eb9dc473a2d37b9dbb487c712d442644f5f7014a8987d3a3e7e474fd44b",
-      "url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/music.so",
-      "git_url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/music.so",
-      "license": "MIT",
-      "min_host_version": 12
-    },
-    {
-      "id": "rp",
-      "name": "rp",
-      "display_name": "Role-Play (РП команды)",
-      "author": "Kote",
-      "description": "Полнофункциональный ролевой модуль: добавление своих действий (.addrp), управление доступом в чатах (.rp), кастомные РП-ники (.setrpnick) и создатели команд.",
-      "version": "2.9.0",
-      "kind": "so",
-      "abi": "arm64-v8a",
-      "commands": [
-        {
-          "name": "rp",
-          "doc": "Управление RP-модулем в чате (on/off/access)",
-          "usage": "[on|off|access]"
-        },
-        {
-          "name": "addrp",
-          "doc": "Добавить новую RP-команду",
-          "usage": "<алиасы>|<действие>"
-        },
-        {
-          "name": "delrp",
-          "doc": "Удалить RP-команду",
-          "usage": "<алиас|all>"
-        },
-        {
-          "name": "rplist",
-          "doc": "Список всех доступных RP-команд",
-          "usage": ""
-        },
-        {
-          "name": "setrpnick",
-          "doc": "Установить RP-ник пользователю",
-          "usage": "[-g] [@user] <ник>"
-        },
-        {
-          "name": "delrpnick",
-          "doc": "Удалить или скрыть RP-ник",
-          "usage": "[-g] [@user]"
-        },
-        {
-          "name": "rpnick",
-          "doc": "Посмотреть текущие RP-ники",
-          "usage": "[@user]"
-        },
-        {
-          "name": "addrpcreator",
-          "doc": "Назначить создателя RP-команд",
-          "usage": "[@user]"
-        },
-        {
-          "name": "delrpcreator",
-          "doc": "Снять права создателя RP-команд",
-          "usage": "[@user]"
-        },
-        {
-          "name": "listrpcreators",
-          "doc": "Список создателей RP-команд",
-          "usage": ""
-        }
-      ],
-      "size": 129480,
-      "sha256": "de93ee928c4d45e37ea4a7721046aea0af9432bb023f57db2b7e679d47f1b7d7",
-      "url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/rp.so",
-      "git_url": "https://raw.githubusercontent.com/AresUser1/KoteModules/main/modules/rp.so",
-      "license": "MIT",
-      "min_host_version": 12
-    }
-  ]
+    "version": "0.2.9",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.9/kote-module-sdk.zip",
+    "sha256": "986f608c93362a15dd83a6a81c1419ea20d55da81e06a44d908462df180d320d",
+    "size": 60389,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.2.9): заголовочные файлы module_abi.h с c_button_ex и KOTO_BTN_*, руководство по покрасу инлайн-кнопок и кастом-эмодзи иконкам, гибридным кнопкам и нативным файлам, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
+  }
 }
