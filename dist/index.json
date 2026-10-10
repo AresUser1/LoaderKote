@@ -2,22 +2,22 @@
   "schema": 1,
   "updated": "2026-10-10",
   "latest_apk": {
-    "version_name": "0.2.7",
-    "version_code": 17,
+    "version_name": "0.2.8",
+    "version_code": 18,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.7/koteloader-0.2.7.apk",
-    "sha256": "959181d078cd4d4d10253c6930d2afa2395f93ec378988b065a2796a0e65ad65",
-    "size": 11123375,
-    "notes": "Версия 0.2.7: Исправлена потеря ссылок и форматирования при отправке медиа/файлов с подписью. Добавлена отправка inline-кнопок к файлам и медиа через вспомогательного бота. Добавлено автоматическое обнаружение отозванной/недействительной сессии Telegram с корректным сбросом и возвратом на экран входа."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.8/koteloader-0.2.8.apk",
+    "sha256": "a432467209f156937a5c3f5aa8051bf5c67a6f65695ab470b41e1cb8fe5a1841",
+    "size": 11143184,
+    "notes": "Версия 0.2.8: Добавлен покрас инлайн-кнопок — модули могут задавать цвет кнопки (синий/красный/зелёный) и кастом-эмодзи иконку через c_button_ex. Обновлён SDK (ABI 3) с документацией и примером по цветным кнопкам."
   },
   "sdk": {
-    "version": "0.2.7",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.7/kote-module-sdk.zip",
-    "sha256": "60b6d2f41258440853b8331191a58e9b0ec9181cd4693eecd63c17e9ba718e10",
-    "size": 59650,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.2.7): заголовочные файлы module_abi.h, руководство по гибридным инлайн-кнопкам и нативным файлам, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
+    "version": "0.2.8",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.8/kote-module-sdk.zip",
+    "sha256": "8596ceaa4ea83cc141bb69945e438218c8d34c6ec930d3de626372e44eb01a4b",
+    "size": 60444,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.2.8): заголовочные файлы module_abi.h с c_button_ex и KOTO_BTN_*, руководство по покрасу инлайн-кнопок и кастом-эмодзи иконкам, гибридным кнопкам и нативным файлам, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
   },
   "modules": [
     {
