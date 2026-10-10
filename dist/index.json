@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-10",
   "latest_apk": {
-    "version_name": "0.2.9",
-    "version_code": 19,
+    "version_name": "0.3.0",
+    "version_code": 20,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.9/koteloader-0.2.9.apk",
-    "sha256": "0bd3892b90f9c9c2ea56dee3280a5aa344911d8ce4b7d79bce3fa7b404c51645",
-    "size": 11145293,
-    "notes": "Версия 0.2.9: фоновые уведомления об обновлениях. Приложение само проверяет новые версии в фоне и присылает уведомление, когда выходит обновление — больше не нужно вручную жать «Проверить». Тап по уведомлению открывает экран обновления с Changelog."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.0/koteloader-0.3.0.apk",
+    "sha256": "1006103dfc269c9021c65a5e810765c92195a5f6a5658edb0129f31c92d989c9",
+    "size": 11180955,
+    "notes": "Версия 0.3.0: реальные имена пользователей в модулях. user_name() теперь показывает имя отправителя и автора reply (а не только своё), а Role-Play подставляет ник цели (reply, @username или id) вместо «Пользователь». Хост заранее резолвит цель-аргумент команды — доступно всем модулям. ABI модулей без изменений."
   },
   "sdk": {
-    "version": "0.2.9",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.9/kote-module-sdk.zip",
-    "sha256": "986f608c93362a15dd83a6a81c1419ea20d55da81e06a44d908462df180d320d",
-    "size": 60389,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.2.9): заголовочные файлы module_abi.h с c_button_ex и KOTO_BTN_*, руководство по покрасу инлайн-кнопок и кастом-эмодзи иконкам, гибридным кнопкам и нативным файлам, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
+    "version": "0.3.0",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.0/kote-module-sdk.zip",
+    "sha256": "20a45ae529101e5395241b0de4df136db43f70db288d02c3e675129f72a69923",
+    "size": 63230,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.0): заголовочные файлы module_abi.h с c_button_ex и KOTO_BTN_*, руководство по покрасу инлайн-кнопок и кастом-эмодзи иконкам, гибридным кнопкам и нативным файлам, новый блок «Имена и цели» (как резолвятся отправитель/reply/аргумент команды), скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
   }
 }
