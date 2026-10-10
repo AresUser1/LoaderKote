@@ -13,11 +13,11 @@
     "notes": "Версия 0.2.7: Исправлена потеря ссылок и форматирования при отправке медиа/файлов с подписью. Добавлена отправка inline-кнопок к файлам и медиа через вспомогательного бота. Добавлено автоматическое обнаружение отозванной/недействительной сессии Telegram с корректным сбросом и возвратом на экран входа."
   },
   "sdk": {
-    "version": "0.2.5",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.5/kote-module-sdk.zip",
-    "sha256": "cb83a96f6dc6674ebdc1d289ef1fee57911e7d24b417ff9da98eea5c2e83153f",
-    "size": 57970,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK): заголовочные файлы module_abi.h, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
+    "version": "0.2.7",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.2.7/kote-module-sdk.zip",
+    "sha256": "60b6d2f41258440853b8331191a58e9b0ec9181cd4693eecd63c17e9ba718e10",
+    "size": 59650,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.2.7): заголовочные файлы module_abi.h, руководство по гибридным инлайн-кнопкам и нативным файлам, скрипты сборки build.sh/Makefile/build.bat, документация и примеры."
   },
   "modules": [
     {
