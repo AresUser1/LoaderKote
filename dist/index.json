@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "latest_apk": {
-    "version_name": "0.3.3",
-    "version_code": 23,
+    "version_name": "0.3.4",
+    "version_code": 24,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.3/koteloader-0.3.3.apk",
-    "sha256": "d070c656b729d008c3ca7a3d97898bc859cb1338ad54daa4af4fd797f5b50061",
-    "size": 11208245,
-    "notes": "Версия 0.3.3: баннеры для модулей (c_banner) — нативные модули ABI 3 могут прикреплять переключаемую картинку-баннер (link-preview) к via-bot сообщению с кнопками, как inline.form у Hikka/FHeta; флаги KOTO_BANNER_ABOVE/LARGE, ABI расширен обратносовместимо (min_host_version 23). Музыкальный модуль переписан без YouTube (v3.0.0, обёртка над inline-ботами). Фикс foreground-service specialUse под Android 15."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/koteloader-0.3.4.apk",
+    "sha256": "4e7af8e549c08beced4d5c6f52d97b0201e38aabc33fd5e051f5a3f759f0afdd",
+    "size": 9393604,
+    "notes": "Версия 0.3.4: поддержка медиа-альбомов (c_send_album — отправка фотопостов единым сообщением), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
   },
   "sdk": {
-    "version": "0.3.3",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.3/kote-module-sdk.zip",
-    "sha256": "a8dd46c253948a2bd03839bdf8b47e5c43295619e8acd57b9ad0f8c5d09f1c8c",
-    "size": 67909,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.3): module_abi.h с c_banner и KOTO_BANNER_*, документация по переключаемым баннерам-картинкам (link-preview) под кнопками + рабочий пример bannerdemo.cpp; плюс прежние c_button_ex/KOTO_BTN_*, блок «Имена и цели», гибридные кнопки и нативные файлы, скрипты сборки build.sh/Makefile/build.bat, примеры."
+    "version": "0.3.4",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/kote-module-sdk.zip",
+    "sha256": "ef9bbe8c897fbbaabf52939259f89dd03341d4fbc5000f8f84c64f500d2c1386",
+    "size": 76778,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.4): module_abi.h с c_send_album, overlay_* (наэкранный холст), c_banner, c_button_ex; документация, скрипты сборки build.sh/Makefile/build.bat, примеры нативных C/C++ и Lua модулей."
   }
 }
