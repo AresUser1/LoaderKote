@@ -8,9 +8,9 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/koteloader-0.3.4.apk",
-    "sha256": "f4b6830050264f231d5d361ac4216d924b1c4e6b7eed66c3c227b4a35fa63555",
-    "size": 9396193,
-    "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), стилизованные inline-кнопки (primary, danger, success) и баннеры (c_banner поверх текста через link_preview_options), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
+    "sha256": "177334b387d2c01326ec6fe5d43f8172a8281e048be6a99ff3802adcd31df90a",
+    "size": 9398135,
+    "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), стилизованные inline-кнопки (primary, danger, success) и баннеры (c_banner поверх текста через link_preview_options), автоматическое определение реальной длительности и тегов аудио вместо 0:01 (MediaMetadataRetriever), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
   },
   "sdk": {
     "version": "0.3.4",
