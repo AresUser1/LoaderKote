@@ -8,15 +8,15 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/koteloader-0.3.4.apk",
-    "sha256": "ef29872237bde99db9b5ac670ca1ef932e0023d3e5dfc54f0ecde6c7645a284e",
-    "size": 9394125,
-    "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
+    "sha256": "f4b6830050264f231d5d361ac4216d924b1c4e6b7eed66c3c227b4a35fa63555",
+    "size": 9396193,
+    "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), стилизованные inline-кнопки (primary, danger, success) и баннеры (c_banner поверх текста через link_preview_options), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
   },
   "sdk": {
     "version": "0.3.4",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/kote-module-sdk.zip",
-    "sha256": "656cbd740ab0b47b16d4cfa515ecdda8f777e8997bbdda2b18a1f0d5b030ad3d",
-    "size": 77307,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.4): отправка файлов и альбомов по клику на кнопку в on_callback, module_abi.h с c_send_album, overlay_* (наэкранный холст), c_banner, c_button_ex; документация, скрипты сборки build.sh/Makefile/build.bat, примеры нативных C/C++ и Lua модулей."
+    "sha256": "c28737e9eb08b1b388f571bb13c4effd4068c083a7a2a2dd77856fe793831cf6",
+    "size": 78595,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.4): отправка файлов и альбомов по клику на кнопку в on_callback, c_banner и стилизованные кнопки c_button_ex, module_abi.h с c_send_album, overlay_* (наэкранный холст); документация, скрипты сборки build.sh/Makefile/build.bat, примеры нативных C/C++ (btndemo.c, bannerdemo.cpp, canvas_demo.c) и Lua модулей."
   }
 }
