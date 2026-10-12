@@ -10,13 +10,13 @@
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/koteloader-0.3.4.apk",
     "sha256": "4e7af8e549c08beced4d5c6f52d97b0201e38aabc33fd5e051f5a3f759f0afdd",
     "size": 9393604,
-    "notes": "Версия 0.3.4: поддержка медиа-альбомов (c_send_album — отправка фотопостов единым сообщением), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
+    "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
   },
   "sdk": {
     "version": "0.3.4",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/kote-module-sdk.zip",
-    "sha256": "ef9bbe8c897fbbaabf52939259f89dd03341d4fbc5000f8f84c64f500d2c1386",
-    "size": 76778,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.4): module_abi.h с c_send_album, overlay_* (наэкранный холст), c_banner, c_button_ex; документация, скрипты сборки build.sh/Makefile/build.bat, примеры нативных C/C++ и Lua модулей."
+    "sha256": "656cbd740ab0b47b16d4cfa515ecdda8f777e8997bbdda2b18a1f0d5b030ad3d",
+    "size": 77307,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.4): отправка файлов и альбомов по клику на кнопку в on_callback, module_abi.h с c_send_album, overlay_* (наэкранный холст), c_banner, c_button_ex; документация, скрипты сборки build.sh/Makefile/build.bat, примеры нативных C/C++ и Lua модулей."
   }
 }
