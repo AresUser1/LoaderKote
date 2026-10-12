@@ -8,8 +8,8 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/koteloader-0.3.4.apk",
-    "sha256": "4e7af8e549c08beced4d5c6f52d97b0201e38aabc33fd5e051f5a3f759f0afdd",
-    "size": 9393604,
+    "sha256": "ef29872237bde99db9b5ac670ca1ef932e0023d3e5dfc54f0ecde6c7645a284e",
+    "size": 9394125,
     "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
   },
   "sdk": {
