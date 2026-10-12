@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-12",
   "latest_apk": {
-    "version_name": "0.3.4",
-    "version_code": 24,
+    "version_name": "0.3.5",
+    "version_code": 25,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/koteloader-0.3.4.apk",
-    "sha256": "177334b387d2c01326ec6fe5d43f8172a8281e048be6a99ff3802adcd31df90a",
-    "size": 9398135,
-    "notes": "Версия 0.3.4: нативная отправка файлов и новых сообщений от юзербота (без via @bot) по клику на инлайн-кнопки (c_send, c_reply, c_send_file, c_send_album в on_callback), стилизованные inline-кнопки (primary, danger, success) и баннеры (c_banner поверх текста через link_preview_options), автоматическое определение реальной длительности и тегов аудио вместо 0:01 (MediaMetadataRetriever), поддержка медиа-альбомов (c_send_album), инлайн-видео со стримингом и плеером (автоопределение типа по сигнатуре/magic bytes), неблокирующее выполнение команд в воркере с живым прогрессом инлайн-редактированием, наэкранный оверлей-холст CanvasOverlayService для рисования поверх экрана (ABI 3: overlay_*), исправление отображения имени аккаунта Telegram User при открытии профиля."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.5/koteloader-0.3.5.apk",
+    "sha256": "74b18e622656d5e717ae0f4eb9611e505f5530d849f8a8df3087defdc9678957",
+    "size": 9403248,
+    "notes": "Версия 0.3.5: исправление критической ошибки парсинга Git URL (raw.githubusercontent.soom), автоматическая сборка HLS .m3u8 аудиопотоков в непрерывный MP3 файл в NativeBridge.downloadFile (исправлена проблема 14.9KB и 0:01 в music_dl и других модулях), фоллбэк имени исполнителя аудио из названия трека (устранено 'Неизвестен' в плеере Telegram), актуализированный SDK с koto_utils.hpp, koto_file.hpp и nlohmann/json.hpp."
   },
   "sdk": {
-    "version": "0.3.4",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.4/kote-module-sdk.zip",
-    "sha256": "c28737e9eb08b1b388f571bb13c4effd4068c083a7a2a2dd77856fe793831cf6",
-    "size": 78595,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.4): отправка файлов и альбомов по клику на кнопку в on_callback, c_banner и стилизованные кнопки c_button_ex, module_abi.h с c_send_album, overlay_* (наэкранный холст); документация, скрипты сборки build.sh/Makefile/build.bat, примеры нативных C/C++ (btndemo.c, bannerdemo.cpp, canvas_demo.c) и Lua модулей."
+    "version": "0.3.5",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.5/kote-module-sdk.zip",
+    "sha256": "9ca9dfbdb7ee0c7cf88c5fe44b38575224366fe82144d3feaba4dddcf56f7959",
+    "size": 218431,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.5): полная поддержка отправки файлов и альбомов по клику на кнопку в on_callback, c_banner и стилизованные кнопки c_button_ex, module_abi.h, koto_utils.hpp (с логгером и HTTP хелперами), koto_file.hpp, nlohmann/json.hpp; скрипты сборки и примеры нативных C/C++ и Lua модулей."
   }
 }
