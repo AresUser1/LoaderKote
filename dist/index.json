@@ -4,19 +4,19 @@
   "latest_apk": {
     "version_name": "0.3.6",
     "version_code": 26,
-    "patch": 3,
+    "patch": 4,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
-    "sha256": "1b346f010a0bd01b13c90515584a826d6c9f9fd1a94786583937da509de6353e",
-    "size": 9448174,
-    "notes": "Версия 0.3.6 (Hotfix 3): устранено аварийное завершение при заходе в Настройки после выключения юзербота, реализовано автоматическое самовосстановление модулей в песочнице (self-healing / rebind), очищен модуль profile (удалены посторонние команды управления аккаунтом), добавлен просмотрщик краш-логов прямо в приложении и сохранение в Загрузки/KoteLoader."
+    "sha256": "3412c2c2884fa519a45581256bf3167ddf0ed3316b44250a442e84317011dee5",
+    "size": 9523255,
+    "notes": "Версия 0.3.6 (Hotfix 4): внедрена C-ABI Section 27 (получение имени, фамилии, юзернейма, расширенного профиля user_full_json и чата chat_full_json), устранён баг с отображением 'Пользователь'/'User' в RP и сторонних модулях, добавлена поддержка в изолированной песочнице и Lua (msg:user_*, koto.user_*), модуль userinfo и C++20 утилиты."
   },
   "sdk": {
     "version": "0.3.6",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/kote-module-sdk.zip",
-    "sha256": "683ee4a3e119737e1001611c26a78b4307c6a3805484473603e67073713ff313",
-    "size": 236172,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.6): Section 26 ABI управления профилем Telegram, полная поддержка инлайн-кнопок (c_button_ex с цветами style и кастом-эмодзи), c_banner, исходники profile.c и btndemo.c, module_abi.h, koto_utils.hpp, примеры и скрипты сборки под Android, Linux и Windows."
+    "sha256": "0ff1e2c634aabcac36fe3a00aa1f8524caaec7c4366482c00b10187e883ac927",
+    "size": 241325,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.6 Hotfix 4): Section 27 ABI (метаданные пользователей и чатов, user_first_name, user_last_name, user_username, user_full_json, chat_full_json), Section 26 ABI управления профилем Telegram, полная поддержка инлайн-кнопок, баннеров, примеры userinfo.c и userinfo.lua, module_abi.h, koto_utils.hpp, скрипты сборки под Android, Linux и Windows."
   }
 }
