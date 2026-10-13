@@ -4,18 +4,18 @@
   "latest_apk": {
     "version_name": "0.3.6",
     "version_code": 26,
-    "patch": 1,
+    "patch": 2,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
-    "sha256": "5fb43545c937415b75589c589803f2d339c8e7722c593ae42261377b1b461ac6",
-    "size": 9442417,
-    "notes": "Версия 0.3.6 (Hotfix 1): исправление правил ProGuard/R8 для сохранения класса SandboxClient и AIDL-интерфейсов песочницы модулей :modsandbox (устранена ошибка 'JNI песочницы не инициализирован' при загрузке checkers, music, rp, tt_dl), кэширование ClassLoader в JNI_OnLoad, инициализация песочницы при запуске из системной шторки (Quick Settings Tile) и фоновой службы KotoService."
+    "sha256": "fe94b71aac9ac3bc0804c58cd30f6351f63774df605a091540fe798e7deba47c",
+    "size": 9444993,
+    "notes": "Версия 0.3.6 (Hotfix 2): устранена ошибка CHAT_SEND_WEBPAGE_FORBIDDEN в групповых чатах с запретом предпросмотра ссылок (добавлен автоматический фоллбэк на кнопки без баннера), полностью удалены эмодзи-кружки и возвращен нативный стиль окраски кнопок (style: primary/danger/success), исправлена отправка колбэков при удаленных сообщениях (MESSAGE_ID_INVALID)."
   },
   "sdk": {
     "version": "0.3.6",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/kote-module-sdk.zip",
-    "sha256": "4121631caba5568364976816033dbbf1f08995579cfdca3d4c6a7fa5f5589662",
+    "sha256": "6d8822dcd9af3d9491510392ed0f1f8f6369babd3bbbc64c4a9763b2dfb93bf5",
     "size": 219509,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.6): Section 26 ABI управления профилем Telegram, полная поддержка инлайн-кнопок и колбэков c_send/c_send_file в группах, c_banner, module_abi.h, koto_utils.hpp, примеры и скрипты сборки под Android, Linux и Windows."
   }
