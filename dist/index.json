@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-13",
   "latest_apk": {
-    "version_name": "0.3.6",
-    "version_code": 26,
+    "version_name": "0.3.7",
+    "version_code": 27,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
-    "sha256": "3412c2c2884fa519a45581256bf3167ddf0ed3316b44250a442e84317011dee5",
-    "size": 9523255,
-    "notes": "Версия 0.3.6 (Hotfix 4): внедрена C-ABI Section 27 (получение имени, фамилии, юзернейма, расширенного профиля user_full_json и чата chat_full_json), устранён баг с отображением 'Пользователь'/'User' в RP и сторонних модулях, добавлена поддержка в изолированной песочнице и Lua (msg:user_*, koto.user_*), модуль userinfo и C++20 утилиты."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.7/koteloader-0.3.7.apk",
+    "sha256": "ba5a48afbdd9384d4ebb1e763d50d868fa0c10d1162228ac2a8b788530412c31",
+    "size": 9553620,
+    "notes": "Версия 0.3.7: Модерация и администрирование чатов (C-ABI Section 28: ban_user, unban_user, kick_user, mute_user, unmute_user, get_history_json с пагинацией и реверсом add_offset, reply_msg_id), исправление пре-резолва и кастом-эмодзи, поддержка модулей afk, bakusearch (trace.moe) и moderation."
   },
   "sdk": {
-    "version": "0.3.6",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/kote-module-sdk.zip",
-    "sha256": "0ff1e2c634aabcac36fe3a00aa1f8524caaec7c4366482c00b10187e883ac927",
-    "size": 241325,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.6 Hotfix 4): Section 27 ABI (метаданные пользователей и чатов, user_first_name, user_last_name, user_username, user_full_json, chat_full_json), Section 26 ABI управления профилем Telegram, полная поддержка инлайн-кнопок, баннеров, примеры userinfo.c и userinfo.lua, module_abi.h, koto_utils.hpp, скрипты сборки под Android, Linux и Windows."
+    "version": "0.3.7",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.7/kote-module-sdk.zip",
+    "sha256": "35fa3a86bfff504e2874d2eeb1b45c1a16feab0e425881f1b12d409a28db0745",
+    "size": 269891,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.7): Section 28 ABI (модерация, ban/unban/kick/mute/unmute, get_history_json, reply_msg_id), Section 27 ABI (метаданные пользователей и чатов), Section 26 ABI (управление профилем Telegram), koto_utils.hpp с хелперами модерации, примеры afk.cpp, bakusearch.cpp, moderation.cpp, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
