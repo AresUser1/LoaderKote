@@ -4,13 +4,13 @@
   "latest_apk": {
     "version_name": "0.3.6",
     "version_code": 26,
-    "patch": 0,
+    "patch": 1,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
-    "sha256": "fbe6ab403c9d8e0d9510c834d1c705b08c4d4f6e489ca835f7432d572a725226",
-    "size": 9423257,
-    "notes": "Версия 0.3.6: Section 26 ABI управления профилем Telegram (.name, .bio, .username, .status, .avatar, .online), 100% надёжная работа инлайн-кнопок via_bot, баннеров и покраса в группах и топиках (устранена QUERY_ID_INVALID, кэширование access_hash и привязка к target_peer, сохранение контекста в __btn_ctx__), обновлённый SDK Kit v0.3.6."
+    "sha256": "5fb43545c937415b75589c589803f2d339c8e7722c593ae42261377b1b461ac6",
+    "size": 9442417,
+    "notes": "Версия 0.3.6 (Hotfix 1): исправление правил ProGuard/R8 для сохранения класса SandboxClient и AIDL-интерфейсов песочницы модулей :modsandbox (устранена ошибка 'JNI песочницы не инициализирован' при загрузке checkers, music, rp, tt_dl), кэширование ClassLoader в JNI_OnLoad, инициализация песочницы при запуске из системной шторки (Quick Settings Tile) и фоновой службы KotoService."
   },
   "sdk": {
     "version": "0.3.6",
