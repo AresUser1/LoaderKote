@@ -10,13 +10,13 @@
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.8/koteloader-0.3.8.apk",
     "sha256": "cb3b7b2c111eeeb93155a480599d88d62d6dfe62ea1117b0bf16635f0c67b352",
     "size": 9617444,
-    "notes": "Версия 0.3.8: Интерактивные кнопки, мульти-аккаунты (Twins) и пересылка (C-ABI Section 29: click_button, forward_messages, twin_send, twin_click_button, twin_get_history_json, twin_forward_messages, get_twins_json, msg_buttons_json, сериализация инлайн-кнопок в истории), поддержка модулей bakusearch и mafia_multitool."
+    "notes": "Версия 0.3.8: Интерактивные кнопки, мульти-аккаунты (Twins) и пересылка (C-ABI Section 29: click_button, forward_messages, twin_send, twin_click_button, twin_get_history_json, twin_forward_messages, get_twins_json, msg_buttons_json, сериализация инлайн-кнопок в истории)."
   },
   "sdk": {
     "version": "0.3.8",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.8/kote-module-sdk.zip",
     "sha256": "f02d3e88d348562177c680de2a64d288a05bd1ee4f4dd133f8a90ff54da00128",
     "size": 282851,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.8): Section 29 ABI (click_button, forward_messages, управление мульти-аккаунтами/твинками, чтение инлайн-кнопок), Section 28 ABI (модерация, ban/unban/kick/mute/unmute, get_history_json), примеры mafia_multitool.cpp, bakusearch.cpp, moderation.cpp, afk.cpp."
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.8): Section 29 ABI (click_button, forward_messages, управление мульти-аккаунтами/твинками, чтение инлайн-кнопок), Section 28 ABI (модерация, ban/unban/kick/mute/unmute, get_history_json), koto_utils.hpp, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
