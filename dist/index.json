@@ -4,7 +4,7 @@
   "latest_apk": {
     "version_name": "0.3.6",
     "version_code": 26,
-    "patch": 4,
+    "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
