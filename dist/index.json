@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "latest_apk": {
-    "version_name": "0.3.5",
-    "version_code": 25,
+    "version_name": "0.3.6",
+    "version_code": 26,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.5/koteloader-0.3.5.apk",
-    "sha256": "74b18e622656d5e717ae0f4eb9611e505f5530d849f8a8df3087defdc9678957",
-    "size": 9403248,
-    "notes": "Версия 0.3.5: исправление критической ошибки парсинга Git URL (raw.githubusercontent.soom), автоматическая сборка HLS .m3u8 аудиопотоков в непрерывный MP3 файл в NativeBridge.downloadFile (исправлена проблема 14.9KB и 0:01 в music_dl и других модулях), фоллбэк имени исполнителя аудио из названия трека (устранено 'Неизвестен' в плеере Telegram), актуализированный SDK с koto_utils.hpp, koto_file.hpp и nlohmann/json.hpp."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
+    "sha256": "fbe6ab403c9d8e0d9510c834d1c705b08c4d4f6e489ca835f7432d572a725226",
+    "size": 9423257,
+    "notes": "Версия 0.3.6: Section 26 ABI управления профилем Telegram (.name, .bio, .username, .status, .avatar, .online), 100% надёжная работа инлайн-кнопок via_bot, баннеров и покраса в группах и топиках (устранена QUERY_ID_INVALID, кэширование access_hash и привязка к target_peer, сохранение контекста в __btn_ctx__), обновлённый SDK Kit v0.3.6."
   },
   "sdk": {
-    "version": "0.3.5",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.5/kote-module-sdk.zip",
-    "sha256": "9ca9dfbdb7ee0c7cf88c5fe44b38575224366fe82144d3feaba4dddcf56f7959",
-    "size": 218431,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.5): полная поддержка отправки файлов и альбомов по клику на кнопку в on_callback, c_banner и стилизованные кнопки c_button_ex, module_abi.h, koto_utils.hpp (с логгером и HTTP хелперами), koto_file.hpp, nlohmann/json.hpp; скрипты сборки и примеры нативных C/C++ и Lua модулей."
+    "version": "0.3.6",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/kote-module-sdk.zip",
+    "sha256": "4121631caba5568364976816033dbbf1f08995579cfdca3d4c6a7fa5f5589662",
+    "size": 219509,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.6): Section 26 ABI управления профилем Telegram, полная поддержка инлайн-кнопок и колбэков c_send/c_send_file в группах, c_banner, module_abi.h, koto_utils.hpp, примеры и скрипты сборки под Android, Linux и Windows."
   }
 }
