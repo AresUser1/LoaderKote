@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-13",
   "latest_apk": {
-    "version_name": "0.3.7",
-    "version_code": 27,
+    "version_name": "0.3.8",
+    "version_code": 28,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.7/koteloader-0.3.7.apk",
-    "sha256": "ba5a48afbdd9384d4ebb1e763d50d868fa0c10d1162228ac2a8b788530412c31",
-    "size": 9553620,
-    "notes": "Версия 0.3.7: Модерация и администрирование чатов (C-ABI Section 28: ban_user, unban_user, kick_user, mute_user, unmute_user, get_history_json с пагинацией и реверсом add_offset, reply_msg_id), исправление пре-резолва и кастом-эмодзи, поддержка модулей afk, bakusearch (trace.moe) и moderation."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.8/koteloader-0.3.8.apk",
+    "sha256": "cb3b7b2c111eeeb93155a480599d88d62d6dfe62ea1117b0bf16635f0c67b352",
+    "size": 9617444,
+    "notes": "Версия 0.3.8: Интерактивные кнопки, мульти-аккаунты (Twins) и пересылка (C-ABI Section 29: click_button, forward_messages, twin_send, twin_click_button, twin_get_history_json, twin_forward_messages, get_twins_json, msg_buttons_json, сериализация инлайн-кнопок в истории), поддержка модулей bakusearch и mafia_multitool."
   },
   "sdk": {
-    "version": "0.3.7",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.7/kote-module-sdk.zip",
-    "sha256": "35fa3a86bfff504e2874d2eeb1b45c1a16feab0e425881f1b12d409a28db0745",
-    "size": 269891,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.7): Section 28 ABI (модерация, ban/unban/kick/mute/unmute, get_history_json, reply_msg_id), Section 27 ABI (метаданные пользователей и чатов), Section 26 ABI (управление профилем Telegram), koto_utils.hpp с хелперами модерации, примеры afk.cpp, bakusearch.cpp, moderation.cpp, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.8",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.8/kote-module-sdk.zip",
+    "sha256": "f02d3e88d348562177c680de2a64d288a05bd1ee4f4dd133f8a90ff54da00128",
+    "size": 282851,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.8): Section 29 ABI (click_button, forward_messages, управление мульти-аккаунтами/твинками, чтение инлайн-кнопок), Section 28 ABI (модерация, ban/unban/kick/mute/unmute, get_history_json), примеры mafia_multitool.cpp, bakusearch.cpp, moderation.cpp, afk.cpp."
   }
 }
