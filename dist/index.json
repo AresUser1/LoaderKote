@@ -4,19 +4,19 @@
   "latest_apk": {
     "version_name": "0.3.6",
     "version_code": 26,
-    "patch": 2,
+    "patch": 3,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/koteloader-0.3.6.apk",
-    "sha256": "fe94b71aac9ac3bc0804c58cd30f6351f63774df605a091540fe798e7deba47c",
-    "size": 9444993,
-    "notes": "Версия 0.3.6 (Hotfix 2): устранена ошибка CHAT_SEND_WEBPAGE_FORBIDDEN в групповых чатах с запретом предпросмотра ссылок (добавлен автоматический фоллбэк на кнопки без баннера), полностью удалены эмодзи-кружки и возвращен нативный стиль окраски кнопок (style: primary/danger/success), исправлена отправка колбэков при удаленных сообщениях (MESSAGE_ID_INVALID)."
+    "sha256": "1b346f010a0bd01b13c90515584a826d6c9f9fd1a94786583937da509de6353e",
+    "size": 9448174,
+    "notes": "Версия 0.3.6 (Hotfix 3): устранено аварийное завершение при заходе в Настройки после выключения юзербота, реализовано автоматическое самовосстановление модулей в песочнице (self-healing / rebind), очищен модуль profile (удалены посторонние команды управления аккаунтом), добавлен просмотрщик краш-логов прямо в приложении и сохранение в Загрузки/KoteLoader."
   },
   "sdk": {
     "version": "0.3.6",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.6/kote-module-sdk.zip",
-    "sha256": "6b1245fea795bf7493e181745e0a2cc2057728589c60c4c3654c122ad303f83d",
-    "size": 238244,
+    "sha256": "683ee4a3e119737e1001611c26a78b4307c6a3805484473603e67073713ff313",
+    "size": 236172,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.6): Section 26 ABI управления профилем Telegram, полная поддержка инлайн-кнопок (c_button_ex с цветами style и кастом-эмодзи), c_banner, исходники profile.c и btndemo.c, module_abi.h, koto_utils.hpp, примеры и скрипты сборки под Android, Linux и Windows."
   }
 }
