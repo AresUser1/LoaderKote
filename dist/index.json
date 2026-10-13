@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-13",
   "latest_apk": {
-    "version_name": "0.3.8",
-    "version_code": 28,
+    "version_name": "0.3.9",
+    "version_code": 29,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.8/koteloader-0.3.8.apk",
-    "sha256": "cb3b7b2c111eeeb93155a480599d88d62d6dfe62ea1117b0bf16635f0c67b352",
-    "size": 9617444,
-    "notes": "Версия 0.3.8: Интерактивные кнопки, мульти-аккаунты (Twins) и пересылка (C-ABI Section 29: click_button, forward_messages, twin_send, twin_click_button, twin_get_history_json, twin_forward_messages, get_twins_json, msg_buttons_json, сериализация инлайн-кнопок в истории)."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.9/koteloader-0.3.9.apk",
+    "sha256": "bb006b45ee5299bea6d46eb7d89c94d31b719170985e2cff5efe9090e2b396b5",
+    "size": 9619296,
+    "notes": "Версия 0.3.9: Исправлена работа наэкранного оверлей-холста CanvasOverlayService и интерфейса C-ABI 3 (overlay_show, overlay_hide, overlay_set_image, overlay_set_bytes, overlay_clear, overlay_save, overlay_get_state), сквозной режим кликов (PASSTHROUGH) и интерактивное рисование поверх экрана на Android 12–15."
   },
   "sdk": {
-    "version": "0.3.8",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.8/kote-module-sdk.zip",
+    "version": "0.3.9",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.9/kote-module-sdk.zip",
     "sha256": "f02d3e88d348562177c680de2a64d288a05bd1ee4f4dd133f8a90ff54da00128",
     "size": 282851,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.8): Section 29 ABI (click_button, forward_messages, управление мульти-аккаунтами/твинками, чтение инлайн-кнопок), Section 28 ABI (модерация, ban/unban/kick/mute/unmute, get_history_json), koto_utils.hpp, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.9): C-ABI Section 25 (overlay-холст: overlay_show, overlay_hide, overlay_set_image, overlay_set_bytes, overlay_clear, overlay_save, overlay_get_state), Section 29 ABI (кнопки, твинки), Section 28 ABI (модерация, история), koto_utils.hpp, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
