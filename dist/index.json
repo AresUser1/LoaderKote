@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-14",
   "latest_apk": {
-    "version_name": "0.3.11",
-    "version_code": 31,
+    "version_name": "0.3.12",
+    "version_code": 32,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.11/koteloader-0.3.11.apk",
-    "sha256": "18179c04281b104cc0686512ee0bb0d461d93ed6ca32d658ef20052e8e763eb1",
-    "size": 9638635,
-    "notes": "Версия 0.3.11: Встроен глобальный обработчик всех нативных крашей (SIGSEGV, SIGABRT, SIGBUS, SIGFPE, SIGILL, SIGTRAP) и C++ исключений с трассировкой стека, выгрузкой регистров и сохранением в latest_crash.txt; расширен перехват системных сбоев изолята."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/koteloader-0.3.12.apk",
+    "sha256": "50c4421f4648bf1eefee93114a241fe054688d35551749150ae0d8280e2c7ace",
+    "size": 9640211,
+    "notes": "Версия 0.3.12: Исправлено зависание получения команд при падении и восстановлении сети (MTProto push updates re-bind и getState); устранён бесконечный цикл BotRunner при обрыве связи; в модуль mafia_multitool добавлено интерактивное кнопочное управление .mfreeze."
   },
   "sdk": {
-    "version": "0.3.11",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.11/kote-module-sdk.zip",
-    "sha256": "cbc680366816715e8a829ec9ee8bde45def40b72b7fb7424e515f609fc30fade",
-    "size": 284637,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.11): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.12",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/kote-module-sdk.zip",
+    "sha256": "bda2ce0dc7a03cf7cd4dc75b68b11035091a3cb08f4c81b43db393041386389e",
+    "size": 285218,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.12): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
