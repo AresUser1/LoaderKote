@@ -13,10 +13,10 @@
     "notes": "Версия 0.3.10: Исправлена работа песочницы модулей (получение reply_msg_id, чтение истории диалогов через MTProto и выполнение действий модерации и кнопок из изолированного окружения)."
   },
   "sdk": {
-    "version": "0.3.9",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.9/kote-module-sdk.zip",
-    "sha256": "f02d3e88d348562177c680de2a64d288a05bd1ee4f4dd133f8a90ff54da00128",
-    "size": 282851,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.9): C-ABI Section 25 (overlay-холст: overlay_show, overlay_hide, overlay_set_image, overlay_set_bytes, overlay_clear, overlay_save, overlay_get_state), Section 29 ABI (кнопки, твинки), Section 28 ABI (модерация, история), koto_utils.hpp, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.10",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.10/kote-module-sdk.zip",
+    "sha256": "4449ba7c19ae102e933e7d82c9c6578d0343742d5c97428b51792bd6081d9ef5",
+    "size": 280565,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.10): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
