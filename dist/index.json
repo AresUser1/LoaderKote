@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-14",
   "latest_apk": {
-    "version_name": "0.3.10",
-    "version_code": 30,
+    "version_name": "0.3.11",
+    "version_code": 31,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.10/koteloader-0.3.10.apk",
-    "sha256": "7171d848572c5db8e30c11c26a16fe8578e8ca65fb94524abcbbf41075f3ce54",
-    "size": 9620058,
-    "notes": "Версия 0.3.10: Исправлена работа песочницы модулей (получение reply_msg_id, чтение истории диалогов через MTProto и выполнение действий модерации и кнопок из изолированного окружения)."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.11/koteloader-0.3.11.apk",
+    "sha256": "18179c04281b104cc0686512ee0bb0d461d93ed6ca32d658ef20052e8e763eb1",
+    "size": 9638635,
+    "notes": "Версия 0.3.11: Встроен глобальный обработчик всех нативных крашей (SIGSEGV, SIGABRT, SIGBUS, SIGFPE, SIGILL, SIGTRAP) и C++ исключений с трассировкой стека, выгрузкой регистров и сохранением в latest_crash.txt; расширен перехват системных сбоев изолята."
   },
   "sdk": {
-    "version": "0.3.10",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.10/kote-module-sdk.zip",
-    "sha256": "4449ba7c19ae102e933e7d82c9c6578d0343742d5c97428b51792bd6081d9ef5",
-    "size": 280565,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.10): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.11",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.11/kote-module-sdk.zip",
+    "sha256": "8b47c17b40285e4cdead66d1300d9683d1db61d64c38346cc9b59da1d41e1a63",
+    "size": 280694,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.11): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
