@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.13`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.13/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.13`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.13/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.14`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.14`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -166,6 +166,15 @@ end
   * Баннеры `c_banner` и кнопки гарантированно работают при нажатии любыми пользователями в чатах и форум-топиках.
 * 🧰 **Обновлённый SDK Kit v0.3.6 (Section 27 ABI)**:
   * Заголовочный файл `module_abi.h` (версия 27), актуализированный `koto_utils.hpp`, новые примеры `userinfo.c` и `userinfo.lua`.
+
+## 📋 Список изменений (v0.3.14)
+
+* 👥 **MTProto-получение списка администраторов чата даже при скрытых участниках (v0.3.14)**:
+  * В хосте реализован MTProto-запрос `channels.getParticipants` с фильтром `channelParticipantsAdmins`. В отличие от общего списка участников, который может быть скрыт владельцем группы (`participants_hidden = true`), Telegram всегда отдаёт администраторов любому участнику группы.
+  * В `chat_full_json` добавлены поля `admin_ids` (массив ID администраторов и создателя), `participants_hidden` (скрыты ли обычные участники) и `can_view_participants`.
+  * В нативный модуль `tagger` (v3.4.5) интегрирован строгий фильтр исключения администраторов из тега при отключённом параметре `tag_admins = false`, а также добавлена команда `.tagadmins [on/off]`.
+* 🧰 **Обновлённый SDK (kote-module-sdk.zip)**:
+  * В `koto_utils.hpp` добавлен хелпер `get_chat_participants(ChatParticipants& out)` с парсингом `admin_ids`, `participants_hidden` и `can_view_participants`.
 
 ## 📋 Список изменений (v0.3.13)
 
