@@ -171,8 +171,7 @@ end
 
 * 👥 **MTProto-получение списка администраторов чата даже при скрытых участниках (v0.3.14)**:
   * В хосте реализован MTProto-запрос `channels.getParticipants` с фильтром `channelParticipantsAdmins`. В отличие от общего списка участников, который может быть скрыт владельцем группы (`participants_hidden = true`), Telegram всегда отдаёт администраторов любому участнику группы.
-  * В `chat_full_json` добавлены поля `admin_ids` (массив ID администраторов и создателя), `participants_hidden` (скрыты ли обычные участники) и `can_view_participants`.
-  * В нативный модуль `tagger` (v3.4.5) интегрирован строгий фильтр исключения администраторов из тега при отключённом параметре `tag_admins = false`, а также добавлена команда `.tagadmins [on/off]`.
+  * В `chat_full_json` C-ABI добавлены поля `admin_ids` (массив ID администраторов и создателя), `participants_hidden` (скрыты ли обычные участники) и `can_view_participants`.
 * 🧰 **Обновлённый SDK (kote-module-sdk.zip)**:
   * В `koto_utils.hpp` добавлен хелпер `get_chat_participants(ChatParticipants& out)` с парсингом `admin_ids`, `participants_hidden` и `can_view_participants`.
 

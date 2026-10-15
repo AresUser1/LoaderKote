@@ -10,7 +10,7 @@
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/koteloader.apk",
     "sha256": "29a5479a14e67f6b83d271bc43ea3b242bb7d5d27442be85e2392c809c1306a0",
     "size": 9651393,
-    "notes": "Версия 0.3.14: MTProto-получение списка администраторов чата даже при скрытых участниках; поддержка исключения админов в теггере (.tagadmins on/off); kote_utils.hpp с get_chat_participants."
+    "notes": "Версия 0.3.14: MTProto-получение списка администраторов чата даже при скрытых участниках; поля admin_ids, participants_hidden, can_view_participants в chat_full_json C-ABI; хелпер get_chat_participants в SDK."
   },
   "sdk": {
     "version": "0.3.14",
