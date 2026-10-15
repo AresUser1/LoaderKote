@@ -15,8 +15,8 @@
   "sdk": {
     "version": "0.3.12",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/kote-module-sdk.zip",
-    "sha256": "bda2ce0dc7a03cf7cd4dc75b68b11035091a3cb08f4c81b43db393041386389e",
-    "size": 285218,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.12): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "sha256": "024d78a029679d0c4021c84932ca3e56c349b17dd09937b126123dc2eb1a0101",
+    "size": 335956,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.12+): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры tagger, stags, spam_ban, mass_notifier, autoresponder, administration, checkers, mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
