@@ -21,11 +21,11 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.12`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/koteloader-0.3.12.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.12`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.13`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.13/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.13`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.13/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
-1. Скачайте файл **`koteloader-0.3.12.apk`** по ссылке выше.
+1. Скачайте файл **`koteloader.apk`** по ссылке выше.
 2. Откройте файл и подтвердите установку в Android (разрешите установку из вашего браузера/проводника).
 3. При первом запуске войдите в свой аккаунт Telegram по номеру телефона или через QR-код.
 4. Разрешите приложению отображение **«Поверх других приложений»** (необходимо для работы наэкранного плавающего HUD).
@@ -166,6 +166,13 @@ end
   * Баннеры `c_banner` и кнопки гарантированно работают при нажатии любыми пользователями в чатах и форум-топиках.
 * 🧰 **Обновлённый SDK Kit v0.3.6 (Section 27 ABI)**:
   * Заголовочный файл `module_abi.h` (версия 27), актуализированный `koto_utils.hpp`, новые примеры `userinfo.c` и `userinfo.lua`.
+
+## 📋 Список изменений (v0.3.13)
+
+* 👥 **Полное обнаружение участников и ускорение теггера (v0.3.13)**:
+  * Реализовано глубокое кэширование участников супергрупп и чатов (`participant_ids`, `mcf->users`) в `chat_full_json`, включая неактивных пользователей.
+  * Устранена задержка старта теггера: мгновенный опрос без блокирующих сетевых запросов.
+  * Поддержка нулевой задержки `(0, 0)` и точная фильтрация ботов по официальному MTProto-флагу.
 
 ## 📋 Список изменений (v0.3.12)
 
