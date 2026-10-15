@@ -2,19 +2,19 @@
   "schema": 1,
   "updated": "2026-10-15",
   "latest_apk": {
-    "version_name": "0.3.14",
-    "version_code": 34,
+    "version_name": "0.3.15",
+    "version_code": 35,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/koteloader.apk",
-    "sha256": "29a5479a14e67f6b83d271bc43ea3b242bb7d5d27442be85e2392c809c1306a0",
-    "size": 9651393,
-    "notes": "Версия 0.3.14: MTProto-получение списка администраторов чата даже при скрытых участниках; поля admin_ids, participants_hidden, can_view_participants в chat_full_json C-ABI; хелпер get_chat_participants в SDK."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.15/koteloader.apk",
+    "sha256": "be2bedf5f0f2f7da45b642d904c1bc88d9c4aded7f4a8def1c804399d8dcb6d4",
+    "size": 9658691,
+    "notes": "Версия 0.3.15: Полностью переработана универсальная инлайн-панель конфигурации модулей (.cfg): исправлена типизация BOOL/INT, добавлено интерактивное циклическое переключение вариантов CHOICE, встроен числовой степпер (шаг/сброс) и компактная 2-колоночная сетка кнопок."
   },
   "sdk": {
-    "version": "0.3.14",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/kote-module-sdk.zip",
+    "version": "0.3.15",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.15/kote-module-sdk.zip",
     "sha256": "68faca8bf5ba52a43aa136193d88996b0ab8bbeb9753f8d11ebe225ce77c2c07",
     "size": 336872,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.13+): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
