@@ -10,13 +10,13 @@
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/koteloader-0.3.12.apk",
     "sha256": "9b14a0df417e6b08a886f99018c09641c6452ad980c3a25f4e9c6ac6134a7efb",
     "size": 9640578,
-    "notes": "Версия 0.3.12: Устранено падение и зависание при обрыве сети (MTProto push updates re-bind и getState); устранён бесконечный цикл BotRunner при обрыве связи; в модуль mafia_multitool добавлено интерактивное кнопочное управление .mfreeze; добавлена сортировка модулей по алфавиту от А до Я."
+    "notes": "Версия 0.3.12: Устранено падение и зависание при обрыве сети (MTProto push updates re-bind и getState); устранён бесконечный цикл BotRunner при обрыве связи; добавлена сортировка модулей по алфавиту от А до Я."
   },
   "sdk": {
     "version": "0.3.12",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/kote-module-sdk.zip",
     "sha256": "024d78a029679d0c4021c84932ca3e56c349b17dd09937b126123dc2eb1a0101",
     "size": 335956,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.12+): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, примеры tagger, stags, spam_ban, mass_notifier, autoresponder, administration, checkers, mafia_multitool, bakusearch, moderation, rp, afk, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.12+): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
