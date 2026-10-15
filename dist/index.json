@@ -8,9 +8,9 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.12/koteloader-0.3.12.apk",
-    "sha256": "50c4421f4648bf1eefee93114a241fe054688d35551749150ae0d8280e2c7ace",
-    "size": 9640211,
-    "notes": "Версия 0.3.12: Исправлено зависание получения команд при падении и восстановлении сети (MTProto push updates re-bind и getState); устранён бесконечный цикл BotRunner при обрыве связи; в модуль mafia_multitool добавлено интерактивное кнопочное управление .mfreeze."
+    "sha256": "9b14a0df417e6b08a886f99018c09641c6452ad980c3a25f4e9c6ac6134a7efb",
+    "size": 9640578,
+    "notes": "Версия 0.3.12: Устранено падение и зависание при обрыве сети (MTProto push updates re-bind и getState); устранён бесконечный цикл BotRunner при обрыве связи; в модуль mafia_multitool добавлено интерактивное кнопочное управление .mfreeze; добавлена сортировка модулей по алфавиту от А до Я."
   },
   "sdk": {
     "version": "0.3.12",
