@@ -8,8 +8,8 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.17/koteloader.apk",
-    "sha256": "9a785aa0ea71832fa103a2fa13c0e1ffd9b7c104aeb58b0fae781319b57afad2",
-    "size": 9659915,
+    "sha256": "0794571466469fdb348c7d432b760ecc58a25213291c2ec70e1babbb3e6b37a3",
+    "size": 9659922,
     "notes": "Версия 0.3.17: Умное скрытие выключенных модулей в панели .cfg и защита настроек неактивных модулей."
   },
   "sdk": {
