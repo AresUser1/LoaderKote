@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.14`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.14`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.14/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.17`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.17/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.17`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.17/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -166,6 +166,13 @@ end
   * Баннеры `c_banner` и кнопки гарантированно работают при нажатии любыми пользователями в чатах и форум-топиках.
 * 🧰 **Обновлённый SDK Kit v0.3.6 (Section 27 ABI)**:
   * Заголовочный файл `module_abi.h` (версия 27), актуализированный `koto_utils.hpp`, новые примеры `userinfo.c` и `userinfo.lua`.
+
+## 📋 Список изменений (v0.3.17)
+
+* ⚙️ **Умное отображение модулей в .cfg (v0.3.17)**:
+  * **Автоматическое скрытие выключенных модулей**: модули, отключённые в приложении (вкладка «Модули»), больше не отображаются в общем каталоге конфигураций `.cfg`.
+  * **Защита параметров отключённых модулей**: при попытке открыть настройки выключенного модуля через команду или старую кнопку выводится предупреждение, а сами настройки остаются скрытыми до включения модуля в приложении.
+  * **Защита интерактивных колбэков**: все обработчики кнопок параметров проверяют статус активности модуля перед применением изменений.
 
 ## 📋 Список изменений (v0.3.16)
 
