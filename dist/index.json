@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-17",
   "latest_apk": {
-    "version_name": "0.3.20",
-    "version_code": 40,
+    "version_name": "0.3.21",
+    "version_code": 41,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.20/koteloader.apk",
-    "sha256": "bedb110a6c49205f214e6929edaac244ae1f5194ef8f636b3d64eea571bd35bb",
-    "size": 9682352,
-    "notes": "Версия 0.3.20: Добавлены ABI-методы read_history и read_mentions (Section 30), автоматическая предзагрузка данных о чате для watcher-обработчиков."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.21/koteloader.apk",
+    "sha256": "19993dbb30e7aedec44b1db8105b8af27b70ece27d8bf734de94c4e5a4e612de",
+    "size": 9700546,
+    "notes": "Версия 0.3.21: Hotfix SIGSEGV в ядре хоста, улучшение маршрутизации MTProto-сброса упоминаний и истории сообщений."
   },
   "sdk": {
-    "version": "0.3.20",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.20/kote-module-sdk.zip",
-    "sha256": "3f61ee725f938f92b347cafcf60fab156f7aaec00236d6bb3e501270daaea3b4",
-    "size": 337182,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.20): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), Section 30 (чтение истории и тегов), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.21",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.21/kote-module-sdk.zip",
+    "sha256": "663e760676673a46625d3bb585d97d6649f65accb7561b890d63d8a95d483d89",
+    "size": 336423,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.21): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), Section 30 (чтение истории и тегов), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
