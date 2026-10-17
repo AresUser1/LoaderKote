@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-17",
   "latest_apk": {
-    "version_name": "0.3.17",
-    "version_code": 37,
+    "version_name": "0.3.18",
+    "version_code": 38,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.17/koteloader.apk",
-    "sha256": "0794571466469fdb348c7d432b760ecc58a25213291c2ec70e1babbb3e6b37a3",
-    "size": 9659922,
-    "notes": "Версия 0.3.17: Умное скрытие выключенных модулей в панели .cfg и защита настроек неактивных модулей."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.18/koteloader.apk",
+    "sha256": "e7991cc864e017acadf7382f6c0e67c35dacc14a04468c30ebfd10618069a146",
+    "size": 9672872,
+    "notes": "Версия 0.3.18: Хотфикс вылета при выходе из аккаунта, очистка сессии, исправление автозапуска и маршрутизации ответов для доверенных пользователей."
   },
   "sdk": {
-    "version": "0.3.17",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.17/kote-module-sdk.zip",
+    "version": "0.3.18",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.18/kote-module-sdk.zip",
     "sha256": "68faca8bf5ba52a43aa136193d88996b0ab8bbeb9753f8d11ebe225ce77c2c07",
     "size": 336872,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.13+): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
