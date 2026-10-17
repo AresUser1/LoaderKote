@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-17",
   "latest_apk": {
-    "version_name": "0.3.21",
-    "version_code": 41,
+    "version_name": "0.3.22",
+    "version_code": 42,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.21/koteloader.apk",
-    "sha256": "19993dbb30e7aedec44b1db8105b8af27b70ece27d8bf734de94c4e5a4e612de",
-    "size": 9700546,
-    "notes": "Версия 0.3.21: Hotfix SIGSEGV в ядре хоста, улучшение маршрутизации MTProto-сброса упоминаний и истории сообщений."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.22/koteloader.apk",
+    "sha256": "5d947ea54f8d2f73af897ddf6790d9df5f1a31b930675d69b1dd53208e749e8a",
+    "size": 9701076,
+    "notes": "Версия 0.3.22: Поддержка сервисных сообщений (закрепы, звонки), нативные флаги упоминаний MTProto и C-ABI Section 31."
   },
   "sdk": {
-    "version": "0.3.21",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.21/kote-module-sdk.zip",
-    "sha256": "663e760676673a46625d3bb585d97d6649f65accb7561b890d63d8a95d483d89",
-    "size": 336423,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.21): C-ABI Section 25 (overlay-холст), Section 28 (модерация, история), Section 29 (кнопки, твинки), Section 30 (чтение истории и тегов), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.22",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.22/kote-module-sdk.zip",
+    "sha256": "4e3f6eaaefc3ff13ca9c06f8950ee0747cc454b2cc00f100fa1f730398b08482",
+    "size": 336478,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.22): C-ABI Section 31 (упоминания, закрепы, инвайты), Section 30 (чтение истории и тегов), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
