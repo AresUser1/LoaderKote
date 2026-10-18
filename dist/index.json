@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "latest_apk": {
-    "version_name": "0.3.23",
-    "version_code": 43,
+    "version_name": "0.3.24",
+    "version_code": 44,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.23/koteloader.apk",
-    "sha256": "463ea186f12cc28096566e1319824d1092f9f0e59819ece426df72669ba2565e",
-    "size": 9705735,
-    "notes": "Версия 0.3.23: Автономное обновление модулей из чата (.update, .update <имя>), установка по имени (.install <имя>) и защита от зависания интентов."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.24/koteloader.apk",
+    "sha256": "b04dabf5c0d21cdf146c9e70dc4111d334ba680ef54079b4219fb5f1c490d650",
+    "size": 9713874,
+    "notes": "Версия 0.3.24: Интерактивная шторка выбора разрешенных функций и команд в настройках доступа, поддержка входящих watcher-хуков для твинков и переключатель обработки тегов в ЛС."
   },
   "sdk": {
-    "version": "0.3.23",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.23/kote-module-sdk.zip",
-    "sha256": "4e3f6eaaefc3ff13ca9c06f8950ee0747cc454b2cc00f100fa1f730398b08482",
-    "size": 336478,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.23): C-ABI Section 31 (упоминания, закрепы, инвайты), Section 30 (чтение истории и тегов), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "version": "0.3.24",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.24/kote-module-sdk.zip",
+    "sha256": "5f2b7ad3b2a96a8a610305f0081d7b6e695c0c43d7a72c597a7eec549caf8422",
+    "size": 335102,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.24): C-ABI Section 31 (упоминания, закрепы, инвайты), Section 30 (чтение истории и тегов), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
