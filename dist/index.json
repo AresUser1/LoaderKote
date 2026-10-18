@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-18",
   "latest_apk": {
-    "version_name": "0.3.26",
-    "version_code": 46,
+    "version_name": "0.3.27",
+    "version_code": 47,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.26/koteloader.apk",
-    "sha256": "eb1d00267dfdf3eef502935de25a23397dadbf21e2131206dbaad8b1ad312b95",
-    "size": 9738456,
-    "notes": "Версия 0.3.26: Поддержка твинков и кнопок в изолированной песочнице модулей, устранение ложной ошибки CancellationException при переключении методов входа твинка, предотвращение краша при отмене авторизации и автообновление списка твинков."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.27/koteloader.apk",
+    "sha256": "a4f3bcd9d515e77bac6c32f8e0394cdb9992bed8de5882cf4e57ccf0762adcf7",
+    "size": 9746396,
+    "notes": "Версия 0.3.27: Полное устранение сбоя SIGSEGV (SEGV_MAPERR) в qr_login при отмене или смене метода входа твинка. Безопасное завершение корутин с квантованием 50мс и владение клиентом через shared_ptr."
   },
   "sdk": {
-    "version": "0.3.26",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.26/kote-module-sdk.zip",
+    "version": "0.3.27",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.27/kote-module-sdk.zip",
     "sha256": "f677c00a42962e4463b72ea7be66f2bd815d56e65d4dd287f1ecd55ba971bffe",
     "size": 336848,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.26): C-ABI Section 31 (упоминания, закрепы, инвайты), Section 30 (чтение истории и тегов), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.27): C-ABI Section 31 (упоминания, закрепы, инвайты), Section 30 (чтение истории и тегов), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
   }
 }
