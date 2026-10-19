@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "latest_apk": {
-    "version_name": "0.3.29",
-    "version_code": 49,
+    "version_name": "0.3.30",
+    "version_code": 50,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.29/koteloader.apk",
-    "sha256": "ad538d8dd82c4fba23ff2b5bc117a4037f8f5187d3870ad4ce8fb8fb40421f1f",
-    "size": 9783202,
-    "notes": "Версия 0.3.29: Исправление логики твинков и доверенных (твинк не выполняет свои исходящие команды), строгая изоляция модулей без KOTO_MOD_TWINS, устранение CHANNEL_INVALID и нулевых access_hash."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.30/koteloader.apk",
+    "sha256": "355a8c64bda746acd921601abf4aa1864d010c2369a5d5738dc478e470fc01f3",
+    "size": 9786016,
+    "notes": "Версия 0.3.30: Исправлена ошибка удаления модулей при .forceupload/обновлении; добавлена безопасная перезагрузка модулей через ANDROID_DLEXT_FORCE_LOAD и dlclose в песочнице; автовосстановление из .bak при сбое загрузки."
   },
   "sdk": {
     "version": "0.3.29",
