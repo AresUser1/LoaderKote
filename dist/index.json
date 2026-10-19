@@ -10,7 +10,7 @@
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/koteloader.apk",
     "sha256": "7cf0856fe55aaf116be7fa608b044f8ab3c5f9821b4aa974a61daf70d3884cd3",
     "size": 9812244,
-    "notes": "Версия 0.3.32: Добавлена нативная поддержка анимированных дайсов (inputMediaDice) для слотов/депа с вердиктом; исправлен sysinfo для Android (SELinux/SoC/ядра); исправлен Dox (отправка запроса строго боту и надежный резолв access_hash)."
+    "notes": "Версия 0.3.32: Нативная поддержка интерактивных дайсов (inputMediaDice) в MTProto ядре; сбор системных метрик хоста (CPU/SoC, активные ядра, RAM под Android SELinux); сквозной резолв access_hash для ботов и приватных каналов; мгновенная синхронизация статуса модулей в интерфейсе."
   },
   "sdk": {
     "version": "0.3.32",
