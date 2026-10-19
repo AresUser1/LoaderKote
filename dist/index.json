@@ -8,8 +8,8 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/koteloader.apk",
-    "sha256": "b71880901def8ee7caeee3c3f9d59730704748089b00c1b40f6a5acba1a8d537",
-    "size": 9812004,
+    "sha256": "7cf0856fe55aaf116be7fa608b044f8ab3c5f9821b4aa974a61daf70d3884cd3",
+    "size": 9812244,
     "notes": "Версия 0.3.32: Добавлена нативная поддержка анимированных дайсов (inputMediaDice) для слотов/депа с вердиктом; исправлен sysinfo для Android (SELinux/SoC/ядра); исправлен Dox (отправка запроса строго боту и надежный резолв access_hash)."
   },
   "sdk": {
