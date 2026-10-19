@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "latest_apk": {
-    "version_name": "0.3.31",
-    "version_code": 51,
+    "version_name": "0.3.32",
+    "version_code": 52,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.31/koteloader.apk",
-    "sha256": "ade7834c7c2d9a97718c659828b4f3e9164359c0e4ce26c0ec063c43d8b1811d",
-    "size": 9795164,
-    "notes": "Версия 0.3.31: Исправлена работа .forceupload и очистки модулей (.delm без учета регистра); добавлено автоматическое разрешение peer/channel access_hash и экспорт кэша сущностей для модулей; поддержка sysinfo и улучшенная стабильность C++ ABI 3."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/koteloader.apk",
+    "sha256": "b71880901def8ee7caeee3c3f9d59730704748089b00c1b40f6a5acba1a8d537",
+    "size": 9812004,
+    "notes": "Версия 0.3.32: Добавлена нативная поддержка анимированных дайсов (inputMediaDice) для слотов/депа с вердиктом; исправлен sysinfo для Android (SELinux/SoC/ядра); исправлен Dox (отправка запроса строго боту и надежный резолв access_hash)."
   },
   "sdk": {
-    "version": "0.3.31",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.31/kote-module-sdk.zip",
+    "version": "0.3.32",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/kote-module-sdk.zip",
     "sha256": "939d80258b6d1bc88b1ebb9552ab97f844602d80c0b8f9e81baf21a512dad82a",
     "size": 343133,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.31): флаги поддержки твинков (KOTO_MOD_TWINS / KOTO_MOD_NO_TWIN), C-ABI Section 31 (упоминания, закрепы, инвайты), Section 30 (чтение истории и тегов), Section 29 (кнопки, твинки), koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a, Linux и Windows."
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.32): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
   }
 }
