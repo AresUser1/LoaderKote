@@ -15,7 +15,7 @@
   "sdk": {
     "version": "0.3.36",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/kote-module-sdk.zip",
-    "sha256": "791e59c77e699acca7ed020c8348e68e1c4e3783e6241200ed56029de5af7e8a",
+    "sha256": "ea661449212453ea8bd86a9b73f260d005790c74d7bae6333b9b89a4d56be95c",
     "size": 339681,
     "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.36): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
   }
