@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0332) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0335) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.32`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.32`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.35`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.35`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -98,6 +98,8 @@ https://raw.githubusercontent.com/AresUser1/KoteModules/main/index.json
 
 | Модуль | Тип | Команды | Описание |
 | :--- | :---: | :--- | :--- |
+| **⚙️ [auto_manager](https://github.com/AresUser1/KoteModules/blob/main/modules/auto_manager.so)** | `Native .so` | `.autread`, `.autoapprove`, `.amtwins` | Авточтение чатов с очисткой упоминаний, автоодобрение заявок, надёжное управление твинками (pure C, v1.2.0). |
+| **💬 [chat](https://github.com/AresUser1/KoteModules/blob/main/modules/chat.so)** | `Native .so` | `.users`, `.admins`, `.bots`, `.userid`, `.chatid` | Управление чатами, списки участников, администраторов и ботов чата (v1.0.5). |
 | **♟️ [checkers](https://github.com/AresUser1/KoteModules/blob/main/modules/checkers.so)** | `Native .so` | `.checkers`, `.шашки`, `.checkersend` | Шашки онлайн-PvP между игроками, выбор цвета, дамки, пат, реванш. |
 | **📥 [copymessage](https://github.com/AresUser1/KoteModules/blob/main/modules/copymessage.so)** | `Native .so` | `.copy`, `.hcopy` | Копирование текста и медиа из защищенных чатов/каналов в «Избранное». |
 | **🎵 [music](https://github.com/AresUser1/KoteModules/blob/main/modules/music.so)** | `Native .so` | `.mus <запрос> [--yt]`, `.musyt`, `.musclean` | Плеер музыки: быстрые боты (lybot, vkmusic_bot) + прямой YouTube (--yt). |
@@ -138,6 +140,25 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.35)
+
+* 👥 **Управление твинками в изолированной песочнице (`:modsandbox`)**:
+  * Реализованы опкоды Binder IPC `OP_TWIN_LIST` (75) и `OP_TWIN_PENDING` (76) в хосте и сервисе песочницы.
+  * Модули в песочнице могут надёжно опрашивать список подключенных твинков (`twin_list`, `get_twins_json`) и регистрировать отложенные действия для мультиаккаунтов.
+* 🤖 **Глубокий кэш участников и ботов чата (`chat_full_json`)**:
+  * Реализован запрос `channelParticipantsBots` в MTProto-клиенте с сохранением списка ID ботов беседы в поле `bot_ids` структуры `chat_full_json`.
+  * Улучшено обнаружение ботов по официальному флагу `is_bot` в MTProto и юзернейм-паттернам.
+* ⚡ **Чистая C-архитектура AutoManager (`v1.2.0`)**:
+  * Полный рефакторинг модуля `auto_manager` на чистый Си (C99/C11): устранён конфликт статического C++ рантайма и динамического линковщика Android (`linker64`), вызывавший `SIGBUS` (`BUS_ADRALN`) при выгрузке.
+  * Размер бинарника уменьшен с 277 КБ до 18 КБ с сохранением 100% функционала: авточтение, очистка тегов, автоодобрение заявок и меню `.amtwins`.
+* 💬 **Обновление системного модуля чата (`chat v1.0.5`)**:
+  * Команда `.bots` моментально выводит ботов чата без пустых списков, используя свежий кэш `bot_ids`.
+
+## 📋 Список изменений (v0.3.34)
+
+* 🛠️ **Стабильность RPC песочницы**:
+  * Оптимизированы буферы ответов для JSON-запросов сущностей и исключены возможные утечки дескрипторов.
 
 ## 📋 Список изменений (v0.3.32)
 

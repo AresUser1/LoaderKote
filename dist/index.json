@@ -13,10 +13,10 @@
     "notes": "Версия 0.3.35: Исправление RPC твинков в изолированной песочнице (OP_TWIN_LIST / OP_TWIN_PENDING); кэширование bot_ids и поиск ботов в беседах; стабильный чистый C-модуль AutoManager."
   },
   "sdk": {
-    "version": "0.3.32",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.32/kote-module-sdk.zip",
-    "sha256": "939d80258b6d1bc88b1ebb9552ab97f844602d80c0b8f9e81baf21a512dad82a",
-    "size": 343133,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.32): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
+    "version": "0.3.35",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/kote-module-sdk.zip",
+    "sha256": "791e59c77e699acca7ed020c8348e68e1c4e3783e6241200ed56029de5af7e8a",
+    "size": 339681,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.35): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
   }
 }
