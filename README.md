@@ -143,6 +143,8 @@ end
 
 ## 📋 Список изменений (v0.3.40)
 
+* Исправлен выбор чата для действий при совпадении числовых ID группы и пользователя.
+
 - Исправлено определение личных диалогов, групп и супергрупп.
 - Результат действия отображается после ответа Telegram.
 - Ошибки выводятся в чат; оставшиеся действия команды останавливаются.
@@ -431,7 +433,7 @@ end
 ## 🔗 Экосистема проектов
 
 * 🐾 **[AresUser1/KoteModules](https://github.com/AresUser1/KoteModules)** — Официальный репозиторий модулей Kotogram: каталог готовых `.so` модулей, исходники и манифест `index.json`.
-* 🧰 **[Kote Module SDK Kit (ZIP)](https://github.com/AresUser1/LoaderKote/releases/latest/download/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, компилятор, шаблоны и примеры под Android, Linux и Windows.
+* 🧰 **[Kote Module SDK Kit (ZIP)](https://github.com/AresUser1/LoaderKote/releases/latest/download/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, скрипты сборки, шаблоны и примеры под Android и Linux/WSL.
 * 💻 **[AresUser1/Kotogram](https://github.com/AresUser1/Kotogram)** — Основной репозиторий ядра и клиента Kotogram.
 
 ---

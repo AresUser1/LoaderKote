@@ -8,15 +8,15 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/koteloader.apk",
-    "sha256": "7791b09113e02a76483a9937299ad27bec433f19be19e1894e65e4265e173f2d",
-    "size": 9887435,
-    "notes": "Версия 0.3.40: исправлено определение типов чатов, выполнение действий и отображение ошибок Telegram; исправлена блокировка в личных диалогах и стабильность ожидания ответов."
+    "sha256": "0996152dbc119f9aadbf6af17c26e2a1a6d1905eda6d14cd5aa238bf57fda616",
+    "size": 9894193,
+    "notes": "Версия 0.3.40: исправлено определение типов чатов и выбор адресата при совпадении ID, выполнение действий и отображение ошибок Telegram; исправлена блокировка в личных диалогах и стабильность ожидания ответов."
   },
   "sdk": {
     "version": "0.3.40",
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/kote-module-sdk.zip",
-    "sha256": "74cfb02f3ec8a87cc922abaf1ce240271bc0624ab72253d0998c7c935bd40671",
-    "size": 308491,
+    "sha256": "0259d75a8c60c6e918e1b51b377a0afd84d7b7de3deaf91f01778f820904c678",
+    "size": 308535,
     "description": "SDK Kotogram 0.3.40: C/C++ ABI 3 и Lua, заголовки API ядра 60, инструменты Android arm64-v8a и рабочие примеры."
   }
 }
