@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-20",
   "latest_apk": {
-    "version_name": "0.3.38",
-    "version_code": 58,
+    "version_name": "0.3.39",
+    "version_code": 59,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.38/koteloader.apk",
-    "sha256": "fa0273834cc7c2a0eaef823957a76e36fc33889e542dc20800abac852de23139",
-    "size": 9826382,
-    "notes": "Версия 0.3.38: Прямой сокет-обход DNS (raw TLS socket c SNI и DoH 1.1.1.1/8.8.8.8); разрешение Cleartext HTTP для зеркал VPS; отказоустойчивый каталог модулей и Bot API."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/koteloader.apk",
+    "sha256": "28bc5a3d13bfe32421602d3fd0fcb064deaa22108d2bd587994af55f61ae2c90",
+    "size": 9826918,
+    "notes": "Версия 0.3.39: Прямой сокет-обход DNS (raw TLS/TCP) для обновления и установки модулей (ModuleGitUpdater, ModuleRepoManager, NativeBridge); стриминг загрузки APK; каскадные зеркала модулей на VPS."
   },
   "sdk": {
-    "version": "0.3.38",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.38/kote-module-sdk.zip",
-    "sha256": "f589db2b91c2e32e293f281c01e8b9897e14205c3539394ae93ce41e80e3b1ee",
-    "size": 338638,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.38): C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
+    "version": "0.3.39",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/kote-module-sdk.zip",
+    "sha256": "febe08736809dcdc4b07f424e246a67f0699418b0bed23c5c339157f09e20d14",
+    "size": 338987,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.39): C-ABI Sections 1-32, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
   }
 }

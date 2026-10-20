@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.38`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.38/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.38`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.38/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.39`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.39`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,14 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.39)
+
+* 🧩 **Отказоустойчивое обновление и установка модулей (ModuleGitUpdater & ModuleRepoManager)**:
+  * В загрузчик модулей и проверку Git-обновлений встроен прямой сокет-обход (raw TLS/TCP socket fallback): скачивание файлов модулей (`.so` / `.lua`) из каталогов и GitHub больше не зависит от системного DNS и не падает при активном Tailscale/VPN.
+  * Добавлены каскадные зеркала модулей: GitHub Raw -> jsDelivr CDN -> зеркала VPS (`/modules/` и `/dist/modules/`).
+* 📥 **Прямой сокет-обход в NativeBridge и Updater**:
+  * Методы `NativeBridge.downloadFile` и фоновая загрузка APK ядра в `Updater.download` получили прямой сокетный стриминг при сбоях сетевых маршрутов.
 
 ## 📋 Список изменений (v0.3.38)
 
