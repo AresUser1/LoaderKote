@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![Latest Release](https://img.shields.io/github/v/release/AresUser1/LoaderKote?style=for-the-badge&color=7F52FF&logo=github)](https://github.com/AresUser1/LoaderKote/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/AresUser1/LoaderKote/releases/latest)
-[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://github.com/AresUser1/LoaderKote/releases/latest)
+[![APK 0.3.40](https://img.shields.io/badge/APK-0.3.40-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
+[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.40`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.40`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.40`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.40`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -433,7 +433,7 @@ end
 ## 🔗 Экосистема проектов
 
 * 🐾 **[AresUser1/KoteModules](https://github.com/AresUser1/KoteModules)** — Официальный репозиторий модулей Kotogram: каталог готовых `.so` модулей, исходники и манифест `index.json`.
-* 🧰 **[Kote Module SDK Kit (ZIP)](https://github.com/AresUser1/LoaderKote/releases/latest/download/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, скрипты сборки, шаблоны и примеры под Android и Linux/WSL.
+* 🧰 **[Kote Module SDK Kit (ZIP)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, скрипты сборки, шаблоны и примеры под Android и Linux/WSL.
 * 💻 **[AresUser1/Kotogram](https://github.com/AresUser1/Kotogram)** — Основной репозиторий ядра и клиента Kotogram.
 
 ---
