@@ -10,7 +10,7 @@
     "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/koteloader.apk",
     "sha256": "3a424cd68c088fda679fc5569aae62569fd8e3417a389942a0485caf3dfc1e0f",
     "size": 9820070,
-    "notes": "Версия 0.3.36: Интеллектуальный обход зависшего DNS/IPv6 при активном Tailscale/VPN (NetworkHelper fallback на физ. сеть Wi-Fi/4G); приоритет IPv4; дублирующие зеркала в модуле AniLiberty (v1.0.8)."
+    "notes": "Версия 0.3.36: Интеллектуальный обход зависшего DNS при активном Tailscale/VPN (NetworkHelper fallback на физ. сеть Wi-Fi/4G); принудительный приоритет IPv4; стабилизация фонового опроса Bot API."
   },
   "sdk": {
     "version": "0.3.36",
