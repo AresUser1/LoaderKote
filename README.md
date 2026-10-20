@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0336) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0340) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.39`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.39`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.40`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.40`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -35,9 +35,9 @@
 2. Внутри находится всё необходимое для написания модулей:
    - `include/module_abi.h` — заголовочный файл C-API (ABI 3).
    - `README.md` и `LUA_GUIDE.md` — подробная документация по созданию нативных C и Lua модулей, инлайн-кнопок и колбэков.
-   - `build.sh`, `Makefile`, `build.bat` — готовые скрипты сборки под Android NDK (`arm64-v8a`), Linux и Windows.
+   - `build.sh`, `Makefile`, `CMakeLists.txt` — сборка под Android NDK (`arm64-v8a`) и Linux/WSL.
    - `examples/` и `src/` — рабочие примеры и шаблон нового модуля (`my_module.c`).
-3. Для сборки выполните `./build.sh` — готовые файлы `.so` появятся в папке `out/`.
+3. Для сборки выполните `./build.sh` — готовые Android `.so` появятся в `out/android-arm64-v8a/`; для Linux используйте явный `--host`.
 4. Отправьте файл `.so` или `.lua` в «Избранное» Telegram и ответьте на него командой `.install` для мгновенной установки!
 
 > [!TIP]
@@ -140,6 +140,14 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.40)
+
+- Исправлено определение личных диалогов, групп и супергрупп.
+- Результат действия отображается после ответа Telegram.
+- Ошибки выводятся в чат; оставшиеся действия команды останавливаются.
+- Исправлена блокировка в личных диалогах и стабильность ожидания ответов.
+- Подпись APK сохранена для обновления установленного приложения.
 
 ## 📋 Список изменений (v0.3.39)
 

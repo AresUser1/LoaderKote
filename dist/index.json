@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-20",
   "latest_apk": {
-    "version_name": "0.3.39",
-    "version_code": 59,
+    "version_name": "0.3.40",
+    "version_code": 60,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/koteloader.apk",
-    "sha256": "28bc5a3d13bfe32421602d3fd0fcb064deaa22108d2bd587994af55f61ae2c90",
-    "size": 9826918,
-    "notes": "Версия 0.3.39: Прямой сокет-обход DNS (raw TLS/TCP) для обновления и установки модулей (ModuleGitUpdater, ModuleRepoManager, NativeBridge); стриминг загрузки APK; каскадные зеркала модулей на VPS."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/koteloader.apk",
+    "sha256": "7791b09113e02a76483a9937299ad27bec433f19be19e1894e65e4265e173f2d",
+    "size": 9887435,
+    "notes": "Версия 0.3.40: исправлено определение типов чатов, выполнение действий и отображение ошибок Telegram; исправлена блокировка в личных диалогах и стабильность ожидания ответов."
   },
   "sdk": {
-    "version": "0.3.39",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/kote-module-sdk.zip",
-    "sha256": "febe08736809dcdc4b07f424e246a67f0699418b0bed23c5c339157f09e20d14",
-    "size": 338987,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.39): C-ABI Sections 1-32, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
+    "version": "0.3.40",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.40/kote-module-sdk.zip",
+    "sha256": "74cfb02f3ec8a87cc922abaf1ce240271bc0624ab72253d0998c7c935bd40671",
+    "size": 308491,
+    "description": "SDK Kotogram 0.3.40: C/C++ ABI 3 и Lua, заголовки API ядра 60, инструменты Android arm64-v8a и рабочие примеры."
   }
 }
