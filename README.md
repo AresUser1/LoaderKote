@@ -2,16 +2,16 @@
 
 <div align="center">
 
-[![APK 0.3.40](https://img.shields.io/badge/APK-0.3.40-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
-[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
+[![APK 0.3.41](https://img.shields.io/badge/APK-0.3.41-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk)
+[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
 
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0340) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0341) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.40`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.40`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.41`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.41`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,15 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.41)
+
+* Исправлены типы адресатов обычных групп, супергрупп и личных диалогов.
+* Неполные сведения и нулевые хеши не заменяют сохранённые данные доступа.
+* При CHANNEL_INVALID выполняется одно обновление сведений и повтор чтения.
+* Ошибки чтения содержат ID чата и тип адресата; автоматические повторы ограничены.
+* Подтверждение чтения ожидает ответа Telegram.
+* Добавлена поддержка реального выхода текущего аккаунта из групп и супергрупп.
 
 ## 📋 Список изменений (v0.3.40)
 

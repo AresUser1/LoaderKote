@@ -7,14 +7,14 @@
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader-0.3.41.apk",
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk",
     "sha256": "3870fff13515186abf9c156e2f1b5802ab772ecd2f71a8d7b3f42bba89d71fb2",
     "size": 9891381,
     "notes": "Версия 0.3.41: исправлены типы адресатов и хеши доступа, чтение истории и упоминаний; добавлены восстановление после CHANNEL_INVALID, контекст ошибок и реальный выход текущего аккаунта из групп."
   },
   "sdk": {
     "version": "0.3.41",
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/kote-module-sdk.zip",
     "sha256": "c74f69b801c04eec7d0c647cb6b855f032c8fd3146bd7b2ffc24d55b73f3eed6",
     "size": 318689,
     "description": "SDK Kotogram 0.3.41: C/C++ ABI 3 и Lua, контракт ядра 61, Android arm64-v8a и примеры чтения и выхода из чата."
