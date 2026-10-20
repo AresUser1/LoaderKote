@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.36`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.36`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.38`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.38/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.38`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.38/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,16 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.38)
+
+* ⚡ **Прямой сокет-движок (Raw TLS/TCP Socket Direct Fallback)**:
+  * Полный обход `RouteSelector` и `getaddrinfo` Android: при блокировке или сбоях DNS (Tailscale MagicDNS, VPN, повреждённый DNS-сервер) сетевой слой выполняет прямое TCP-подключение к IP-адресам серверов и оборачивает в `SSLSocket` с установкой SNI (`SNIHostName`) и валидацией сертификатов хоста.
+  * Реализованы низкоуровневые прямые методы `directGet`, `directPostJson` и `directDownloadToFile` с поддержкой gzip и chunked transfer-encoding.
+* 🔓 **Политика Cleartext HTTP для зеркал VPS**:
+  * В манифест и `network_security_config.xml` добавлено явное разрешение `android:usesCleartextTraffic="true"`, гарантирующее бесперебойную проверку обновлений и загрузку манифестов с зеркал VPS по HTTP.
+* 🔄 **Отказоустойчивость Updater, NativeBridge и ModuleRepoManager**:
+  * При ошибках сетевых маршрутов проверка версий, скачивание APK, фоновые запросы модулей и Bot API плавно переключаются на прямой сокет-обход.
 
 ## 📋 Список изменений (v0.3.37)
 
