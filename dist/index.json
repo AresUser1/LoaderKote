@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-20",
   "latest_apk": {
-    "version_name": "0.3.36",
-    "version_code": 56,
+    "version_name": "0.3.37",
+    "version_code": 57,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/koteloader.apk",
-    "sha256": "3a424cd68c088fda679fc5569aae62569fd8e3417a389942a0485caf3dfc1e0f",
-    "size": 9820070,
-    "notes": "Версия 0.3.36: Интеллектуальный обход зависшего DNS при активном Tailscale/VPN (NetworkHelper fallback на физ. сеть Wi-Fi/4G); принудительный приоритет IPv4; стабилизация фонового опроса Bot API."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.37/koteloader.apk",
+    "sha256": "922817f5c117bc73bd0b7c8713d40b4c3a66b2a963c27f99dce1c6d32f26fb46",
+    "size": 9820269,
+    "notes": "Версия 0.3.37: Отказоустойчивый сетевой стек v2 (bindProcessToNetwork для Tailscale/VPN, прямой TLS/IP-обход для Bot API и CDN, DoH 1.1.1.1/8.8.8.8); каскадные зеркала обновлений (GitHub, jsDelivr, VPS); failover каталога модулей."
   },
   "sdk": {
-    "version": "0.3.36",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/kote-module-sdk.zip",
-    "sha256": "ea661449212453ea8bd86a9b73f260d005790c74d7bae6333b9b89a4d56be95c",
-    "size": 339681,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.36): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
+    "version": "0.3.37",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.37/kote-module-sdk.zip",
+    "sha256": "25eb62bdffe798b8c1081eccf0dc127b6ecf060d93f5ec5fef5167649843bb79",
+    "size": 337262,
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.37): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
   }
 }
