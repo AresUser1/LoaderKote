@@ -2,15 +2,15 @@
   "schema": 1,
   "updated": "2026-10-20",
   "latest_apk": {
-    "version_name": "0.3.33",
-    "version_code": 53,
+    "version_name": "0.3.34",
+    "version_code": 54,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.33/koteloader.apk",
-    "sha256": "cf19f8d7a902039524e9d5005010ba26c38dbe05aab84719cd9e5ca02736fbe9",
-    "size": 9813575,
-    "notes": "Версия 0.3.33: Нативная поддержка бинарного скачивания .so модулей без UTF-8 повреждений; поддержка загрузки больших модулей через .forceupload; исправление dlopen e_type ошибки."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.34/koteloader.apk",
+    "sha256": "33e6a112492a84d2b7b74bf84b278af3bf6fac9e002adfee2304bc27ae24058f",
+    "size": 9810259,
+    "notes": "Версия 0.3.34: Полное удаление неработающего модуля core_updater (.updatecore); безопасное нативное обновление через штатный установщик Android; чистое бинарное скачивание .so модулей."
   },
   "sdk": {
     "version": "0.3.32",
