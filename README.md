@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0335) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0336) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.35`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.35`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.36`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.36`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,16 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.36)
+
+* 🌐 **Интеллектуальный обход DNS при активных VPN (Tailscale, WireGuard, Split-Tunnel)**:
+  * Внедрён сетевой компонент `NetworkHelper`: если системный DNS-резолвер устройства или локальный DNS-сервер VPN (`100.100.100.100`) не отвечает или возвращает `UnknownHostException` («No address associated with hostname»), приложение автоматически переключает HTTP-запрос на физический интерфейс (`Wi-Fi` или сотовую связь `4G/LTE`) в обход зависшего DNS.
+  * Устранены сбои при вызовах сторонних API из модулей (`httpGetBytes`, AniLiberty), скачивании файлов и фоновом опросе Bot API (`api.telegram.org`).
+* 🔌 **Принудительный приоритет IPv4 (`preferIPv4Stack = true`)**:
+  * Предотвращено зависание и падение соединений в «чёрную дыру» IPv6 при появлении виртуальных интерфейсов с ULA IPv6-адресами без глобального маршрута.
+* 🎬 **Двойные зеркала и диагностика в AniLiberty (v1.0.8)**:
+  * Модуль AniLiberty оснащён автоматическим failover-переключением между официальными зеркалами `aniliberty.top` и `anilibria.top`.
 
 ## 📋 Список изменений (v0.3.35)
 

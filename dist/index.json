@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-20",
   "latest_apk": {
-    "version_name": "0.3.35",
-    "version_code": 55,
+    "version_name": "0.3.36",
+    "version_code": 56,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/koteloader.apk",
-    "sha256": "604375b68fe15c0eb2396a4e36623ad6e7cc6f7b51ec05c1305eb707b7273e1e",
-    "size": 9815683,
-    "notes": "Версия 0.3.35: Исправление RPC твинков в изолированной песочнице (OP_TWIN_LIST / OP_TWIN_PENDING); кэширование bot_ids и поиск ботов в беседах; стабильный чистый C-модуль AutoManager."
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/koteloader.apk",
+    "sha256": "3a424cd68c088fda679fc5569aae62569fd8e3417a389942a0485caf3dfc1e0f",
+    "size": 9820070,
+    "notes": "Версия 0.3.36: Интеллектуальный обход зависшего DNS/IPv6 при активном Tailscale/VPN (NetworkHelper fallback на физ. сеть Wi-Fi/4G); приоритет IPv4; дублирующие зеркала в модуле AniLiberty (v1.0.8)."
   },
   "sdk": {
-    "version": "0.3.35",
-    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.35/kote-module-sdk.zip",
+    "version": "0.3.36",
+    "url": "https://github.com/AresUser1/LoaderKote/releases/download/v0.3.36/kote-module-sdk.zip",
     "sha256": "791e59c77e699acca7ed020c8348e68e1c4e3783e6241200ed56029de5af7e8a",
     "size": 339681,
-    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.35): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
+    "description": "Официальный набор инструментов разработчика модулей Kotogram (C/C++ ABI 3 & Lua SDK v0.3.36): флаги поддержки твинков, C-ABI Sections 1-31, koto_utils.hpp, шаблоны и заголовочные файлы, скрипты сборки под Android arm64-v8a."
   }
 }
