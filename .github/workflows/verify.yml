@@ -1,0 +1,34 @@
+name: Verify distribution
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+        with:
+          cmdline-tools-version: '11076708'
+      - run: sdkmanager 'build-tools;34.0.0'
+      - run: python3 tools/verify_dist.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: koteloader-distribution-${{ github.sha }}
+          path: |
+            dist/koteloader.apk
+            dist/kote-module-sdk.zip
+            dist/index.json
+          if-no-files-found: error
+          retention-days: 30

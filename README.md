@@ -2,16 +2,16 @@
 
 <div align="center">
 
-[![Latest Release](https://img.shields.io/github/v/release/AresUser1/LoaderKote?style=for-the-badge&color=7F52FF&logo=github)](https://github.com/AresUser1/LoaderKote/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/AresUser1/LoaderKote/releases/latest)
-[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://github.com/AresUser1/LoaderKote/releases/latest)
+[![APK 0.3.40](https://img.shields.io/badge/APK-0.3.40-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
+[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
 
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0336) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0340) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.39`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.39`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://github.com/AresUser1/LoaderKote/releases/download/v0.3.39/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.40`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.40`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -35,9 +35,9 @@
 2. Внутри находится всё необходимое для написания модулей:
    - `include/module_abi.h` — заголовочный файл C-API (ABI 3).
    - `README.md` и `LUA_GUIDE.md` — подробная документация по созданию нативных C и Lua модулей, инлайн-кнопок и колбэков.
-   - `build.sh`, `Makefile`, `build.bat` — готовые скрипты сборки под Android NDK (`arm64-v8a`), Linux и Windows.
+   - `build.sh`, `Makefile`, `CMakeLists.txt` — сборка под Android NDK (`arm64-v8a`) и Linux/WSL.
    - `examples/` и `src/` — рабочие примеры и шаблон нового модуля (`my_module.c`).
-3. Для сборки выполните `./build.sh` — готовые файлы `.so` появятся в папке `out/`.
+3. Для сборки выполните `./build.sh` — готовые Android `.so` появятся в `out/android-arm64-v8a/`; для Linux используйте явный `--host`.
 4. Отправьте файл `.so` или `.lua` в «Избранное» Telegram и ответьте на него командой `.install` для мгновенной установки!
 
 > [!TIP]
@@ -140,6 +140,16 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.40)
+
+* Исправлен выбор чата для действий при совпадении числовых ID группы и пользователя.
+
+- Исправлено определение личных диалогов, групп и супергрупп.
+- Результат действия отображается после ответа Telegram.
+- Ошибки выводятся в чат; оставшиеся действия команды останавливаются.
+- Исправлена блокировка в личных диалогах и стабильность ожидания ответов.
+- Подпись APK сохранена для обновления установленного приложения.
 
 ## 📋 Список изменений (v0.3.39)
 
@@ -423,7 +433,7 @@ end
 ## 🔗 Экосистема проектов
 
 * 🐾 **[AresUser1/KoteModules](https://github.com/AresUser1/KoteModules)** — Официальный репозиторий модулей Kotogram: каталог готовых `.so` модулей, исходники и манифест `index.json`.
-* 🧰 **[Kote Module SDK Kit (ZIP)](https://github.com/AresUser1/LoaderKote/releases/latest/download/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, компилятор, шаблоны и примеры под Android, Linux и Windows.
+* 🧰 **[Kote Module SDK Kit (ZIP)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, скрипты сборки, шаблоны и примеры под Android и Linux/WSL.
 * 💻 **[AresUser1/Kotogram](https://github.com/AresUser1/Kotogram)** — Основной репозиторий ядра и клиента Kotogram.
 
 ---
