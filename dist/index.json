@@ -7,14 +7,14 @@
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/0b1f9e2a26f9c8c53e28e108191772424eaa5bc1/dist/koteloader.apk",
-    "sha256": "9105b771c585d0bee9f5c2993720fe0b70c3a90128a0ab1aaf578d614e6db3a7",
-    "size": 9957387,
-    "notes": "Версия 0.3.46: исправление разрешения сущностей каналов в истории диалогов и обработка RPC ошибок для твинков и основного клиента."
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
+    "sha256": "321aec6f033dba4907fc0d6140b5a52af7d26b5ca3d0cbf9357b8affdfd80284",
+    "size": 9971031,
+    "notes": "Версия 0.3.46: изолированы права твинков от доверенных лиц, строгий контроль авторизации входящих команд основы, динамическое обновление имён твинков из Telegram."
   },
   "sdk": {
     "version": "0.3.46",
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/0b1f9e2a26f9c8c53e28e108191772424eaa5bc1/dist/kote-module-sdk.zip",
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
     "sha256": "7c57b0e94fa33ceddc9d5a1d8163caee401eb377b2ba856122b1c5c6a8ade548",
     "size": 328977,
     "description": "SDK Kotogram 0.3.46: C/C++ ABI 3, реактивная синхронизация профилей и разрешение воркеров по имени (ядро 66), актуальные заголовки и примеры."
