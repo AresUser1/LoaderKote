@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-21",
   "latest_apk": {
-    "version_name": "0.3.44",
-    "version_code": 64,
+    "version_name": "0.3.45",
+    "version_code": 65,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/koteloader.apk",
-    "sha256": "21514708da5ff699a119ad56afc7a9d751ccd9dbcdf4133ff70a31c083ba5e9d",
-    "size": 9930986,
-    "notes": "Версия 0.3.44: исправлено восстановление авточтения после пропущенных событий и ошибок, добавлена сверка непрочитанных диалогов и архива. Упоминания очищаются по всему чату, запросы чтения объединяются по аккаунтам и чатам."
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/c60dd2246b6355376f30e5f7cbedbce426ca445a/dist/koteloader.apk",
+    "sha256": "b3d4f0c9f9d216badf71f17b0a1fe5ddf24fbdf15c566add95b9c5f78287f963",
+    "size": 9934411,
+    "notes": "Версия 0.3.45: сохранение пользовательских имён твинков при создании и в настройках прав доступа, устранена инверсия сообщений при подтверждении кода входа."
   },
   "sdk": {
-    "version": "0.3.44",
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/kote-module-sdk.zip",
-    "sha256": "7ed1b8fb0846a45ab57fa3368b40c97fbf2237d2ec5a6ff1d23f7187f9b79b93",
+    "version": "0.3.45",
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/c60dd2246b6355376f30e5f7cbedbce426ca445a/dist/kote-module-sdk.zip",
+    "sha256": "610d68540ed611f53d128e73ed374ea9484d07529ead71c01810051f57a49ff7",
     "size": 327069,
-    "description": "SDK Kotogram 0.3.44: C/C++ ABI 3, флаг периодической сверки непрочитанных диалогов (ядро 64), актуальные заголовки и примеры."
+    "description": "SDK Kotogram 0.3.45: C/C++ ABI 3, передача пользовательских имён твинков при авторизации (ядро 65), актуальные заголовки и примеры."
   }
 }
