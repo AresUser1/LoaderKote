@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![APK 0.3.42](https://img.shields.io/badge/APK-0.3.42-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk)
-[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk)
+[![APK 0.3.43](https://img.shields.io/badge/APK-0.3.43-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/koteloader.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/koteloader.apk)
+[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.42`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.42`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.43`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.43`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,14 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.43)
+
+* Добавлены Android-счётчики трафика UID приложения с загрузки устройства.
+* RSS, PID, потоки и CPU-время относятся к основному процессу Kotogram.
+* Метрики основного процесса доступны и в изолированной среде выполнения.
+* Источники статистики различают настоящий ноль и недоступные данные.
+* Сохранена подпись для обновления установленного приложения.
 
 ## 📋 Список изменений (v0.3.42)
 
