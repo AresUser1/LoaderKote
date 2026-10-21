@@ -8,15 +8,15 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/0b1f9e2a26f9c8c53e28e108191772424eaa5bc1/dist/koteloader.apk",
-    "sha256": "ff14a961d3f80225a20c30eaa83cbdfd2304a4a9637d94a73488f0844dc3f030",
-    "size": 9943416,
-    "notes": "Версия 0.3.46: устранено дублирование карточек твинков на экране Обзор, добавлена дедупликация и автоочистка некорректных ключей из базы данных."
+    "sha256": "a9fcc3cbf606fc03812c631e175d0ce31ab742c7fafc642769902ae0cb988a53",
+    "size": 9946195,
+    "notes": "Версия 0.3.46: автоматическая синхронизация профиля аккаунта и твинков при старте движка, актуализация имён твинков из Telegram, устранено дублирование карточек твинков на экране Обзор."
   },
   "sdk": {
     "version": "0.3.46",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/0b1f9e2a26f9c8c53e28e108191772424eaa5bc1/dist/kote-module-sdk.zip",
-    "sha256": "4be74cb4e15f591974b536b1406de3ac43a9b280337ab9acae220c203a457eb0",
-    "size": 327069,
-    "description": "SDK Kotogram 0.3.46: C/C++ ABI 3, защита от дублирования твинков (ядро 66), актуальные заголовки и примеры."
+    "sha256": "7c57b0e94fa33ceddc9d5a1d8163caee401eb377b2ba856122b1c5c6a8ade548",
+    "size": 328977,
+    "description": "SDK Kotogram 0.3.46: C/C++ ABI 3, реактивная синхронизация профилей и разрешение воркеров по имени (ядро 66), актуальные заголовки и примеры."
   }
 }

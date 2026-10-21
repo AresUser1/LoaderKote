@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![APK 0.3.44](https://img.shields.io/badge/APK-0.3.44-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/koteloader.apk)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/koteloader.apk)
-[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/koteloader.apk)
+[![APK 0.3.46](https://img.shields.io/badge/APK-0.3.46-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.44`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.44`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/aee273b50ffa42a359ec9b4a5e4bc319e08bcbb9/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.46`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.46`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,21 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.46)
+
+* Автоматическая синхронизация профиля аккаунта и твинков при включении движка без необходимости перезапуска приложения.
+* Запрос актуального имени подключённых твинков из Telegram (`get_me`) и сохранение в базу данных.
+* Корректный приоритет живого никнейма твинка из Telegram в пользовательском интерфейсе.
+* Устранено дублирование карточек твинков на экране «Обзор», добавлена дедупликация и автоочистка некорректных записей хранилища.
+* Резолв твинков-воркеров по строковому имени и поддержка постраничной пагинации сообщений в MTProto-ядре.
+* Сохранена обратная совместимость подписи APK.
+
+## 📋 Список изменений (v0.3.45)
+
+* Оптимизация работы сетевого сокетного транспорта MTProto при переподключении сессий.
+* Улучшена обработка сетевых сбоев и задержек FLOOD_WAIT.
+* Повышена общая стабильность фоновой службы.
 
 ## 📋 Список изменений (v0.3.44)
 
