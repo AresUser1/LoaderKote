@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![APK 0.3.41](https://img.shields.io/badge/APK-0.3.41-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk)
-[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk)
-[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk)
+[![APK 0.3.42](https://img.shields.io/badge/APK-0.3.42-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk)
+[![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk)
+[![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.41`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.41`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/c5bcfd7f0d38206ab34717c06a1d3ad0e56c85db/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.42`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.42`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -98,7 +98,7 @@ https://raw.githubusercontent.com/AresUser1/KoteModules/main/index.json
 
 | Модуль | Тип | Команды | Описание |
 | :--- | :---: | :--- | :--- |
-| **⚙️ [auto_manager](https://github.com/AresUser1/KoteModules/blob/main/modules/auto_manager.so)** | `Native .so` | `.autread`, `.autoapprove`, `.amtwins` | Авточтение чатов с очисткой упоминаний, автоодобрение заявок, надёжное управление твинками (pure C, v1.2.0). |
+| **⚙️ [auto_manager](https://github.com/AresUser1/KoteModules/blob/main/modules/auto_manager.so)** | `Native .so` | `.autread`, `.autoapprove`, `.amtwins` | Авточтение с исключениями и режимами твинков; .amtwins показывает ID и поддерживает on/off ID (v1.2.2, ядро 62). |
 | **💬 [chat](https://github.com/AresUser1/KoteModules/blob/main/modules/chat.so)** | `Native .so` | `.users`, `.admins`, `.bots`, `.userid`, `.chatid` | Управление чатами, списки участников, администраторов и ботов чата (v1.0.5). |
 | **♟️ [checkers](https://github.com/AresUser1/KoteModules/blob/main/modules/checkers.so)** | `Native .so` | `.checkers`, `.шашки`, `.checkersend` | Шашки онлайн-PvP между игроками, выбор цвета, дамки, пат, реванш. |
 | **📥 [copymessage](https://github.com/AresUser1/KoteModules/blob/main/modules/copymessage.so)** | `Native .so` | `.copy`, `.hcopy` | Копирование текста и медиа из защищенных чатов/каналов в «Избранное». |
@@ -140,6 +140,12 @@ end
 Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
 
 ---
+
+## 📋 Список изменений (v0.3.42)
+
+* Исправлено распознавание обоих корректных ответов Bool при чтении каналов.
+* Чтение упоминаний обрабатывает все порции ответа и сохраняет RPC-ошибки.
+* Подпись APK сохранена для обновления установленного приложения.
 
 ## 📋 Список изменений (v0.3.41)
 
