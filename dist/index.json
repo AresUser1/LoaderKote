@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-21",
   "latest_apk": {
-    "version_name": "0.3.45",
-    "version_code": 65,
+    "version_name": "0.3.46",
+    "version_code": 66,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/c60dd2246b6355376f30e5f7cbedbce426ca445a/dist/koteloader.apk",
-    "sha256": "b3d4f0c9f9d216badf71f17b0a1fe5ddf24fbdf15c566add95b9c5f78287f963",
-    "size": 9934411,
-    "notes": "Версия 0.3.45: сохранение пользовательских имён твинков при создании и в настройках прав доступа, устранена инверсия сообщений при подтверждении кода входа."
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/0b1f9e2a26f9c8c53e28e108191772424eaa5bc1/dist/koteloader.apk",
+    "sha256": "ff14a961d3f80225a20c30eaa83cbdfd2304a4a9637d94a73488f0844dc3f030",
+    "size": 9943416,
+    "notes": "Версия 0.3.46: устранено дублирование карточек твинков на экране Обзор, добавлена дедупликация и автоочистка некорректных ключей из базы данных."
   },
   "sdk": {
-    "version": "0.3.45",
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/c60dd2246b6355376f30e5f7cbedbce426ca445a/dist/kote-module-sdk.zip",
-    "sha256": "610d68540ed611f53d128e73ed374ea9484d07529ead71c01810051f57a49ff7",
+    "version": "0.3.46",
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/0b1f9e2a26f9c8c53e28e108191772424eaa5bc1/dist/kote-module-sdk.zip",
+    "sha256": "4be74cb4e15f591974b536b1406de3ac43a9b280337ab9acae220c203a457eb0",
     "size": 327069,
-    "description": "SDK Kotogram 0.3.45: C/C++ ABI 3, передача пользовательских имён твинков при авторизации (ядро 65), актуальные заголовки и примеры."
+    "description": "SDK Kotogram 0.3.46: C/C++ ABI 3, защита от дублирования твинков (ядро 66), актуальные заголовки и примеры."
   }
 }
