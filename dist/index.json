@@ -2,21 +2,21 @@
   "schema": 1,
   "updated": "2026-10-21",
   "latest_apk": {
-    "version_name": "0.3.42",
-    "version_code": 62,
+    "version_name": "0.3.43",
+    "version_code": 63,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/koteloader.apk",
-    "sha256": "0801aee7c24df74080ab2adea16b2ff948ca06d6c8eeb7f3ff9029c996d43be1",
-    "size": 9891600,
-    "notes": "Версия 0.3.42: исправлено распознавание ответов Telegram при чтении каналов; чтение упоминаний обрабатывает все порции и сохраняет исходные RPC-ошибки."
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/koteloader.apk",
+    "sha256": "e9db4b42fca3b8b7056eeb38805b58cf5fbb76b006d940007adbe65e85079662",
+    "size": 9894075,
+    "notes": "Версия 0.3.43: добавлены счётчики трафика приложения Android и метрики основного процесса. Источники статистики различают недоступные данные и настоящий ноль; поддержана передача метрик в изолированную среду выполнения."
   },
   "sdk": {
-    "version": "0.3.42",
-    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/7934308203b494e841353be6f1b311a185a7e2c4/dist/kote-module-sdk.zip",
-    "sha256": "336f122b7c5c4e3594c6b8f9b8508452c72778c99fa5371c12532b60456252e6",
-    "size": 319460,
-    "description": "SDK Kotogram 0.3.42: C/C++ ABI 3 и Lua, контракт ядра 62 и обновлённые примеры автоматики аккаунтов."
+    "version": "0.3.43",
+    "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/8f3c69be11ae9d4aedc1dcf947d19683f3b6eeac/dist/kote-module-sdk.zip",
+    "sha256": "cabf82e5ded0105b12033f82c505f58e7155b4a5ebb488b621493071c15d4bf4",
+    "size": 326655,
+    "description": "SDK Kotogram 0.3.43: C/C++ ABI 3, read-only метрики хоста (ядро 63), примеры sysinfo и молчаливого авточтения твинков."
   }
 }
