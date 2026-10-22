@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "latest_apk": {
-    "version_name": "0.3.46",
-    "version_code": 66,
+    "version_name": "0.3.47",
+    "version_code": 67,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "7d25994d90e2c7894cfb068c375121d7e47d93bc8600a533f15ced7c97d9f543",
-    "size": 9968684,
-    "notes": "Версия 0.3.46: устранена блокировка и сбой синхронизации твинков, защита от нулевых указателей в MTProto, полный список и прокрутка всех твинков на панели."
+    "sha256": "bdf11ab2124e079190bd7250c051d731f433b809f9063df0a774364c068326b0",
+    "size": 9972372,
+    "notes": "Версия 0.3.47: экспорт реакторов и ответов в JSON истории MTProto (ядро 67) для скрапера и модулей активности, оптимизация сетевого буфера."
   },
   "sdk": {
-    "version": "0.3.46",
+    "version": "0.3.47",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
     "sha256": "7c57b0e94fa33ceddc9d5a1d8163caee401eb377b2ba856122b1c5c6a8ade548",
     "size": 328977,
-    "description": "SDK Kotogram 0.3.46: C/C++ ABI 3, реактивная синхронизация профилей и разрешение воркеров по имени (ядро 66), актуальные заголовки и примеры."
+    "description": "SDK Kotogram 0.3.47: C/C++ ABI 3, поддержка экспорта реакторов в истории MTProto (ядро 67), актуальные заголовки и примеры."
   }
 }
