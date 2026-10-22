@@ -8,8 +8,8 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "cbe3ac809b6664616c37bb58edbf521d108b91ac8ddb1293ae185a585fc6011b",
-    "size": 9978526,
+    "sha256": "079544c828a2e4b4bc3c2e21ba9d5525b0ec4ed5cde9549015bbdb20b507631b",
+    "size": 9978534,
     "notes": "Версия 0.3.48: автоматическое создание и регистрация инлайн-бота через @BotFather, кнопка принудительного включения /setinline в настройках, улучшенные подсказки онбординга."
   },
   "sdk": {
