@@ -8,8 +8,8 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "bdf11ab2124e079190bd7250c051d731f433b809f9063df0a774364c068326b0",
-    "size": 9972372,
+    "sha256": "617b0f05010001f5ec61c1603c9176dfd5a851dc2d1b3a2efb267003e39d7f57",
+    "size": 9972211,
     "notes": "Версия 0.3.47: экспорт реакторов и ответов в JSON истории MTProto (ядро 67) для скрапера и модулей активности, оптимизация сетевого буфера."
   },
   "sdk": {
