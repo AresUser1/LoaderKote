@@ -15,8 +15,8 @@
   "sdk": {
     "version": "0.3.47",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "7c57b0e94fa33ceddc9d5a1d8163caee401eb377b2ba856122b1c5c6a8ade548",
-    "size": 328977,
+    "sha256": "7d92efd4564bf3d440ac9f5d018d5110074ba0ddbc8acf7f80443fcdabac7327",
+    "size": 329314,
     "description": "SDK Kotogram 0.3.47: C/C++ ABI 3, поддержка экспорта реакторов в истории MTProto (ядро 67), актуальные заголовки и примеры."
   }
 }
