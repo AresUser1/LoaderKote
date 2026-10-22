@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "latest_apk": {
-    "version_name": "0.3.50",
-    "version_code": 70,
+    "version_name": "0.3.52",
+    "version_code": 72,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "70c7d6036b370fade54301e69c45c66fb8166c07095630f4f1e96ed4dafb18f0",
-    "size": 9982345,
-    "notes": "Версия 0.3.50: исправление воспроизведения аудиозаписей в Telegram-плеере, нормализация MIME-типов и расширений файлов, надёжная сборка HLS-потоков, исправление закрытия дескрипторов в MediaMetadataRetriever, восстановление порядка тегов исполнитель-название."
+    "sha256": "3dd4ed243879c9475ef9372197f889655267456a996aa1eedb46a514df3546cd",
+    "size": 9978809,
+    "notes": "Версия 0.3.52: прямая отправка файлов без вмешательства в ID3-теги и без ложных сплитов исполнителя/названия (чистый c_send_file), новый флаг KOTO_SEND_AS_FILE, исправление конфликта инлайн-кнопок (шахматы, шашки, администрирование), конвертация fMP4 в ADTS AAC."
   },
   "sdk": {
-    "version": "0.3.47",
+    "version": "0.3.52",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "7d92efd4564bf3d440ac9f5d018d5110074ba0ddbc8acf7f80443fcdabac7327",
-    "size": 329314,
-    "description": "SDK Kotogram 0.3.47: C/C++ ABI 3, поддержка экспорта реакторов в истории MTProto (ядро 67), актуальные заголовки и примеры."
+    "sha256": "e5a56c1ddec29f10b7b473f3283142965f214ddc08d7f21206b9f3b8b10f589b",
+    "size": 331318,
+    "description": "SDK Kotogram 0.3.52: C/C++ ABI 3, ядро 72, флаг KOTO_SEND_AS_FILE, актуальные заголовки и примеры."
   }
 }
