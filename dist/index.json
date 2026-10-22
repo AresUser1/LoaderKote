@@ -10,13 +10,13 @@
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
     "sha256": "3dd4ed243879c9475ef9372197f889655267456a996aa1eedb46a514df3546cd",
     "size": 9978809,
-    "notes": "Версия 0.3.52: прямая отправка файлов без вмешательства в ID3-теги и без ложных сплитов исполнителя/названия (чистый c_send_file), новый флаг KOTO_SEND_AS_FILE, исправление конфликта инлайн-кнопок (шахматы, шашки, администрирование), конвертация fMP4 в ADTS AAC."
+    "notes": "Версия 0.3.52: прямая отправка файлов без вмешательства в ID3-теги и без ложных сплитов исполнителя/названия (чистый c_send_file), новый флаг KOTO_SEND_AS_FILE, исправление маршрутизации инлайн-кнопок между модулями, конвертация fMP4 в ADTS AAC."
   },
   "sdk": {
     "version": "0.3.52",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "e5a56c1ddec29f10b7b473f3283142965f214ddc08d7f21206b9f3b8b10f589b",
-    "size": 331318,
+    "sha256": "528b167ae06ff82b502d62ff799dfc1c7e1a03078e7669838e1d8e07e649c903",
+    "size": 331825,
     "description": "SDK Kotogram 0.3.52: C/C++ ABI 3, ядро 72, флаг KOTO_SEND_AS_FILE, актуальные заголовки и примеры."
   }
 }
