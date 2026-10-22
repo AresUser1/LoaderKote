@@ -2,15 +2,15 @@
   "schema": 1,
   "updated": "2026-10-22",
   "latest_apk": {
-    "version_name": "0.3.48",
-    "version_code": 68,
+    "version_name": "0.3.49",
+    "version_code": 69,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "079544c828a2e4b4bc3c2e21ba9d5525b0ec4ed5cde9549015bbdb20b507631b",
-    "size": 9978534,
-    "notes": "Версия 0.3.48: автоматическое создание и регистрация инлайн-бота через @BotFather, кнопка принудительного включения /setinline в настройках, улучшенные подсказки онбординга."
+    "sha256": "a0d8c2301be517588724de78c9f8f9205760a0e9b2b71cef6eba6ccb7d62f65a",
+    "size": 9980777,
+    "notes": "Версия 0.3.49: исправление определения длительности треков (0:01) с парсингом MP3/ID3/WAV/M4A, устранена путаница исполнителя и названия, добавлены фоновые уведомления о новых релизах с переходом в настройки."
   },
   "sdk": {
     "version": "0.3.47",
