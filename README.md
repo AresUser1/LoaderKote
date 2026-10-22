@@ -6,12 +6,12 @@
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Source Code](https://img.shields.io/badge/Source-Kotogram%20Repo-orange?style=for-the-badge&logo=git)](https://github.com/AresUser1/Kotogram)
+[![Releases](https://img.shields.io/badge/Releases-GitHub-orange?style=for-the-badge&logo=github)](https://github.com/AresUser1/LoaderKote/releases)
 
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0341) • [💻 Исходный код](https://github.com/AresUser1/Kotogram)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0346) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -137,7 +137,7 @@ function on_message(msg)
 end
 ```
 
-Полное руководство по разработке: 📖 [LUA_GUIDE.md в основном репозитории](https://github.com/AresUser1/Kotogram/blob/main/docs/LUA_GUIDE.md).
+Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
 
@@ -480,9 +480,9 @@ end
 
 ## 🔗 Экосистема проектов
 
-* 🐾 **[AresUser1/KoteModules](https://github.com/AresUser1/KoteModules)** — Официальный репозиторий модулей Kotogram: каталог готовых `.so` модулей, исходники и манифест `index.json`.
-* 🧰 **[Kote Module SDK Kit (ZIP)](https://raw.githubusercontent.com/AresUser1/LoaderKote/2c1a9bcbcccdf1fd3e7987736643ea99951d47ba/dist/kote-module-sdk.zip)** — Полный набор инструментов разработчика модулей: заголовочный файл `module_abi.h`, скрипты сборки, шаблоны и примеры под Android и Linux/WSL.
-* 💻 **[AresUser1/Kotogram](https://github.com/AresUser1/Kotogram)** — Основной репозиторий ядра и клиента Kotogram.
+* 🐾 **[AresUser1/LoaderKote](https://github.com/AresUser1/LoaderKote)** — Официальный репозиторий загрузчика KoteLoader, выпуски релизов и SDK.
+* 📦 **[AresUser1/KoteModules](https://github.com/AresUser1/KoteModules)** — Официальный каталог модулей: скомпилированные `.so` модули, исходники и манифест `index.json`.
+* 🧰 **[Kote Module SDK Kit (ZIP)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip)** — Актуальный набор инструментов разработчика модулей: заголовочный файл `module_abi.h` (C-ABI 3), скрипты кросс-компиляции NDK, шаблоны и примеры.
 
 ---
 
