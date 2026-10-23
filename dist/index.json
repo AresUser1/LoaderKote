@@ -8,8 +8,8 @@
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "33d5b7d04e19423d756c0d0042be1e47f050537fd28a35f17449334c322a3472",
-    "size": 9999742,
+    "sha256": "f3233d446748c3a85f035fb61fe25122cfcd69e26ddc26599f7c52ffa6265a84",
+    "size": 10000720,
     "notes": "Версия 0.3.53: исправление создания и пересоздания инлайн-бота в @BotFather, поддержка ответов BotFather на русском и английском языках, надёжная настройка инлайн-режима (/setinline) и плейсхолдера, сохранение и восстановление юзернейма бота."
   },
   "sdk": {
