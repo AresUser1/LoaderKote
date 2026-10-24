@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "latest_apk": {
-    "version_name": "0.3.54",
-    "version_code": 74,
+    "version_name": "0.3.55",
+    "version_code": 78,
     "patch": 0,
     "abi": "arm64-v8a",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "8f57b8bb1fe20afae778fadfb860b92073b4d7176d7c92c2f8e101cd8784ac4a",
-    "size": 10333668,
-    "notes": "Версия 0.3.54: нативная MTProto-интеграция бота-помощника (прямой обход блокировок Bot API в РФ без VPN, обработка инлайн-кнопок напрямую в C++ ядре), умный парсер прокси из ссылок и каналов, регистронезависимость команд для кириллицы (UTF-8), повышенная стабильность на нестабильных прокси, премиум-эмодзи в install, SDK 0.3.54 с расширяемыми сервисами хоста."
+    "sha256": "b832c193dbf1d0f34addb269761fa16c0c64e90fb5a7220a94a306eb6aa98f9d",
+    "size": 10333648,
+    "notes": "Версия 0.3.55 (код 78): нативная MTProto-интеграция бота-помощника (прямой обход блокировок Bot API в РФ без VPN, обработка инлайн-кнопок напрямую в C++ ядре), умный парсер прокси из ссылок и каналов, регистронезависимость команд для кириллицы (UTF-8), повышенная стабильность на нестабильных прокси, премиум-эмодзи в install, мягкий фоллбэк при пустых ответах/MESSAGE_EMPTY, авто-обновление пиров на CHANNEL_INVALID, SDK 0.3.55 с расширяемыми сервисами хоста."
   },
   "sdk": {
-    "version": "0.3.54",
+    "version": "0.3.55",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "7502b818a60a8461cf2d6b532f8f8b857d3d4993f3df39f2ccfe5ea46630aaef",
+    "sha256": "2eb2ac96871e525511fe8d5e211079d8dfe039ab508bae86247a33f1e2ce7226",
     "size": 336999,
-    "description": "SDK Kotogram 0.3.54: C/C++ ABI 3, ядро 74, HOST_SERVICES (koto_services.hpp), актуальные заголовки и примеры."
+    "description": "SDK Kotogram 0.3.55: C/C++ ABI 3, ядро 78, HOST_SERVICES (koto_services.hpp), актуальные заголовки и примеры."
   }
 }
