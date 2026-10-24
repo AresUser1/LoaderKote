@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.3.55](https://img.shields.io/badge/APK-0.3.55-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.3.56](https://img.shields.io/badge/APK-0.3.56-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0355) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0356) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.55`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.55`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.56`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.56`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -141,30 +141,24 @@ end
 
 ---
 
-## 📋 Список изменений (v0.3.55)
+## 📋 Список изменений (v0.3.56)
 
+* ⌨️ **Умный парсер команд и поддержка любых UTF-8 пробелов**:
+  * Полная поддержка неразрывных пробелов (NBSP `\xC2\xA0`), тонких и типографических пробелов между префиксом и командой (например, `. шашки`, `. help`, `.  minfo`) с мобильных клавиатур Gboard/Samsung/iOS.
+  * Автоматический фоллбэк на разбор сырого текста сообщения в `.minfo`, если аргументы не переданы.
+* 👥 **Безопасные эмодзи для пользователей без Telegram Premium**:
+  * В системных модулях `modules`, `updater`, `aliases` заменены проблемные премиум-эмодзи обновления на общедоступные (`🔁`, `⌛️`), предотвращающие ошибки `DOCUMENT_INVALID` и `ENTITY_BOUNDS_INVALID`.
 * 🛡️ **Нативная MTProto-интеграция бота-помощника (прямой обход блокировок Bot API в РФ без VPN)**:
   * Взаимодействие со вспомогательным ботом (inline-результаты, кнопки, колбэки шахмат, шашек, меню настроек `.cfg` и панелей) полностью переведено на нативный протокол MTProto в C++ ядре (`kotocore`).
   * Полностью устранены обращения к заблокированному домену `api.telegram.org` по HTTPS при активном движке — инлайн-кнопки работают стабильно через FakeTLS/MTProto-прокси и в любых сетях РФ.
-  * При активном MTProto-хосте HTTP-поллинг автоматически заглушается.
-* 🌐 **Умный парсер ссылок и текстов MTProto/SOCKS5 прокси**:
-  * Поддержка ссылок `tg://proxy?server=...` и `https://t.me/proxy?server=...`.
-  * Автоматическое распознавание текстовых постов из каналов прокси формата `Server: ... Port: ... Secret: ...` при вставке в поле ввода.
-* 🔡 **Регистронезависимость команд для кириллицы (UTF-8)**:
-  * Команды на русском языке (например, `.шашки`, `. шашки`, `. Шашки`) корректно распознаются независимо от регистра символов и автокапитализации на мобильных клавиатурах.
-* ⚡ **Повышенная стабильность на нестабильных прокси**:
-  * Устранена аварийная остановка движка при сбросе TCP-соединения бесплатными MTProto-прокси во время инициализации и `catch_up()`.
-* ✨ **Telegram Premium эмодзи в модуле `install`**:
-  * Иконки загрузки и установки обновлены на анимированные премиум-эмодзи.
 * 🛠️ **Устранение ошибок интентов и фоллбэк**:
-  * Исправлена ошибка `[intent-err] MESSAGE_EMPTY` в `.minfo`: добавлен безопасный фоллбэк на отправку нового сообщения при любых сбоях редактирования.
-  * Добавлено автоматическое обновление `access_hash` пиров при получении `CHANNEL_INVALID` и защита от флуда в логах с кулдауном 60 секунд.
-* 💾 **Надёжная персистентность сессий и куки в `gemini_web`**:
-  * Внедрено дублирующее сохранение в кеш-файл на диске для гарантированного восстановления куки и выбранной модели при перезапуске или переустановке модуля.
-* 🧰 **Kote Module SDK 0.3.55 (Koto ABI 3)**:
+  * Исправлены ошибки `MESSAGE_EMPTY` и `ENTITY_BOUNDS_INVALID` в `EditSelf`: добавлен каскадный фоллбэк на чистый текст без сущностей при любых сбоях редактирования.
+  * Автоматическое разрешение пиров `ensure_peer_ready` для `EditSelf` и `fn_progress_edit`.
+  * Добавлено автоматическое обновление `access_hash` пиров при получении `CHANNEL_INVALID` и шлюз от флуда в логах.
+* 🧰 **Kote Module SDK 0.3.56 (Koto ABI 3)**:
   * Интерфейс расширяемых сервисов хоста `koto_services.hpp` и документация `HOST_SERVICES.md`.
 * 🔒 **Сохранение совместимости и бесшовное обновление**:
-  * `versionCode = 78` обеспечивает гладкое обновление поверх любых тестовых сборок без необходимости удаления данных или использования ADB. Полная совместимость ABI 3 и сохранение сертификата подписи.
+  * `versionCode = 79` обеспечивает гладкое обновление поверх любых предыдущих сборок (включая 76, 77, 78) без ошибки «Приложение не установлено». Полная совместимость ABI 3 и сохранение сертификата подписи.
 
 ## 📋 Список изменений (v0.3.53)
 
