@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.3.56](https://img.shields.io/badge/APK-0.3.56-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.3.57](https://img.shields.io/badge/APK-0.3.57-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-arm64--v8a-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0356) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0357) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.3.56`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.3.56`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.3.57`** | Приложение для Android (`arm64-v8a`, Android 8.0+) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.3.57`** | Полный набор для сборки модулей (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,17 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.3.57)
+
+* 🎨 **Полное восстановление покраски инлайн-кнопок в MTProto-боте (`keyboardButtonStyle`)**:
+  * Восстановлена покраска кнопок (`c_button_ex`: `KOTO_BTN_PRIMARY` — синий, `KOTO_BTN_DANGER` — красный, `KOTO_BTN_SUCCESS` — зелёный, кастом-эмодзи иконки `icon`) при нативной MTProto-интеграции бота.
+  * Исправлено формирование TL-структуры `gen::replyInlineMarkup` в C++ ядре: флаги `keyboardButtonStyle` теперь надёжно передаются как в первичных ответах на инлайн-запросы (`build_inline_markup`), так и при редактировании сообщений через callback-кнопки (`parse_inline_markup_json` в `editInlineBotMessage` и `editMessage`).
+  * Обеспечен бесшовный round-trip цветов и иконок кнопок между ядром, песочницей и ботом.
+* 🧰 **Kote Module SDK 0.3.57 (Koto ABI 3)**:
+  * Актуализация SDK и заголовков с поддержкой `keyboardButtonStyle` в инлайн-кнопках и расширяемых сервисов хоста `HOST_SERVICES.md`.
+* 🔒 **Сохранение совместимости и бесшовное обновление**:
+  * `versionCode = 80` обеспечивает гладкое обновление поверх любых предыдущих сборок без ошибки «Приложение не установлено». Полная совместимость ABI 3 и единый сертификат подписи.
 
 ## 📋 Список изменений (v0.3.56)
 
