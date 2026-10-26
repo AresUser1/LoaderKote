@@ -8,20 +8,20 @@
     "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "59417351864e7b5401a96bc04d178ec984ba3cc167ef202da11b2fc175a66e63",
-    "size": 10346891,
+    "sha256": "ade1e3143fd332781adcaa5d88ce8d17c98de5c4fabf9303c36c6830d1a34de4",
+    "size": 16280141,
     "notes": "Версия 0.3.57 (код 80): универсальная поддержка 32+64 бит (arm64-v8a + armeabi-v7a), полное восстановление покраски инлайн-кнопок в нативном MTProto-боте, умный парсер команд с поддержкой любых UTF-8 пробелов, фоллбэк парсинга текста сообщения в .minfo, система онлайн-обновления C++ ядра без переустановки APK, SDK 0.3.57 с расширяемыми сервисами хоста."
   },
   "latest_core": {
-    "version_name": "0.3.57.1",
-    "version_code": 81,
+    "version_name": "0.3.57.2",
+    "version_code": 82,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "ea3b86e8103d2c081a840319301cfffec6cf7c7f5092594ff854d768510b17e5",
-    "sha256_arm32": "99af4d67c884a0626a58e2363c6539a0660bbdc0030dc80d175c0cf9168aa308",
-    "size_arm64": 13624464,
-    "size_arm32": 8576100,
-    "notes": "Обновление C++20 MTProto ядра: увеличен TCP_USER_TIMEOUT до 60с для стабильной работы при задержке 3000 мс и нестабильных сетях, защита от обрывов сокета, полная поддержка ARM64 и ARM32."
+    "sha256_arm64": "ee2a36139fdefc3689133149f43fa49726b133acc71dde7a4cb830468144ccf1",
+    "sha256_arm32": "4a79060fb89cdda7720467e2485d8711e8a1916d265c6fe132cfc2dab782dec8",
+    "size_arm64": 13624480,
+    "size_arm32": 8578556,
+    "notes": "Обновление C++20 MTProto ядра v0.3.57.2 (код 82): добавлена поддержка управления контактами (telegram.contact.add.v1, telegram.contact.delete.v1) в модульных хост-сервисах, исправлен парсинг user_id для действий блокировки/разблокировки (.block, .unblock), полная поддержка 32-бит и 64-бит ARM."
   },
   "sdk": {
     "version": "0.3.57",
