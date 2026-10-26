@@ -13,15 +13,15 @@
     "notes": "Версия 0.3.57 (код 80): универсальная поддержка 32+64 бит (arm64-v8a + armeabi-v7a), полное восстановление покраски инлайн-кнопок в нативном MTProto-боте, умный парсер команд с поддержкой любых UTF-8 пробелов, фоллбэк парсинга текста сообщения в .minfo, система онлайн-обновления C++ ядра без переустановки APK, SDK 0.3.57 с расширяемыми сервисами хоста."
   },
   "latest_core": {
-    "version_name": "0.3.57.2",
-    "version_code": 82,
+    "version_name": "0.3.57.3",
+    "version_code": 83,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "ee2a36139fdefc3689133149f43fa49726b133acc71dde7a4cb830468144ccf1",
-    "sha256_arm32": "4a79060fb89cdda7720467e2485d8711e8a1916d265c6fe132cfc2dab782dec8",
-    "size_arm64": 13624480,
-    "size_arm32": 8578556,
-    "notes": "Обновление C++20 MTProto ядра v0.3.57.2 (код 82): добавлены системные хост-сервисы работы с контактами (telegram.contact.add.v1, telegram.contact.delete.v1), универсальный парсинг user_id и peer в диспетчере host_action_json, оптимизация стека сессий MTProto и полная поддержка ARM64 + ARM32."
+    "sha256_arm64": "760a385e40211d630a8e23a739d7f04f2095540014168433857b3673ff697f10",
+    "sha256_arm32": "70aeb0b124cb8d01fbf58a0ac2f8021bc8edd4c46302116f335fcfe1b750b27e",
+    "size_arm64": 13673816,
+    "size_arm32": 8615444,
+    "notes": "Обновление C++20 MTProto ядра v0.3.57.3 (код 83): добавлены нативные сервисы опросов telegram.poll.send.v1 (отправка нативных опросов через MTProto с полной поддержкой Premium кастом-эмодзи и закреплением) и telegram.poll.scan.v1 (сканирование публичных голосов по вариантам, выявление не голосовавших участников и внешних голосующих вне группы)."
   },
   "sdk": {
     "version": "0.3.57",
