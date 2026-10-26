@@ -2,32 +2,32 @@
   "schema": 1,
   "updated": "2026-10-26",
   "latest_apk": {
-    "version_name": "0.3.57.5",
-    "version_code": 85,
+    "version_name": "0.4.0",
+    "version_code": 90,
     "patch": 0,
     "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "6139d02616e6ebcbdc0e0e9d2e4391c8a970ce98c684e03104f22386a2d8a730",
-    "size": 16520299,
-    "notes": "Версия 0.3.57.5 (код 85): исправление порядка инициализации NativeBridge (онлайн-ядро корректно подгружается при старте без отката к APK), улучшение стабильности песочницы загрузчика и оптимизация системных сервисов."
+    "sha256": "61591e97fbeaa2c8b9a6728cdc15e33327ec8b96c8e31001cf83e1e2ca013d4b",
+    "size": 16561147,
+    "notes": "Версия 0.4.0 (код 90): крупное обновление — полная поддержка 32-битных (armeabi-v7a) и 64-битных (arm64-v8a) устройств в едином универсальном APK, нативное ядро C++20 с динамическим префиксом и редактированием сообщений на месте, обновлённый SDK модулей."
   },
   "latest_core": {
-    "version_name": "0.3.57.9",
-    "version_code": 89,
+    "version_name": "0.4.0",
+    "version_code": 90,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "dc245410c2ce6255c12814e812a1f3e6de50ff7d8a0987912c5fc540f381a682",
-    "sha256_arm32": "38db15a89e6bfc8e0783c17344e9f52737f946623d5f1ab523b0c4459a888b97",
+    "sha256_arm64": "5f78748265edce4d82494c0cbbcffdd8a8c377d04c15e1c4c8fdbfbf5e3adeeb",
+    "sha256_arm32": "9d830dcf4c56d0af1ff854629340d25d25b27c2d305e8b51e21614b7a99407c2",
     "size_arm64": 13706208,
     "size_arm32": 8636564,
-    "notes": "C++20 MTProto ядро v0.3.57.9 (код 89): поддержка нативного редактирования сообщений в чатах, динамический префикс команд в логах терминала, оптимизация диспетчера событий."
+    "notes": "C++20 MTProto ядро v0.4.0 (код 90): поддержка arm64-v8a и armeabi-v7a (32-bit), нативное редактирование сообщений в чатах, динамический префикс в терминале, оптимизация производительности."
   },
   "sdk": {
-    "version": "0.3.57",
+    "version": "0.4.0",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "f09805517268a4615bbc5c6164a7012f53d0745ad5929531a27fd809b625b154",
-    "size": 336999,
-    "description": "SDK Kotogram 0.3.57: C/C++ ABI 3, ядро 80, HOST_SERVICES (koto_services.hpp), поддержка keyboardButtonStyle в инлайн-кнопках, актуальные заголовки и примеры."
+    "sha256": "903b0aff106590b5d8ace0e25a8c601d8f313f4e147255f6078a3d68dc63158f",
+    "size": 350792,
+    "description": "SDK Kotogram 0.4.0: C/C++ ABI 3, поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры, подробное руководство по портированию (GUIDE_32BIT.md)."
   }
 }
