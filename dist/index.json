@@ -17,10 +17,10 @@
     "version_code": 87,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "646ddaa9958c406330d1e5dde5c8b56fa591adaee16783b8cef87f0180873536",
-    "sha256_arm32": "f1c2283d71ef39bf7b93d9f430cd268bcd364af088b45f32c585137e78021d10",
+    "sha256_arm64": "e6235d1e317f87793b5123a56803dea2240549dea192d6ce05135f04ec38b6e1",
+    "sha256_arm32": "6bacdcbd711e171388a59d63dabe23a90f6e9302c1830e55cde2747135b55e2f",
     "size_arm64": 13693920,
-    "size_arm32": 8628884,
+    "size_arm32": 8629780,
     "notes": "Обновление C++20 MTProto ядра v0.3.57.7 (код 87): поддержка новых настроек опросов (добавление вариантов, изменение ответа, случайный порядок), автоматическая санитаризация сущностей форматирования от ENTITY_BOUNDS_INVALID в бот-сообщениях, исправление редактирования шаблонов в .pollcfg."
   },
   "sdk": {
