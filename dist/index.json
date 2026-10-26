@@ -2,26 +2,26 @@
   "schema": 1,
   "updated": "2026-10-26",
   "latest_apk": {
-    "version_name": "0.4.0",
-    "version_code": 90,
+    "version_name": "0.4.1",
+    "version_code": 91,
     "patch": 0,
     "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "07cabae053dae8f40c8cd9397bf31ea9ad4811fc7a538e124f3e116390232376",
-    "size": 16560895,
-    "notes": "Версия 0.4.0 (код 90): полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a) в едином универсальном APK, нативное ядро v0.4.0 без необходимости онлайн-обновления, исправление краша модулей при сетевых запросах."
+    "sha256": "2635ea4559e1f30efcbb87d55e21bc37fce25d41017c77db1289cdaca5af22c3",
+    "size": 16560903,
+    "notes": "Версия 0.4.1 (код 91): универсальный APK с полностью встроенными нативными ядрами (arm64-v8a и armeabi-v7a). Никаких отдельных обновлений ядра не требуется — всё уже упаковано внутри приложения."
   },
   "latest_core": {
-    "version_name": "0.4.0",
-    "version_code": 90,
+    "version_name": "0.4.1",
+    "version_code": 91,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "5518fe8b7b4eb3f823bd2f6311de79050c1aa392b297c4c66483d809c1656c47",
-    "sha256_arm32": "d0dc221d403b19bec7b7dccdc19faf024ce7343975259a0a660154bb74ec4952",
+    "sha256_arm64": "252e1b6cd237f6094beaa9f2ff20ddbc52ac6662a33c7fda934362c9bcf9d16b",
+    "sha256_arm32": "93f38ba8c68d444384e7b803123a390c007a73a7bd27bb022e81bc9e8ada6441",
     "size_arm64": 13706208,
     "size_arm32": 8637860,
-    "notes": "C++20 MTProto ядро v0.4.0 (код 90): исправление crash sandboxHostCall / HTTP-запросов модулей, автоматическая очистка устаревшего дискового ядра при установке APK, поддержка arm64-v8a и armeabi-v7a."
+    "notes": "C++20 MTProto ядро v0.4.1 (код 91): встроенное ядро в релизный APK 0.4.1, полное исправление crash sandboxHostCall и MediaMetadataRetriever, поддержка arm64-v8a и armeabi-v7a."
   },
   "sdk": {
     "version": "0.4.0",
