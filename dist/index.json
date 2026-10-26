@@ -24,10 +24,10 @@
     "notes": "C++20 MTProto ядро v0.4.1 (код 91): встроенное ядро в релизный APK 0.4.1, полное исправление crash sandboxHostCall и MediaMetadataRetriever, поддержка arm64-v8a и armeabi-v7a."
   },
   "sdk": {
-    "version": "0.4.0",
+    "version": "0.4.1",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "903b0aff106590b5d8ace0e25a8c601d8f313f4e147255f6078a3d68dc63158f",
-    "size": 350792,
-    "description": "SDK Kotogram 0.4.0: C/C++ ABI 3, поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры, подробное руководство по портированию (GUIDE_32BIT.md)."
+    "sha256": "df075794cba16c75ea37cf77ebaadeee04c4a274a5cfaebe0980d658cb1981cd",
+    "size": 350806,
+    "description": "SDK Kotogram 0.4.1: C/C++ ABI 3, полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры (build.bat/sh --all), подробное руководство по портированию (GUIDE_32BIT.md)."
   }
 }
