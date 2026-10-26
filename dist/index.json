@@ -13,15 +13,15 @@
     "notes": "Версия 0.3.57 (код 80): универсальная поддержка 32+64 бит (arm64-v8a + armeabi-v7a), полное восстановление покраски инлайн-кнопок в нативном MTProto-боте, умный парсер команд с поддержкой любых UTF-8 пробелов, фоллбэк парсинга текста сообщения в .minfo, система онлайн-обновления C++ ядра без переустановки APK, SDK 0.3.57 с расширяемыми сервисами хоста."
   },
   "latest_core": {
-    "version_name": "0.3.57.4",
-    "version_code": 84,
+    "version_name": "0.3.57.5",
+    "version_code": 85,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "01b13c452cd5ea4ce386d412e37961db4b8bb387730cf9c80c8467f62a1da10c",
-    "sha256_arm32": "ce970363e4352c616699c4011cfada53d132b03c0115307babcae43ca634e008",
-    "size_arm64": 13686120,
-    "size_arm32": 8623308,
-    "notes": "Обновление C++20 MTProto ядра v0.3.57.4 (код 84): нативный сервис быстрой пакетной очистки своих сообщений telegram.delme.v1 (поиск всех сообщений от себя через MTProto и удаление батчами по 100 сообщений без лимита на глубину сканирования истории)."
+    "sha256_arm64": "eefe8f09fb2f0b7b91395804c422354c0dc6ce77445470350518b2089466a8d2",
+    "sha256_arm32": "3d3571fbe408c76827fe3c6724d89b6ebe2549589b94eee24c87da6dc95451c1",
+    "size_arm64": 13685696,
+    "size_arm32": 8623940,
+    "notes": "Обновление C++20 MTProto ядра v0.3.57.5 (код 85): полная поддержка сканирования пересланных опросов из любых каналов и чатов через messages.getPollVotes, авто-разбан и оповещение в чате по истечении 1 часа (.gameban), устранение переполнения стека и защита от лимита 4096 символов."
   },
   "sdk": {
     "version": "0.3.57",
