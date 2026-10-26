@@ -1,16 +1,27 @@
 {
   "schema": 1,
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "latest_apk": {
     "version_name": "0.3.57",
     "version_code": 80,
     "patch": 0,
-    "abi": "arm64-v8a",
+    "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
     "sha256": "59417351864e7b5401a96bc04d178ec984ba3cc167ef202da11b2fc175a66e63",
     "size": 10346891,
-    "notes": "Версия 0.3.57 (код 80): полное восстановление покраски инлайн-кнопок (keyboardButtonStyle: primary, danger, success, иконки custom emoji) в нативном MTProto-боте для первичных сообщений и при callback-редактировании, умный парсер команд с поддержкой любых UTF-8 пробелов, фоллбэк парсинга текста сообщения в .minfo, замена премиум-эмодзи в системных модулях на общедоступные, мягкий каскадный фоллбэк при пустых ответах и MESSAGE_EMPTY, упреждающая проверка пиров и устранение спама CHANNEL_INVALID, нативная MTProto-интеграция бота-помощника в C++ ядре (обход блокировок Bot API без VPN), SDK 0.3.57 с расширяемыми сервисами хоста."
+    "notes": "Версия 0.3.57 (код 80): универсальная поддержка 32+64 бит (arm64-v8a + armeabi-v7a), полное восстановление покраски инлайн-кнопок в нативном MTProto-боте, умный парсер команд с поддержкой любых UTF-8 пробелов, фоллбэк парсинга текста сообщения в .minfo, система онлайн-обновления C++ ядра без переустановки APK, SDK 0.3.57 с расширяемыми сервисами хоста."
+  },
+  "latest_core": {
+    "version_name": "0.3.57",
+    "version_code": 80,
+    "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
+    "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
+    "sha256_arm64": "6b1a306bfa22146f0a7247ea3886c13f8bc244f7278348c0806781eb5aaca595",
+    "sha256_arm32": "d9059c220e855ad9666506b72ca7017c0ef49c85a717eaec54e7c48843076c97",
+    "size_arm64": 29073680,
+    "size_arm32": 8575508,
+    "notes": "Нативное C++20 MTProto ядро юзербота kotogram (быстрое онлайн-обновление на лету без переустановки APK)."
   },
   "sdk": {
     "version": "0.3.57",
