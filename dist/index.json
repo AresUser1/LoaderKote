@@ -17,10 +17,10 @@
     "version_code": 85,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "eefe8f09fb2f0b7b91395804c422354c0dc6ce77445470350518b2089466a8d2",
-    "sha256_arm32": "3d3571fbe408c76827fe3c6724d89b6ebe2549589b94eee24c87da6dc95451c1",
-    "size_arm64": 13685696,
-    "size_arm32": 8623940,
+    "sha256_arm64": "d49be957ef07ba0e3c26c49b18779b7d4ba6bdb7fa6dfd504e07093165eeb945",
+    "sha256_arm32": "e0a8390353c80ae67063b17e94032f5dfa8196edc5db52ca9139c902b18955fd",
+    "size_arm64": 13689792,
+    "size_arm32": 8625396,
     "notes": "Обновление C++20 MTProto ядра v0.3.57.5 (код 85): полная поддержка сканирования пересланных опросов из любых каналов и чатов через messages.getPollVotes, авто-разбан и оповещение в чате по истечении 1 часа (.gameban), устранение переполнения стека и защита от лимита 4096 символов."
   },
   "sdk": {
