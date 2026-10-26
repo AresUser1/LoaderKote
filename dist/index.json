@@ -8,20 +8,20 @@
     "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "61591e97fbeaa2c8b9a6728cdc15e33327ec8b96c8e31001cf83e1e2ca013d4b",
-    "size": 16561147,
-    "notes": "Версия 0.4.0 (код 90): крупное обновление — полная поддержка 32-битных (armeabi-v7a) и 64-битных (arm64-v8a) устройств в едином универсальном APK, нативное ядро C++20 с динамическим префиксом и редактированием сообщений на месте, обновлённый SDK модулей."
+    "sha256": "07cabae053dae8f40c8cd9397bf31ea9ad4811fc7a538e124f3e116390232376",
+    "size": 16560895,
+    "notes": "Версия 0.4.0 (код 90): полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a) в едином универсальном APK, нативное ядро v0.4.0 без необходимости онлайн-обновления, исправление краша модулей при сетевых запросах."
   },
   "latest_core": {
     "version_name": "0.4.0",
     "version_code": 90,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "5f78748265edce4d82494c0cbbcffdd8a8c377d04c15e1c4c8fdbfbf5e3adeeb",
-    "sha256_arm32": "9d830dcf4c56d0af1ff854629340d25d25b27c2d305e8b51e21614b7a99407c2",
+    "sha256_arm64": "5518fe8b7b4eb3f823bd2f6311de79050c1aa392b297c4c66483d809c1656c47",
+    "sha256_arm32": "d0dc221d403b19bec7b7dccdc19faf024ce7343975259a0a660154bb74ec4952",
     "size_arm64": 13706208,
-    "size_arm32": 8636564,
-    "notes": "C++20 MTProto ядро v0.4.0 (код 90): поддержка arm64-v8a и armeabi-v7a (32-bit), нативное редактирование сообщений в чатах, динамический префикс в терминале, оптимизация производительности."
+    "size_arm32": 8637860,
+    "notes": "C++20 MTProto ядро v0.4.0 (код 90): исправление crash sandboxHostCall / HTTP-запросов модулей, автоматическая очистка устаревшего дискового ядра при установке APK, поддержка arm64-v8a и armeabi-v7a."
   },
   "sdk": {
     "version": "0.4.0",
