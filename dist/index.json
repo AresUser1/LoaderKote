@@ -1,33 +1,33 @@
 {
   "schema": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "latest_apk": {
-    "version_name": "0.4.1",
-    "version_code": 91,
+    "version_name": "0.4.2",
+    "version_code": 92,
     "patch": 0,
     "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "2635ea4559e1f30efcbb87d55e21bc37fce25d41017c77db1289cdaca5af22c3",
-    "size": 16560903,
-    "notes": "Версия 0.4.1 (код 91): универсальный APK с полностью встроенными нативными ядрами (arm64-v8a и armeabi-v7a). Никаких отдельных обновлений ядра не требуется — всё уже упаковано внутри приложения."
+    "sha256": "6938e4d45ddd710323d1f9ecf7ea788e096768dd2cf4acb7d00b7b58b6cc44a4",
+    "size": 16570494,
+    "notes": "KoteLoader v0.4.2 (код 92): Единый универсальный APK со встроенными C++20 ядрами (arm64-v8a и armeabi-v7a). Добавлена системная поддержка HTTP POST с кастомными заголовками и авторизацией."
   },
   "latest_core": {
-    "version_name": "0.4.1",
-    "version_code": 91,
+    "version_name": "0.4.2",
+    "version_code": 92,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "252e1b6cd237f6094beaa9f2ff20ddbc52ac6662a33c7fda934362c9bcf9d16b",
-    "sha256_arm32": "93f38ba8c68d444384e7b803123a390c007a73a7bd27bb022e81bc9e8ada6441",
-    "size_arm64": 13706208,
-    "size_arm32": 8637860,
-    "notes": "C++20 MTProto ядро v0.4.1 (код 91): встроенное ядро в релизный APK 0.4.1, полное исправление crash sandboxHostCall и MediaMetadataRetriever, поддержка arm64-v8a и armeabi-v7a."
+    "sha256_arm64": "cf8654e927ca1fbf949d467ec618fd98726ff539d8abcae3538cd2140f7f6f50",
+    "sha256_arm32": "332350647c5a37cd6ae68dca133a56e619434a06c9c99ffc4fa27054fa414404",
+    "size_arm64": 13714552,
+    "size_arm32": 8643844,
+    "notes": "C++20 MTProto ядро v0.4.2 (код 92): Поддержка системного HTTP POST (koto.http_post / msg:http_post / api->http_post), заголовки авторизации, сборка arm64-v8a и armeabi-v7a."
   },
   "sdk": {
-    "version": "0.4.1",
+    "version": "0.4.2",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "df075794cba16c75ea37cf77ebaadeee04c4a274a5cfaebe0980d658cb1981cd",
-    "size": 350806,
-    "description": "SDK Kotogram 0.4.1: C/C++ ABI 3, полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры (build.bat/sh --all), подробное руководство по портированию (GUIDE_32BIT.md)."
+    "sha256": "a55eab038db405c156ce698ec8c8e2446902f70e6fb2a446439d0d60a15217d8",
+    "size": 457907,
+    "description": "SDK Kotogram 0.4.2: C/C++ ABI 3 + Lua runtime, поддержка koto.http_post, универсальная сборка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   }
 }
