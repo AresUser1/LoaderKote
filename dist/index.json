@@ -2,26 +2,26 @@
   "schema": 1,
   "updated": "2026-10-27",
   "latest_apk": {
-    "version_name": "0.4.2",
-    "version_code": 92,
+    "version_name": "0.3.57.5",
+    "version_code": 85,
     "patch": 0,
     "abi": "universal (arm64-v8a + armeabi-v7a)",
     "min_sdk": 26,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "6938e4d45ddd710323d1f9ecf7ea788e096768dd2cf4acb7d00b7b58b6cc44a4",
-    "size": 16570494,
-    "notes": "KoteLoader v0.4.2 (код 92): Единый универсальный APK со встроенными C++20 ядрами (arm64-v8a и armeabi-v7a). Добавлена системная поддержка HTTP POST с кастомными заголовками и авторизацией."
+    "sha256": "b66a51ba623ced25c048bb188d62de49172f9b5cbb8465426b1288c697beccde",
+    "size": 16708269,
+    "notes": "Версия 0.3.57.5 (код 85): исправление порядка инициализации NativeBridge (онлайн-ядро корректно подгружается при старте приложения без отката к APK), улучшение стабильности песочницы загрузчика и оптимизация системных сервисов."
   },
   "latest_core": {
-    "version_name": "0.4.2",
-    "version_code": 92,
+    "version_name": "0.3.57.9",
+    "version_code": 89,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "cf8654e927ca1fbf949d467ec618fd98726ff539d8abcae3538cd2140f7f6f50",
-    "sha256_arm32": "332350647c5a37cd6ae68dca133a56e619434a06c9c99ffc4fa27054fa414404",
-    "size_arm64": 13714552,
-    "size_arm32": 8643844,
-    "notes": "C++20 MTProto ядро v0.4.2 (код 92): Поддержка системного HTTP POST (koto.http_post / msg:http_post / api->http_post), заголовки авторизации, сборка arm64-v8a и armeabi-v7a."
+    "sha256_arm64": "775a3c1ab77a3acdbe510fc120c75a7fe922bc802ad67c74a96f16a032069e6e",
+    "sha256_arm32": "afffb15c306cc7f6bf72bb6c49b979f7438f46d5a1c0a3adb995d107ffecc115",
+    "size_arm64": 13755560,
+    "size_arm32": 8672628,
+    "notes": "C++20 MTProto ядро v0.3.57.9 (код 89): поддержка нативного редактирования сообщений в чатах, динамический префикс команд в логах терминала, оптимизация диспетчера событий."
   },
   "sdk": {
     "version": "0.4.2",
@@ -29,5 +29,9 @@
     "sha256": "a55eab038db405c156ce698ec8c8e2446902f70e6fb2a446439d0d60a15217d8",
     "size": 457907,
     "description": "SDK Kotogram 0.4.2: C/C++ ABI 3 + Lua runtime, поддержка koto.http_post, универсальная сборка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
-  }
+  },
+  "version": "0.4.9",
+  "version_code": 100,
+  "sha256": "ebfa26a10d1ca16b7124c59c4f0d31132e35caf004eaa988236cfa55cce94c59",
+  "size": 16708128
 }
