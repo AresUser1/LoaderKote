@@ -2,26 +2,23 @@
   "schema": 1,
   "updated": "2026-10-27",
   "latest_apk": {
-    "version_name": "0.3.57.5",
-    "version_code": 85,
-    "patch": 0,
-    "abi": "universal (arm64-v8a + armeabi-v7a)",
-    "min_sdk": 26,
+    "version_name": "0.4.10",
+    "version_code": 101,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "b66a51ba623ced25c048bb188d62de49172f9b5cbb8465426b1288c697beccde",
-    "size": 16708269,
-    "notes": "Версия 0.3.57.5 (код 85): исправление порядка инициализации NativeBridge (онлайн-ядро корректно подгружается при старте приложения без отката к APK), улучшение стабильности песочницы загрузчика и оптимизация системных сервисов."
+    "sha256": "6d7ae5bbbd7e6ab3e309589b4f7351e8ebf461a9a0ee95fb30c8d914720faeda",
+    "size": 16709371,
+    "notes": "Kotogram v0.4.10 (code 101): Native MTProto inputMessageEntityMentionName support for instant mention notifications."
   },
   "latest_core": {
-    "version_name": "0.3.57.9",
-    "version_code": 89,
+    "version_name": "0.4.10",
+    "version_code": 101,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "775a3c1ab77a3acdbe510fc120c75a7fe922bc802ad67c74a96f16a032069e6e",
-    "sha256_arm32": "afffb15c306cc7f6bf72bb6c49b979f7438f46d5a1c0a3adb995d107ffecc115",
-    "size_arm64": 13755560,
-    "size_arm32": 8672628,
-    "notes": "C++20 MTProto ядро v0.3.57.9 (код 89): поддержка нативного редактирования сообщений в чатах, динамический префикс команд в логах терминала, оптимизация диспетчера событий."
+    "sha256_arm64": "6ed5bd46da416251b3b630f03dceb480c5d47cc02a0d9ae22cddcabd96c32773",
+    "sha256_arm32": "189446e08eec0cfce5ab89aac2c2de41ce7d1589c83d17aeb06561c3b0bfdcfd",
+    "size_arm64": 29623480,
+    "size_arm32": 15599264,
+    "notes": "C++20 MTProto core v0.4.10 (code 101): inputMessageEntityMentionName conversion with access_hash resolution."
   },
   "sdk": {
     "version": "0.4.2",
