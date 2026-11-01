@@ -5,20 +5,20 @@
     "version_name": "0.4.10",
     "version_code": 101,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "6d7ae5bbbd7e6ab3e309589b4f7351e8ebf461a9a0ee95fb30c8d914720faeda",
-    "size": 16709371,
-    "notes": "Kotogram v0.4.10 (code 101): Native MTProto inputMessageEntityMentionName support for instant mention notifications."
+    "sha256": "c3668397d5da4108a82531c1ea4fb7f335358a317b372b043bc1f1fe23e0443c",
+    "size": 12149432,
+    "notes": "Kotogram v0.4.10 (code 101): Универсальное обновление клиента для 64-бит (arm64-v8a) и 32-бит (armeabi-v7a)."
   },
   "latest_core": {
     "version_name": "0.4.10",
     "version_code": 101,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "6ed5bd46da416251b3b630f03dceb480c5d47cc02a0d9ae22cddcabd96c32773",
-    "sha256_arm32": "189446e08eec0cfce5ab89aac2c2de41ce7d1589c83d17aeb06561c3b0bfdcfd",
-    "size_arm64": 29623480,
-    "size_arm32": 15599264,
-    "notes": "C++20 MTProto core v0.4.10 (code 101): inputMessageEntityMentionName conversion with access_hash resolution."
+    "sha256_arm64": "944a93a37551b86896eed5a1f1294a82b41de58e28db319814dfa1bff2ba69c3",
+    "sha256_arm32": "539f21d63136d27dbcf1bb087d71b49f5e0a1ea458418cbd9a3ce8bfe89f00ca",
+    "size_arm64": 13804960,
+    "size_arm32": 8710100,
+    "notes": "C++20 MTProto core v0.4.10 (code 101): Нативное ядро для 64-бит и 32-бит архитектур."
   },
   "sdk": {
     "version": "0.4.2",
