@@ -1,24 +1,24 @@
 {
   "schema": 1,
-  "updated": "2026-10-27",
+  "updated": "2026-11-02",
   "latest_apk": {
-    "version_name": "0.4.10",
-    "version_code": 101,
+    "version_name": "0.4.11",
+    "version_code": 102,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "c3668397d5da4108a82531c1ea4fb7f335358a317b372b043bc1f1fe23e0443c",
-    "size": 12149432,
-    "notes": "Kotogram v0.4.10 (code 101): Универсальное обновление клиента для 64-бит (arm64-v8a) и 32-бит (armeabi-v7a)."
+    "sha256": "1903e66eb06bdfddd214d3405dc8a05a99c5cd84b6b335d7f8fa8091cec47c36",
+    "size": 12145113,
+    "notes": "Kotogram v0.4.11 (code 102): мгновенная загрузка настроек модулей в оверлее и приложении, тихий терминал без спама логами, dual-arch 64-бит и 32-бит."
   },
   "latest_core": {
-    "version_name": "0.4.10",
-    "version_code": 101,
+    "version_name": "0.4.11",
+    "version_code": 102,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "944a93a37551b86896eed5a1f1294a82b41de58e28db319814dfa1bff2ba69c3",
-    "sha256_arm32": "539f21d63136d27dbcf1bb087d71b49f5e0a1ea458418cbd9a3ce8bfe89f00ca",
-    "size_arm64": 13804960,
-    "size_arm32": 8710100,
-    "notes": "C++20 MTProto core v0.4.10 (code 101): Нативное ядро для 64-бит и 32-бит архитектур."
+    "sha256_arm64": "ab5f9cf78cfb9834f9ab62b456db91275777e784c1f20c5f5250415e286a2186",
+    "sha256_arm32": "02fb94007e443ddda8a76446fbd1a9c232fcad7797921e2e1a2574fb48a672a8",
+    "size_arm64": 13784304,
+    "size_arm32": 8701236,
+    "notes": "C++20 MTProto core v0.4.11 (code 102): синхронная отдача настроек модулей, отключены отладочные логи в терминале, dual-arch 64-бит и 32-бит."
   },
   "sdk": {
     "version": "0.4.2",
@@ -28,7 +28,8 @@
     "description": "SDK Kotogram 0.4.2: C/C++ ABI 3 + Lua runtime, поддержка koto.http_post, универсальная сборка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
   "version": "0.4.9",
-  "version_code": 100,
+  "version_code": 102,
   "sha256": "ebfa26a10d1ca16b7124c59c4f0d31132e35caf004eaa988236cfa55cce94c59",
-  "size": 16708128
+  "size": 16708128,
+  "version_name": "0.4.11"
 }
