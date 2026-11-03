@@ -5,7 +5,7 @@
     "version_name": "0.4.11",
     "version_code": 102,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "41524892eb2e849b049e5684a70410bdfd0415df26218bdda7b7cb2af9865fca",
+    "sha256": "700b6ef0c240663b09f1d2ace98262b48dfe41e3c6cddc93b38078198fc947db",
     "size": 12145485,
     "notes": "Kotogram v0.4.11 (code 102): исправление входа и переподключения, автоочистка кэша, бинарный http_post для цитат, dual-arch arm64-v8a + armeabi-v7a."
   },
@@ -29,7 +29,7 @@
   },
   "version": "0.4.11",
   "version_code": 102,
-  "sha256": "41524892eb2e849b049e5684a70410bdfd0415df26218bdda7b7cb2af9865fca",
+  "sha256": "700b6ef0c240663b09f1d2ace98262b48dfe41e3c6cddc93b38078198fc947db",
   "size": 12145485,
   "version_name": "0.4.11"
 }
