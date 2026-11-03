@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "latest_apk": {
     "version_name": "0.4.11",
     "version_code": 102,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "1903e66eb06bdfddd214d3405dc8a05a99c5cd84b6b335d7f8fa8091cec47c36",
-    "size": 12145113,
-    "notes": "Kotogram v0.4.11 (code 102): мгновенная загрузка настроек модулей в оверлее и приложении, тихий терминал без спама логами, dual-arch 64-бит и 32-бит."
+    "sha256": "41524892eb2e849b049e5684a70410bdfd0415df26218bdda7b7cb2af9865fca",
+    "size": 12145485,
+    "notes": "Kotogram v0.4.11 (code 102): исправление входа и переподключения, автоочистка кэша, бинарный http_post для цитат, dual-arch arm64-v8a + armeabi-v7a."
   },
   "latest_core": {
     "version_name": "0.4.11",
@@ -21,15 +21,15 @@
     "notes": "C++20 MTProto core v0.4.11 (code 102): синхронная отдача настроек модулей, отключены отладочные логи в терминале, dual-arch 64-бит и 32-бит."
   },
   "sdk": {
-    "version": "0.4.2",
+    "version": "0.4.1",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "a55eab038db405c156ce698ec8c8e2446902f70e6fb2a446439d0d60a15217d8",
-    "size": 457907,
-    "description": "SDK Kotogram 0.4.2: C/C++ ABI 3 + Lua runtime, поддержка koto.http_post, универсальная сборка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "5b4ca527d0f70764d3a431a73d2f0330ed85f9597d27d8b5534dbfccf6343257",
+    "size": 366264,
+    "description": "SDK Kotogram 0.4.1: C/C++ ABI 3, полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры (build.bat/sh --all), подробное руководство по портированию (GUIDE_32BIT.md)."
   },
-  "version": "0.4.9",
+  "version": "0.4.11",
   "version_code": 102,
-  "sha256": "ebfa26a10d1ca16b7124c59c4f0d31132e35caf004eaa988236cfa55cce94c59",
-  "size": 16708128,
+  "sha256": "41524892eb2e849b049e5684a70410bdfd0415df26218bdda7b7cb2af9865fca",
+  "size": 12145485,
   "version_name": "0.4.11"
 }
