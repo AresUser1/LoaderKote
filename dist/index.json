@@ -1,24 +1,24 @@
 {
   "schema": 1,
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "latest_apk": {
     "version_name": "0.4.11",
     "version_code": 102,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "700b6ef0c240663b09f1d2ace98262b48dfe41e3c6cddc93b38078198fc947db",
-    "size": 12145485,
-    "notes": "Kotogram v0.4.11 (code 102): исправление входа и переподключения, автоочистка кэша, бинарный http_post для цитат, dual-arch arm64-v8a + armeabi-v7a."
+    "sha256": "048bb9b5462cdf66ee5fb352fcadf262d1d8afc9fe1c2e4848adcf1332efa5d7",
+    "size": 12146142,
+    "notes": "Kotogram v0.4.11 (code 102): таймауты RPC и пингов, восстановление сети после Doze, устранение блокировки UI потока бэкапом сессий."
   },
   "latest_core": {
-    "version_name": "0.4.11",
-    "version_code": 102,
+    "version_name": "0.4.11-p1",
+    "version_code": 103,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "ab5f9cf78cfb9834f9ab62b456db91275777e784c1f20c5f5250415e286a2186",
-    "sha256_arm32": "02fb94007e443ddda8a76446fbd1a9c232fcad7797921e2e1a2574fb48a672a8",
-    "size_arm64": 13784304,
-    "size_arm32": 8701236,
-    "notes": "C++20 MTProto core v0.4.11 (code 102): синхронная отдача настроек модулей, отключены отладочные логи в терминале, dual-arch 64-бит и 32-бит."
+    "sha256_arm64": "92d39af20d40cd11aedc86b5252453d42cb0c913908a1683d366a85905e686c0",
+    "sha256_arm32": "2384ddcfb6186bcd5da6ba7afd7ef5c96476270dae022f4e4a88e6cc153646ba",
+    "size_arm64": 13800296,
+    "size_arm32": 8716500,
+    "notes": "MTProto core v0.4.11-p1 (code 103): таймаут RPC (35s) и пингов (15s) с отменой таймеров в Executor, устранение зависания сокета и 100ms спин-поллинга keepalive."
   },
   "sdk": {
     "version": "0.4.1",
@@ -29,7 +29,7 @@
   },
   "version": "0.4.11",
   "version_code": 102,
-  "sha256": "700b6ef0c240663b09f1d2ace98262b48dfe41e3c6cddc93b38078198fc947db",
-  "size": 12145485,
+  "sha256": "048bb9b5462cdf66ee5fb352fcadf262d1d8afc9fe1c2e4848adcf1332efa5d7",
+  "size": 12146142,
   "version_name": "0.4.11"
 }
