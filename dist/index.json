@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "latest_apk": {
     "version_name": "0.4.11",
     "version_code": 102,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "048bb9b5462cdf66ee5fb352fcadf262d1d8afc9fe1c2e4848adcf1332efa5d7",
-    "size": 12146142,
-    "notes": "Kotogram v0.4.11 (code 102): таймауты RPC и пингов, восстановление сети после Doze, устранение блокировки UI потока бэкапом сессий."
+    "sha256": "99fb5a5e2ba8b2b932b140b75ac2b7ed5174a2d24d981d338d00077a198338c8",
+    "size": 12173558,
+    "notes": "Kotogram v0.4.11 (code 102): исправление таймеров MTProto, устранение гонки запуска/остановки, шифрование сессий (AES-256-GCM), согласованные снимки SQLite (VACUUM INTO), живой мониторинг связи и авто-пробуждение после Doze."
   },
   "latest_core": {
-    "version_name": "0.4.11-p1",
-    "version_code": 103,
+    "version_name": "0.4.11-p2",
+    "version_code": 104,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "92d39af20d40cd11aedc86b5252453d42cb0c913908a1683d366a85905e686c0",
-    "sha256_arm32": "2384ddcfb6186bcd5da6ba7afd7ef5c96476270dae022f4e4a88e6cc153646ba",
-    "size_arm64": 13800296,
-    "size_arm32": 8716500,
-    "notes": "MTProto core v0.4.11-p1 (code 103): таймаут RPC (35s) и пингов (15s) с отменой таймеров в Executor, устранение зависания сокета и 100ms спин-поллинга keepalive."
+    "sha256_arm64": "3d990db98710e79a444c52137bea1b12910f406f7075c1e397b3a0cdcc6fde99",
+    "sha256_arm32": "d331db4ccbf92732206317eed45b0d9554aeaa2851e804c14ac99e09aeab11b2",
+    "size_arm64": 13808472,
+    "size_arm32": 8718596,
+    "notes": "MTProto core v0.4.11-p2 (code 104): отменяемые таймеры в Executor, транзакционный бэкап SQLite (VACUUM INTO), экспорт времени pong и статуса подключения, защита от двойного возобновления корутин."
   },
   "sdk": {
-    "version": "0.4.1",
+    "version": "0.4.3",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "5b4ca527d0f70764d3a431a73d2f0330ed85f9597d27d8b5534dbfccf6343257",
-    "size": 366264,
-    "description": "SDK Kotogram 0.4.1: C/C++ ABI 3, полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры (build.bat/sh --all), подробное руководство по портированию (GUIDE_32BIT.md)."
+    "sha256": "4349aa08f2c42d95af23b1e675422386d170daf6196d178e5b31828e8a3a38a9",
+    "size": 362984,
+    "description": "SDK Kotogram 0.4.3: C/C++ ABI 3, полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры (build.bat/sh --all), подробное руководство по портированию (GUIDE_32BIT.md)."
   },
   "version": "0.4.11",
   "version_code": 102,
-  "sha256": "048bb9b5462cdf66ee5fb352fcadf262d1d8afc9fe1c2e4848adcf1332efa5d7",
-  "size": 12146142,
+  "sha256": "99fb5a5e2ba8b2b932b140b75ac2b7ed5174a2d24d981d338d00077a198338c8",
+  "size": 12173558,
   "version_name": "0.4.11"
 }

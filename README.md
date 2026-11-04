@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.2](https://img.shields.io/badge/APK-0.4.2-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.11](https://img.shields.io/badge/APK-0.4.11-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v042) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0411) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -140,6 +140,37 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.11 / код 102)
+
+* 🛡️ **Полное исправление нативных таймеров и предотвращение падений ядра (UAF)**:
+  * В Executor::cancel_timer() внедрена очистка очереди 
+eady_: отменённые таймеры больше не возобновляют корутины повторно при одновременном ответе от сервера и таймауте.
+  * Устранено накопление зависших идентификаторов таймеров при сбоях RPC (ResponseAwaiter::await_resume()), подтверждено тестами с AddressSanitizer (0 утечек, 0 heap-use-after-free).
+* ⚙️ **Устранение гонки «Запуск → Стоп» в Foreground-сервисе**:
+  * Запуск и остановка движка синхронизированы через управляемые корутины engineStartJob и engineStopJob.
+  * При нажатии «Остановить» корутина старта немедленно отменяется, а намерение пользователя (user_enabled=false) фиксируется до вызова остановки. Поздний старт движка при медленной сети полностью исключён.
+* 🔐 **Защищённое резервное копирование сессий (AES-256-GCM)**:
+  * Файл авторизации kotogram_login.session шифруется алгоритмом **AES-256-GCM** с уникальным криптографическим ключом устройства (ANDROID_ID + подпись приложения).
+  * Из общедоступной системной папки Download/KoteLoader_Backup полностью удалены открытые файлы сессий и токен бота из DataStore.
+  * Операция clearSessionBackup() защищена мьютексом ackupMutex, исключая гонки между фоновым бэкапом и выходом из аккаунта.
+* 💾 **Транзакционные снимки SQLite базы данных (VACUUM INTO)**:
+  * В нативное ядро и JNI-мост добавлен метод NativeBridge.backupDatabase().
+  * Резервное копирование koto.db теперь выполняется через полный сброс WAL-журнала (sqlite3_wal_checkpoint_v2 с SQLITE_CHECKPOINT_TRUNCATE) и атомарную команду VACUUM INTO. Исключены любые риски повреждения базы или потери последних записей.
+* 📡 **Живой мониторинг связи и свежести MTProto (getLastPongTime)**:
+  * В C++ ядро внедрён динамический экспорт времени последнего полученного pong-пакета.
+  * Статус-карта в приложении обновляется каждые 3 секунды, отображая реальный статус подключения («Telegram подключён • pong 4с назад», «Переподключение…»).
+  * Сервисное уведомление отслеживает состояние сокета и предупреждает пользователя, если pong не приходил более 90 секунд.
+* ⚡ **Мгновенное пробуждение после Doze и энергосбережения**:
+  * Foreground-сервис слушает системные события DEVICE_IDLE_MODE_CHANGED и POWER_SAVE_MODE_CHANGED.
+  * При включении экрана или выходе устройства из режима глубокого сна автоматически вызывается onNetworkChanged(), восстанавливая соединение без ожидания длинных системных сокет-таймаутов.
+* 🔋 **Диалог оптимизации батареи с авто-обновлением**:
+  * Статус исключения из Doze в настройках подписан на жизненный цикл ON_RESUME. При возврате из настроек системы статус обновляется на «ВКЛЮЧЕНО» «на лету» без закрытия диалога.
+* 🛠️ **Исправление логики хотфиксов и подавление сетевого шума в логах**:
+  * Исключены ложные предложения даунгрейда версий (хотфикс предлагается только для совпадающего ersionCode и ersionName).
+  * Настроен 30-секундный кулдаун на ошибки DNS и исключены неработающие зеркала, устраняя спам в терминале.
+* 🧰 **Kote Module SDK 0.4.3**:
+  * Актуализированные заголовочные файлы ABI 3, поддержка 32-бит и 64-бит модулей (uild.bat / uild.sh --all).
 
 ## 📋 Список изменений (v0.4.2)
 
