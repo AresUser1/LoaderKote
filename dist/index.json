@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-07",
   "latest_apk": {
-    "version_name": "0.4.11",
-    "version_code": 102,
+    "version_name": "0.4.12",
+    "version_code": 105,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "99fb5a5e2ba8b2b932b140b75ac2b7ed5174a2d24d981d338d00077a198338c8",
-    "size": 12173558,
-    "notes": "Kotogram v0.4.11 (code 102): исправление таймеров MTProto, устранение гонки запуска/остановки, шифрование сессий (AES-256-GCM), согласованные снимки SQLite (VACUUM INTO), живой мониторинг связи и авто-пробуждение после Doze."
+    "sha256": "9dbf447f573791fbfb9f57f4d6213ee95c1ef7e8b00a5383de1bc24844cc7493",
+    "size": 12225704,
+    "notes": "Kotogram v0.4.12 (code 105): фикс нативного краша в peer_ready, полная локализация интерфейса (RU/EN), обновлены 14 системных модулей, кнопки соцсетей."
   },
   "latest_core": {
-    "version_name": "0.4.11-p2",
-    "version_code": 104,
+    "version_name": "0.4.12",
+    "version_code": 105,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "3d990db98710e79a444c52137bea1b12910f406f7075c1e397b3a0cdcc6fde99",
-    "sha256_arm32": "d331db4ccbf92732206317eed45b0d9554aeaa2851e804c14ac99e09aeab11b2",
-    "size_arm64": 13808472,
-    "size_arm32": 8718596,
-    "notes": "MTProto core v0.4.11-p2 (code 104): отменяемые таймеры в Executor, транзакционный бэкап SQLite (VACUUM INTO), экспорт времени pong и статуса подключения, защита от двойного возобновления корутин."
+    "sha256_arm64": "866273f8c5bc90b865dc355ec4fedde55eff8d474508128ecb2ff8eb113b5ec7",
+    "sha256_arm32": "710aa523bf2cfaadf6d51efb513184300df7f2e7f8cc9304fa3889ed5a3ea960",
+    "size_arm64": 13812568,
+    "size_arm32": 8719508,
+    "notes": "MTProto core v0.4.12 (code 105): безопасная маршрутизация пиров, JNI app_language sync, устранён SIGSEGV при приёме сообщений."
   },
   "sdk": {
-    "version": "0.4.3",
+    "version": "0.4.4",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "4349aa08f2c42d95af23b1e675422386d170daf6196d178e5b31828e8a3a38a9",
-    "size": 362984,
-    "description": "SDK Kotogram 0.4.3: C/C++ ABI 3, полная поддержка 32-бит (armeabi-v7a) и 64-бит (arm64-v8a), скрипты сборки под обе архитектуры (build.bat/sh --all), подробное руководство по портированию (GUIDE_32BIT.md)."
+    "sha256": "316994fd398918346dff42af83046d6bb32246198871c9bfa825752595360c3d",
+    "size": 383409,
+    "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.11",
-  "version_code": 102,
-  "sha256": "99fb5a5e2ba8b2b932b140b75ac2b7ed5174a2d24d981d338d00077a198338c8",
-  "size": 12173558,
-  "version_name": "0.4.11"
+  "version": "0.4.12",
+  "version_code": 105,
+  "sha256": "9dbf447f573791fbfb9f57f4d6213ee95c1ef7e8b00a5383de1bc24844cc7493",
+  "size": 12225704,
+  "version_name": "0.4.12"
 }
