@@ -5,31 +5,31 @@
     "version_name": "0.4.12",
     "version_code": 105,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "9dbf447f573791fbfb9f57f4d6213ee95c1ef7e8b00a5383de1bc24844cc7493",
-    "size": 12225704,
-    "notes": "Kotogram v0.4.12 (code 105): фикс нативного краша в peer_ready, полная локализация интерфейса (RU/EN), обновлены 14 системных модулей, кнопки соцсетей."
+    "sha256": "0b3acaa8c5111bf49ebc1803dccc6d545a9ca20ee1fd53df2a5c1c07db39e519",
+    "size": 16864833,
+    "notes": "Kotogram v0.4.12 (code 105): поддержка ссылок https://t.me/ в whois, теги <a href> и <tg-emoji>, фикс краша peer_ready, полная двуязычность RU/EN, 14 обновлённых системных модулей."
   },
   "latest_core": {
     "version_name": "0.4.12",
     "version_code": 105,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "866273f8c5bc90b865dc355ec4fedde55eff8d474508128ecb2ff8eb113b5ec7",
-    "sha256_arm32": "710aa523bf2cfaadf6d51efb513184300df7f2e7f8cc9304fa3889ed5a3ea960",
-    "size_arm64": 13812568,
-    "size_arm32": 8719508,
-    "notes": "MTProto core v0.4.12 (code 105): безопасная маршрутизация пиров, JNI app_language sync, устранён SIGSEGV при приёме сообщений."
+    "sha256_arm64": "b676567ed3982ebe437d804083ba6ae8411e1962fa3edcf842c46243845eb267",
+    "sha256_arm32": "9143161ab427ce683763e290ca31cd329c1a75d4f68f73fa4af5afe10759c694",
+    "size_arm64": 29720864,
+    "size_arm32": 15692448,
+    "notes": "MTProto core v0.4.12 (code 105): поддержка разметки ссылок и кастомных эмодзи в jni_bridge, безопасная маршрутизация пиров, JNI app_language sync."
   },
   "sdk": {
     "version": "0.4.4",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "316994fd398918346dff42af83046d6bb32246198871c9bfa825752595360c3d",
-    "size": 383409,
+    "sha256": "4a32e239d00ca3ded32e12806a20c274868233bf7723dca9d70f4ef9082f696d",
+    "size": 385009,
     "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
   "version": "0.4.12",
   "version_code": 105,
-  "sha256": "9dbf447f573791fbfb9f57f4d6213ee95c1ef7e8b00a5383de1bc24844cc7493",
-  "size": 12225704,
+  "sha256": "0b3acaa8c5111bf49ebc1803dccc6d545a9ca20ee1fd53df2a5c1c07db39e519",
+  "size": 16864833,
   "version_name": "0.4.12"
 }
