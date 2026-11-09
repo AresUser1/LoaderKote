@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.13](https://img.shields.io/badge/APK-0.4.13-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.13](https://img.shields.io/badge/APK-0.4.14-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -140,6 +140,15 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.14 / код 107)
+
+* ⚡ **Мгновенный сетевой фоллбэк и агрессивные тайм-ауты (2.5с)**:
+  * Оптимизирована загрузка манифестов и обновлений: при сетевых задержках или блокировках под VPN загрузчик мгновенно переключается на скоростные зеркала G-Core CDN и jsDelivr, устраняя зависание индикатора прогресса.
+* 🌐 **Глобальный CookieManager (RFC 6265) & Мобильный стек HTTP**:
+  * В нативный мост NativeBridge интегрировано сохранение cookie-сессий и эмуляция нативных заголовков Android Chrome Mobile с Client Hints.
+* 🔄 **Надежное определение супергрупп и каналов при CHANNEL_INVALID**:
+  * Реализована автоматическая дозагрузка и инвалидация хэшей доступа (access_hash) через MTProto messages_getChats при экспорте ссылок и сервисных запросах.
 
 ## 📋 Список изменений (v0.4.13 / код 106)
 

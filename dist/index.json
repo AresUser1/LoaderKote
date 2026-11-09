@@ -2,23 +2,23 @@
   "schema": 1,
   "updated": "2026-11-09",
   "latest_apk": {
-    "version_name": "0.4.13",
-    "version_code": 106,
+    "version_name": "0.4.14",
+    "version_code": 107,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "1c785f8e608aff6e17043308f76f12f37a51b54dcbc584dba3938977734999e4",
-    "size": 16865516,
-    "notes": "Kotogram v0.4.13 (код 106): устранение нативного сбоя в потоке ядра (thread_main safe retry), автоочистка устаревшего кэша библиотек на диске, автоматическая валидация хэшей доступа и повтор запросов при CHANNEL_INVALID / PEER_ID_INVALID, поддержка сессионных cookie в HTTP-стеке NativeBridge, оптимизация маршрутизации callback-запросов онлайн-кнопок, зеркалирование репозиториев через глобальные CDN для стабильного обновления под VPN."
+    "sha256": "d2e27aa49fbb5bc2e9e76900c083e86042ad72167044f048a8a67324d5ea6ce3",
+    "size": 16865428,
+    "notes": "Kotogram v0.4.14 (код 107): сверхбыстрый сетевой фоллбэк с агрессивным тайм-аутом 2.5с и автопереключением на скоростные CDN-зеркала G-Core/jsDelivr для мгновенного обновления под VPN; системный CookieManager (RFC 6265) в HTTP-стеке NativeBridge; корректные мобильные Client Hints; автоматическая валидация хэшей доступа (access_hash) для каналов и супергрупп при CHANNEL_INVALID."
   },
   "latest_core": {
-    "version_name": "0.4.13",
-    "version_code": 106,
+    "version_name": "0.4.14",
+    "version_code": 107,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "7147d39af48254db17b794053a13de123e2e8356ad973865da3d5ccd593dae97",
-    "sha256_arm32": "fd5ce157560f26f30a9d43f27e5bbd6aa70077140b06de79652bbd9fb3068141",
-    "size_arm64": 13828976,
-    "size_arm32": 8735844,
-    "notes": "C++20 MTProto ядро v0.4.13 (код 106): устойчивый запуск потока движка, автоматический обход CHANNEL_INVALID с инвалидацией хэшей и дозагрузкой диалогов, оптимизация маршрутизации callback-запросов."
+    "sha256_arm64": "b676567ed3982ebe437d804083ba6ae8411e1962fa3edcf842c46243845eb267",
+    "sha256_arm32": "9143161ab427ce683763e290ca31cd329c1a75d4f68f73fa4af5afe10759c694",
+    "size_arm64": 29720864,
+    "size_arm32": 15692448,
+    "notes": "C++20 MTProto ядро v0.4.14 (код 107): автоматическая дозагрузка access_hash для супергрупп при CHANNEL_INVALID/PEER_ID_INVALID, сессионные веб-куки в HTTP-клиенте, устойчивая маршрутизация inline-кнопок."
   },
   "sdk": {
     "version": "0.4.4",
@@ -27,9 +27,9 @@
     "size": 383409,
     "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.13",
-  "version_code": 106,
-  "sha256": "1c785f8e608aff6e17043308f76f12f37a51b54dcbc584dba3938977734999e4",
-  "size": 16865516,
-  "version_name": "0.4.13"
+  "version": "0.4.14",
+  "version_code": 107,
+  "sha256": "d2e27aa49fbb5bc2e9e76900c083e86042ad72167044f048a8a67324d5ea6ce3",
+  "size": 16865428,
+  "version_name": "0.4.14"
 }
