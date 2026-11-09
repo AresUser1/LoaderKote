@@ -5,9 +5,9 @@
     "version_name": "0.4.13",
     "version_code": 106,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "cbd07ac293b148fb21744ecda81b17ad0a3a9b6d19e059f0e221b7f990cdda0d",
-    "size": 16865021,
-    "notes": "Kotogram v0.4.13 (код 106): устранение нативного сбоя в потоке ядра (thread_main safe retry), автоочистка устаревшего кэша библиотек на диске, автоматическая валидация хэшей доступа и повтор запросов при CHANNEL_INVALID / PEER_ID_INVALID, поддержка сессионных cookie в HTTP-стеке NativeBridge, оптимизация маршрутизации callback-запросов инлайн-кнопок."
+    "sha256": "1c785f8e608aff6e17043308f76f12f37a51b54dcbc584dba3938977734999e4",
+    "size": 16865516,
+    "notes": "Kotogram v0.4.13 (код 106): устранение нативного сбоя в потоке ядра (thread_main safe retry), автоочистка устаревшего кэша библиотек на диске, автоматическая валидация хэшей доступа и повтор запросов при CHANNEL_INVALID / PEER_ID_INVALID, поддержка сессионных cookie в HTTP-стеке NativeBridge, оптимизация маршрутизации callback-запросов онлайн-кнопок, зеркалирование репозиториев через глобальные CDN для стабильного обновления под VPN."
   },
   "latest_core": {
     "version_name": "0.4.13",
@@ -29,7 +29,7 @@
   },
   "version": "0.4.13",
   "version_code": 106,
-  "sha256": "cbd07ac293b148fb21744ecda81b17ad0a3a9b6d19e059f0e221b7f990cdda0d",
-  "size": 16865021,
+  "sha256": "1c785f8e608aff6e17043308f76f12f37a51b54dcbc584dba3938977734999e4",
+  "size": 16865516,
   "version_name": "0.4.13"
 }
