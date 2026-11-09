@@ -1,24 +1,24 @@
 {
   "schema": 1,
-  "updated": "2026-11-07",
+  "updated": "2026-11-09",
   "latest_apk": {
-    "version_name": "0.4.12",
-    "version_code": 105,
+    "version_name": "0.4.13",
+    "version_code": 106,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "0b3acaa8c5111bf49ebc1803dccc6d545a9ca20ee1fd53df2a5c1c07db39e519",
-    "size": 16864833,
-    "notes": "Kotogram v0.4.12 (code 105): поддержка ссылок https://t.me/ в whois, теги <a href> и <tg-emoji>, фикс краша peer_ready, полная двуязычность RU/EN, 14 обновлённых системных модулей."
+    "sha256": "cbd07ac293b148fb21744ecda81b17ad0a3a9b6d19e059f0e221b7f990cdda0d",
+    "size": 16865021,
+    "notes": "Kotogram v0.4.13 (code 106): устранение нативного сбоя в потоке ядра (thread_main safe retry), автоочистка устаревшего кэша ядра на диске, автоматический повторный запрос диалогов при CHANNEL_INVALID в link_manager/wordle, CookieManager для Akinator, маршрутизация callback кнопок для игр Wordle и MazeGame."
   },
   "latest_core": {
-    "version_name": "0.3.57.9",
-    "version_code": 89,
+    "version_name": "0.4.13",
+    "version_code": 106,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "68b4f21e0c565d846f06d5834bdd646403fd6f2e235f649926ab8889bdb8d9cf",
-    "sha256_arm32": "aad2db9090dcbb85036183462dcb2572a60c24e9b7d51c6298159200e125af02",
-    "size_arm64": 13828952,
-    "size_arm32": 8735460,
-    "notes": "C++20 MTProto ядро v0.3.57.9 (код 89): поддержка нативного редактирования сообщений в чатах, динамический префикс команд в логах терминала, оптимизация диспетчера событий."
+    "sha256_arm64": "7147d39af48254db17b794053a13de123e2e8356ad973865da3d5ccd593dae97",
+    "sha256_arm32": "fd5ce157560f26f30a9d43f27e5bbd6aa70077140b06de79652bbd9fb3068141",
+    "size_arm64": 13828976,
+    "size_arm32": 8735844,
+    "notes": "C++20 MTProto ядро v0.4.13 (код 106): устойчивый запуск потока движка, автоматический обход CHANNEL_INVALID с инвалидацией хэшей и дозагрузкой диалогов, маршрутизация callback-запросов игр."
   },
   "sdk": {
     "version": "0.4.4",
@@ -27,9 +27,9 @@
     "size": 385009,
     "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.12",
-  "version_code": 105,
-  "sha256": "0b3acaa8c5111bf49ebc1803dccc6d545a9ca20ee1fd53df2a5c1c07db39e519",
-  "size": 16864833,
-  "version_name": "0.4.12"
+  "version": "0.4.13",
+  "version_code": 106,
+  "sha256": "cbd07ac293b148fb21744ecda81b17ad0a3a9b6d19e059f0e221b7f990cdda0d",
+  "size": 16865021,
+  "version_name": "0.4.13"
 }
