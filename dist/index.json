@@ -7,7 +7,7 @@
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
     "sha256": "cbd07ac293b148fb21744ecda81b17ad0a3a9b6d19e059f0e221b7f990cdda0d",
     "size": 16865021,
-    "notes": "Kotogram v0.4.13 (code 106): устранение нативного сбоя в потоке ядра (thread_main safe retry), автоочистка устаревшего кэша ядра на диске, автоматический повторный запрос диалогов при CHANNEL_INVALID в link_manager/wordle, CookieManager для Akinator, маршрутизация callback кнопок для игр Wordle и MazeGame."
+    "notes": "Kotogram v0.4.13 (код 106): устранение нативного сбоя в потоке ядра (thread_main safe retry), автоочистка устаревшего кэша библиотек на диске, автоматическая валидация хэшей доступа и повтор запросов при CHANNEL_INVALID / PEER_ID_INVALID, поддержка сессионных cookie в HTTP-стеке NativeBridge, оптимизация маршрутизации callback-запросов инлайн-кнопок."
   },
   "latest_core": {
     "version_name": "0.4.13",
@@ -18,13 +18,13 @@
     "sha256_arm32": "fd5ce157560f26f30a9d43f27e5bbd6aa70077140b06de79652bbd9fb3068141",
     "size_arm64": 13828976,
     "size_arm32": 8735844,
-    "notes": "C++20 MTProto ядро v0.4.13 (код 106): устойчивый запуск потока движка, автоматический обход CHANNEL_INVALID с инвалидацией хэшей и дозагрузкой диалогов, маршрутизация callback-запросов игр."
+    "notes": "C++20 MTProto ядро v0.4.13 (код 106): устойчивый запуск потока движка, автоматический обход CHANNEL_INVALID с инвалидацией хэшей и дозагрузкой диалогов, оптимизация маршрутизации callback-запросов."
   },
   "sdk": {
     "version": "0.4.4",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "4a32e239d00ca3ded32e12806a20c274868233bf7723dca9d70f4ef9082f696d",
-    "size": 385009,
+    "sha256": "316994fd398918346dff42af83046d6bb32246198871c9bfa825752595360c3d",
+    "size": 383409,
     "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
   "version": "0.4.13",
