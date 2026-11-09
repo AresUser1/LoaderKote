@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.13](https://img.shields.io/badge/APK-0.4.14-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.13](https://img.shields.io/badge/APK-0.4.15-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -140,6 +140,12 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.15 / код 108)
+
+* 🛡️ **Полное устранение ENTITY_BOUNDS_INVALID в setInlineBotResults**:
+  * В нативный мост C++20 MTProto (jni_bridge) интегрирована валидация и автоматическая нормализация смещений и длин сущностей форматирования (sanitize_message_entities) перед отправкой инлайн-результатов бота.
+  * Добавлен защитный повтор отправки при неожиданных ошибках разметки Telegram API, гарантирующий стабильное отображение кнопок и панелей.
 
 ## 📋 Список изменений (v0.4.14 / код 107)
 

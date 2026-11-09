@@ -2,23 +2,23 @@
   "schema": 1,
   "updated": "2026-11-09",
   "latest_apk": {
-    "version_name": "0.4.14",
-    "version_code": 107,
+    "version_name": "0.4.15",
+    "version_code": 108,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "d2e27aa49fbb5bc2e9e76900c083e86042ad72167044f048a8a67324d5ea6ce3",
-    "size": 16865428,
-    "notes": "Kotogram v0.4.14 (код 107): сверхбыстрый сетевой фоллбэк с агрессивным тайм-аутом 2.5с и автопереключением на скоростные CDN-зеркала G-Core/jsDelivr для мгновенного обновления под VPN; системный CookieManager (RFC 6265) в HTTP-стеке NativeBridge; корректные мобильные Client Hints; автоматическая валидация хэшей доступа (access_hash) для каналов и супергрупп при CHANNEL_INVALID."
+    "sha256": "2095f656f343455d3dffca1dcfcaae6abbf34bd8b1e6a5edc355012c0866b86d",
+    "size": 16865427,
+    "notes": "Kotogram v0.4.15 (код 108): устранение ошибки ENTITY_BOUNDS_INVALID в setInlineBotResults с автоматической валидацией границ форматирования и безопасным fallback-повтором; сверхбыстрый сетевой фоллбэк с агрессивным тайм-аутом 2.5с для CDN-зеркал G-Core/jsDelivr; системный CookieManager (RFC 6265) в NativeBridge; валидация access_hash при CHANNEL_INVALID."
   },
   "latest_core": {
-    "version_name": "0.4.14",
-    "version_code": 107,
+    "version_name": "0.4.15",
+    "version_code": 108,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
     "sha256_arm64": "b676567ed3982ebe437d804083ba6ae8411e1962fa3edcf842c46243845eb267",
     "sha256_arm32": "9143161ab427ce683763e290ca31cd329c1a75d4f68f73fa4af5afe10759c694",
     "size_arm64": 29720864,
     "size_arm32": 15692448,
-    "notes": "C++20 MTProto ядро v0.4.14 (код 107): автоматическая дозагрузка access_hash для супергрупп при CHANNEL_INVALID/PEER_ID_INVALID, сессионные веб-куки в HTTP-клиенте, устойчивая маршрутизация inline-кнопок."
+    "notes": "C++20 MTProto ядро v0.4.15 (код 108): санитайзинг сущностей форматирования в setInlineBotResults, предотвращение сбоев инлайн-бота и выпадения кнопок при отправке форматированного текста."
   },
   "sdk": {
     "version": "0.4.4",
@@ -27,9 +27,9 @@
     "size": 383409,
     "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.14",
-  "version_code": 107,
-  "sha256": "d2e27aa49fbb5bc2e9e76900c083e86042ad72167044f048a8a67324d5ea6ce3",
-  "size": 16865428,
-  "version_name": "0.4.14"
+  "version": "0.4.15",
+  "version_code": 108,
+  "sha256": "2095f656f343455d3dffca1dcfcaae6abbf34bd8b1e6a5edc355012c0866b86d",
+  "size": 16865427,
+  "version_name": "0.4.15"
 }
