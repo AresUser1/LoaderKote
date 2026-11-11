@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-11",
   "latest_apk": {
-    "version_name": "0.4.15",
-    "version_code": 108,
+    "version_name": "0.4.16",
+    "version_code": 109,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "2095f656f343455d3dffca1dcfcaae6abbf34bd8b1e6a5edc355012c0866b86d",
-    "size": 16865427,
-    "notes": "Kotogram v0.4.15 (код 108): устранение ошибки ENTITY_BOUNDS_INVALID в setInlineBotResults с автоматической валидацией границ форматирования и безопасным fallback-повтором; сверхбыстрый сетевой фоллбэк с агрессивным тайм-аутом 2.5с для CDN-зеркал G-Core/jsDelivr; системный CookieManager (RFC 6265) в NativeBridge; валидация access_hash при CHANNEL_INVALID."
+    "sha256": "bd285f7cc4bad8a11e5d00ea9b65bf5c87622fe424650258110ab4a8afcbdd6b",
+    "size": 16940573,
+    "notes": "Kotogram v0.4.16 (код 109): всплывающее окно обновлений при запуске (Startup Update Popup) с установкой в 1 клик; умная фоновая предзагрузка и тихое Hot-Swap автообновление нативного ядра и системных компонентов через 30 минут бездействия (AutoUpdateManager); мгновенное неблокирующее чтение ID и DC основного аккаунта из памяти, SQLite и сессии без ожидания старта пула твинков; Kote Module SDK 0.4.5."
   },
   "latest_core": {
-    "version_name": "0.4.15",
-    "version_code": 108,
+    "version_name": "0.4.16",
+    "version_code": 109,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "b676567ed3982ebe437d804083ba6ae8411e1962fa3edcf842c46243845eb267",
-    "sha256_arm32": "9143161ab427ce683763e290ca31cd329c1a75d4f68f73fa4af5afe10759c694",
-    "size_arm64": 29720864,
-    "size_arm32": 15692448,
-    "notes": "C++20 MTProto ядро v0.4.15 (код 108): санитайзинг сущностей форматирования в setInlineBotResults, предотвращение сбоев инлайн-бота и выпадения кнопок при отправке форматированного текста."
+    "sha256_arm64": "0b9e85c0987cc156acf2da1cb7bee728eecb65dd4fe792baea213cf3601d1e6f",
+    "sha256_arm32": "5a8cb279bda4f4ccb83c66f60521d7f0bd3f2e9547be132f32313e6e9bc242bc",
+    "size_arm64": 29778680,
+    "size_arm32": 15755320,
+    "notes": "C++20 MTProto ядро v0.4.16 (код 109): мгновенное неблокирующее получение профиля аккаунта (id, name, username, dc) из памяти, SQLite и файла сессии без блокировки очереди при инициализации твинков; сохранение self_id в хранилище хоста; поддержка фонового Hot-Swap перезапуска."
   },
   "sdk": {
-    "version": "0.4.4",
+    "version": "0.4.5",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "316994fd398918346dff42af83046d6bb32246198871c9bfa825752595360c3d",
-    "size": 383409,
-    "description": "SDK Kotogram 0.4.4: C/C++ ABI 3, полная поддержка мультиязычности (RU/EN), макросы koto_is_lang_en и KOTO_TR, koto_utils::tr, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "e14c62ba79ae9bf0c5c3e29ba105319b024248d1629ec0ae36d8f8bab23caddc",
+    "size": 382479,
+    "description": "SDK Kotogram 0.4.5: C/C++ ABI 3, синхронизированные заголовочные файлы koto_utils.hpp и module_abi.h, полная поддержка мультиязычности (RU/EN, koto_utils::tr, koto_utils::is_en), HTTP POST и CookieManager, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.15",
-  "version_code": 108,
-  "sha256": "2095f656f343455d3dffca1dcfcaae6abbf34bd8b1e6a5edc355012c0866b86d",
-  "size": 16865427,
-  "version_name": "0.4.15"
+  "version": "0.4.16",
+  "version_code": 109,
+  "sha256": "bd285f7cc4bad8a11e5d00ea9b65bf5c87622fe424650258110ab4a8afcbdd6b",
+  "size": 16940573,
+  "version_name": "0.4.16"
 }

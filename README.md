@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.13](https://img.shields.io/badge/APK-0.4.15-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.16](https://img.shields.io/badge/APK-0.4.16-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0413) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0416--код-109) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.2`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.2`** | Полный набор для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.4.16`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.5`** | Полный набор для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,18 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.16 / код 109)
+
+* 🔔 **Умное всплывающее окно обновлений при запуске (Startup Update Popup)**:
+  * При открытии приложения автоматически проверяется наличие свежей версии APK, нативного C++20 MTProto ядра (`libkotocore.so`) и установленных системных/пользовательских модулей с возможностью установки или мгновенной горячей замены в 1 клик.
+* ⚡ **Фоновая предзагрузка и тихое Hot-Swap автообновление (30 минут простоя)**:
+  * Внедрён менеджер `AutoUpdateManager`: обновления нативного ядра и модулей автоматически предзагружаются в фоновый staging-кэш с проверкой контрольных сумм SHA-256.
+  * При отсутствии активности в течение 30 минут в фоновом режиме клиент бесшовно применяет предзагруженные обновления и перезапускает `KotoService` за 1 секунду без выброса интерфейса на экран пользователя.
+* 👤 **Мгновенная синхронизация профиля аккаунта (`ID` и `DC`)**:
+  * Неблокирующее чтение `self_info_json` из локального хранилища SQLite и файла сессии без ожидания запуска пула твинков в очереди движка; кэширование `id` и `dc` в быстром профиле для мгновенного отображения с первого кадра.
+* 🧰 **Kote Module SDK 0.4.5**:
+  * Полная синхронизация заголовочных файлов (`koto_utils.hpp`, `module_abi.h`, хелперы мультиязычности `koto_utils::tr` / `is_en`).
 
 ## 📋 Список изменений (v0.4.15 / код 108)
 
