@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.16](https://img.shields.io/badge/APK-0.4.16-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.17](https://img.shields.io/badge/APK-0.4.17-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0416--код-109) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0417--код-110) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.16`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
+| 📱 **KoteLoader APK** | **`v0.4.17`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
 | 🧰 **Kote Module SDK Kit** | **`v0.4.5`** | Полный набор для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
@@ -140,6 +140,15 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.17 / код 110)
+
+* 🌐 **Расширение нативных MTProto хост-сервисов управления каналами и диалогами**:
+  * В нативное C++20 ядро добавлены системные методы `telegram.channel.join.v1` и `telegram.channel.leave.v1` с поддержкой мгновенного вступления по публичным юзернеймам, invite-ссылкам и числовым идентификаторам (`channel_id`), а также автоматическим заглушением (`mute`) и перемещением в архив (`archive`).
+* 🎁 **Нативный API инспекции медиа и розыгрышей Telegram (`payments.getGiveawayInfo`)**:
+  * Внедрены системные методы `telegram.giveaway.info.v1` и `telegram.message.giveaway.v1` для извлечения информации о розыгрышах Telegram Premium и Stars, проверки статуса участия аккаунта и результатов.
+* 📦 **Оптимизация размера и стриппинга бинарных файлов нативного ядра**:
+  * Оптимизированы сборки `libkotocore-arm64-v8a.so` (13.8 МБ) и `libkotocore-armeabi-v7a.so` (8.7 МБ) с полным удалением отладочных символов, ускоряя горячую замену ядра в фоновом режиме.
 
 ## 📋 Список изменений (v0.4.16 / код 109)
 
