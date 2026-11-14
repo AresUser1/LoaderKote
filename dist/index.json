@@ -21,11 +21,11 @@
     "notes": "C++20 MTProto ядро v0.4.17 (код 110): добавлены сервисы telegram.channel.join.v1, telegram.channel.leave.v1, telegram.giveaway.info.v1 и telegram.message.giveaway.v1; оптимизирована синхронизация истории и фоновое разрешение пиров."
   },
   "sdk": {
-    "version": "0.4.5",
+    "version": "0.4.6",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "e14c62ba79ae9bf0c5c3e29ba105319b024248d1629ec0ae36d8f8bab23caddc",
-    "size": 382479,
-    "description": "SDK Kotogram 0.4.5: C/C++ ABI 3, синхронизированные заголовочные файлы koto_utils.hpp и module_abi.h, полная поддержка мультиязычности (RU/EN, koto_utils::tr, koto_utils::is_en), HTTP POST и CookieManager, 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "658ed13f08fd41238fed38ab3ed6764839153fd3dd063d4f77a9c9ec1595ba6f",
+    "size": 391332,
+    "description": "SDK Kotogram 0.4.6 (Host versionCode 110): C/C++ ABI 3, MTProto хост-сервисы (telegram.channel.join/leave, giveaway.info, poll.scan), koto_services.hpp, мультиязычность (RU/EN, koto_utils::tr/is_en), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
   "version": "0.4.17",
   "version_code": 110,

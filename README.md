@@ -22,7 +22,7 @@
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
 | 📱 **KoteLoader APK** | **`v0.4.17`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.5`** | Полный набор для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.6`** | Полный набор под Host 110 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -149,6 +149,11 @@ end
   * Внедрены системные методы `telegram.giveaway.info.v1` и `telegram.message.giveaway.v1` для извлечения информации о розыгрышах Telegram Premium и Stars, проверки статуса участия аккаунта и результатов.
 * 📦 **Оптимизация размера и стриппинга бинарных файлов нативного ядра**:
   * Оптимизированы сборки `libkotocore-arm64-v8a.so` (13.8 МБ) и `libkotocore-armeabi-v7a.so` (8.7 МБ) с полным удалением отладочных символов, ускоряя горячую замену ядра в фоновом режиме.
+* 🧰 **Kote Module SDK 0.4.6 (Host versionCode 110)**:
+  * Включение поддержки хост-сервисов каналов (`telegram.channel.join.v1`, `telegram.channel.leave.v1`) и инспекции розыгрышей (`telegram.giveaway.info.v1`, `telegram.message.giveaway.v1`).
+  * Высокоуровневые C++ обёртки в `koto_services.hpp` (`channel_join`, `giveaway_info`, `poll_scan`, `delme_action`).
+  * Синхронизация заголовочных файлов `koto_utils.hpp` (`tr`, `is_en`) и актуализация документации `HOST_SERVICES.md`.
+  * Новый пример нативной мини-игры: «3 в ряд» (`match3.cpp`) с сеткой 8х8 на inline-кнопках.
 
 ## 📋 Список изменений (v0.4.16 / код 109)
 
