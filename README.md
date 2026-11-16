@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.17](https://img.shields.io/badge/APK-0.4.17-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.18](https://img.shields.io/badge/APK-0.4.18-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0417--код-110) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0418--код-111) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.17`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.6`** | Полный набор под Host 110 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.4.18`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.7`** | Полный набор под Host 111 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,21 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.18 / код 111)
+
+* 🎁 **Системный MTProto хост-сервис уникальных подарков (NFT)**:
+  * В нативное C++20 ядро добавлен системный метод `telegram.stargift.info.v1` (`payments.getUniqueStarGift`), предоставляющий метаданные подарка, атрибуты, номер выпуска, адрес смарт-контракта в сети TON и информацию о владельце.
+* 🔍 **Системный поиск контактов Telegram**:
+  * Внедрён системный сервис `telegram.contacts.search.v1` (`contacts.search`), позволяющий модулям выполнять поиск пользователей и контактов Telegram по поисковому запросу без нарушения инкапсуляции ядра.
+* 🌐 **Адаптивные таймауты и стабильность при высоком пинге (VPN / прокси)**:
+  * DoH (DNS-over-HTTPS) таймауты увеличены до 15 секунд, прямые HTTP-запросы и скачивание файлов адаптированы под задержки до 3000 мс в нестабильных мобильных сетях и медленных VPN-соединениях.
+  * Улучшена изоляция VPN-трафика: системные HTTP-запросы перенаправляются на физическую сеть только при фактической активности интерфейса VPN, сохраняя целостность основного сокета MTProto.
+* 🧹 **Подавление некритичного спама в терминале**:
+  * Запросы `QUERY_ID_INVALID` для устаревших инлайн-кнопок переведены в уровень отладки (`DEBUG`), предотвращая засорение логов предупреждениями.
+* 🧰 **Kote Module SDK 0.4.7 (Host versionCode 111)**:
+  * В `koto_services.hpp` добавлены C++ обёртки `stargift_info` и `contacts_search`.
+  * Обновлена документация `HOST_SERVICES.md` и примеры модулей.
 
 ## 📋 Список изменений (v0.4.17 / код 110)
 
