@@ -5,8 +5,8 @@
     "version_name": "0.4.18",
     "version_code": 111,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "ee798bcbdefa818bd4121e7d18cd5801cba2ba61af6f4d106951f7ff513ae999",
-    "size": 16953877,
+    "sha256": "f06badaa368ed54ce36373fa28e6a27c58a2f9901380bb5f208badf38e661be3",
+    "size": 16954153,
     "notes": "Kotogram v0.4.18 (код 111): системный сервис MTProto уникальных подарков (telegram.stargift.info.v1) и глобальный поиск контактов (telegram.contacts.search.v1); увеличенные адаптивные DoH/HTTP таймауты (15-60с) для стабильной работы через VPN и медленные прокси с пингом до 3000 мс; подавление лишнего спама QUERY_ID_INVALID в терминале."
   },
   "latest_core": {
@@ -29,7 +29,7 @@
   },
   "version": "0.4.18",
   "version_code": 111,
-  "sha256": "ee798bcbdefa818bd4121e7d18cd5801cba2ba61af6f4d106951f7ff513ae999",
-  "size": 16953877,
+  "sha256": "f06badaa368ed54ce36373fa28e6a27c58a2f9901380bb5f208badf38e661be3",
+  "size": 16954153,
   "version_name": "0.4.18"
 }
