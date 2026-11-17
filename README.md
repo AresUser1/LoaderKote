@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.18`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**Скачать APK (Direct Download)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.8`** | Полный набор под Host 112 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**Скачать SDK Kit (kote-module-sdk.zip)**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.4.18 (код 112)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.8 (Host 112)`** | Полный набор под Host 112 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
