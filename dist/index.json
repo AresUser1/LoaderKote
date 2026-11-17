@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "latest_apk": {
     "version_name": "0.4.18",
-    "version_code": 111,
+    "version_code": 112,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "f06badaa368ed54ce36373fa28e6a27c58a2f9901380bb5f208badf38e661be3",
-    "size": 16954153,
-    "notes": "Kotogram v0.4.18 (код 111): системный сервис MTProto уникальных подарков (telegram.stargift.info.v1) и глобальный поиск контактов (telegram.contacts.search.v1); увеличенные адаптивные DoH/HTTP таймауты (15-60с) для стабильной работы через VPN и медленные прокси с пингом до 3000 мс; подавление лишнего спама QUERY_ID_INVALID в терминале."
+    "sha256": "903e90491c672a8b5ce0c28ac14ba8b642b036c9b18103dbe3db6ea16ca5ed93",
+    "size": 17572708,
+    "notes": "Kotogram v0.4.18 (код 112): устранение зависаний при запуске и перезапуске ядра; неблокирующая очередь команд движка, параллельный фоновый запуск твинков и бота, быстрая остановка клиентов и явные таймауты TCP/запуска (10–15с); расширение нативных MTProto хост-сервисов (подарки, Stars, права чата, медленный режим, заявки на вступление и списки участников); исправление гонки сервиса и применения прокси при старте."
   },
   "latest_core": {
     "version_name": "0.4.18",
-    "version_code": 111,
+    "version_code": 112,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "0b9e85c0987cc156acf2da1cb7bee728eecb65dd4fe792baea213cf3601d1e6f",
-    "sha256_arm32": "5a8cb279bda4f4ccb83c66f60521d7f0bd3f2e9547be132f32313e6e9bc242bc",
-    "size_arm64": 29778680,
-    "size_arm32": 15755320,
-    "notes": "C++20 MTProto ядро v0.4.18 (код 111): добавлены сервисы telegram.stargift.info.v1 (payments.getUniqueStarGift) и telegram.contacts.search.v1 (contacts.search); улучшена изоляция сетевых сбоев и валидация инлайн-кнопок."
+    "sha256_arm64": "2da3110fdf4476b2458949c89be6f7384763e7b72c4b4e9cd08342b604d0fd27",
+    "sha256_arm32": "cc3240732742ac4a7d3a0323dff11c12656716e279c72582cab96d68d351945b",
+    "size_arm64": 30865000,
+    "size_arm32": 16515072,
+    "notes": "C++20 MTProto ядро v0.4.18 (код 112): неблокирующая диспетчеризация команд engine_main, фоновое подключение твинков и прогрев сессии, быстрый disconnect клиентов, таймаут TCP connect 10с и 8 новых MTProto хост-сервисов."
   },
   "sdk": {
-    "version": "0.4.7",
+    "version": "0.4.8",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "ad23516e6345a6dfa4439f65de7ecf5d3cb68923e1018b1c2b9b17e742117d32",
-    "size": 855965,
-    "description": "SDK Kotogram 0.4.7 (Host versionCode 111): C/C++ ABI 3, системные сервисы уникальных подарков и поиска контактов (telegram.stargift.info, telegram.contacts.search), koto_services.hpp, примеры модулей, мультиязычность (RU/EN), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "c1ec57c1d0e59110f75631198bff385aa72b91abf4d9d7654b9f1b75168d8c14",
+    "size": 399394,
+    "description": "SDK Kotogram 0.4.8 (Host versionCode 112): C/C++ ABI 3, 8 новых MTProto хост-сервисов (подарки, Stars, права чата, slowmode, заявки на вступление, участники), обновлённый koto_services.hpp, HOST_SERVICES.md, мультиязычность (RU/EN), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
   "version": "0.4.18",
-  "version_code": 111,
-  "sha256": "f06badaa368ed54ce36373fa28e6a27c58a2f9901380bb5f208badf38e661be3",
-  "size": 16954153,
+  "version_code": 112,
+  "sha256": "903e90491c672a8b5ce0c28ac14ba8b642b036c9b18103dbe3db6ea16ca5ed93",
+  "size": 17572708,
   "version_name": "0.4.18"
 }
