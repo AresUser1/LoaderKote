@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "latest_apk": {
-    "version_name": "0.4.18",
-    "version_code": 112,
+    "version_name": "0.4.19",
+    "version_code": 113,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "903e90491c672a8b5ce0c28ac14ba8b642b036c9b18103dbe3db6ea16ca5ed93",
-    "size": 17572708,
-    "notes": "Kotogram v0.4.18 (код 112): устранение зависаний при запуске и перезапуске ядра; неблокирующая очередь команд движка, параллельный фоновый запуск твинков и бота, быстрая остановка клиентов и явные таймауты TCP/запуска (10–15с); расширение нативных MTProto хост-сервисов (подарки, Stars, права чата, медленный режим, заявки на вступление и списки участников); исправление гонки сервиса и применения прокси при старте."
+    "sha256": "8f61f3520973e26ba4c72e91f278cb4c1b73bb8699aa8806f6c1575d46e1b30d",
+    "size": 17618060,
+    "notes": "Kotogram v0.4.19 (код 113): универсальный мгновенный сброс действий (Live Action Flush) для C++ и Lua модулей до ухода в долгие синхронные операции; автоматическая защита от переполнения подписей Telegram MTProto (Safe Caption Truncation, UTF-16 лимит) с автокоррекцией разметки (sanitize_message_entities); оптимизация JNI-моста и очереди задач; обновления встроенных и поддерживаемых модулей."
   },
   "latest_core": {
-    "version_name": "0.4.18",
-    "version_code": 112,
+    "version_name": "0.4.19",
+    "version_code": 113,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "2da3110fdf4476b2458949c89be6f7384763e7b72c4b4e9cd08342b604d0fd27",
-    "sha256_arm32": "cc3240732742ac4a7d3a0323dff11c12656716e279c72582cab96d68d351945b",
-    "size_arm64": 30865000,
-    "size_arm32": 16515072,
-    "notes": "C++20 MTProto ядро v0.4.18 (код 112): неблокирующая диспетчеризация команд engine_main, фоновое подключение твинков и прогрев сессии, быстрый disconnect клиентов, таймаут TCP connect 10с и 8 новых MTProto хост-сервисов."
+    "sha256_arm64": "d04a0ab2d62e6ab37e2c7e71ac003d2c71cbbe35f91870456b28532c86ad8086",
+    "sha256_arm32": "33f3af00e7a4f0307ab48da9e2d3f488bc5450b5fd79eda9e121d61049c120c2",
+    "size_arm64": 30926880,
+    "size_arm32": 16547792,
+    "notes": "C++20 MTProto ядро v0.4.19 (код 113): немедленный сброс действий OP_FLUSH_ACTION в реальном времени, безопасная обрезка длинных подписей медиа, устранение дедлоков при рестарте."
   },
   "sdk": {
-    "version": "0.4.8",
+    "version": "0.4.9",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "c1ec57c1d0e59110f75631198bff385aa72b91abf4d9d7654b9f1b75168d8c14",
-    "size": 399394,
-    "description": "SDK Kotogram 0.4.8 (Host versionCode 112): C/C++ ABI 3, 8 новых MTProto хост-сервисов (подарки, Stars, права чата, slowmode, заявки на вступление, участники), обновлённый koto_services.hpp, HOST_SERVICES.md, мультиязычность (RU/EN), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "476e522dbdea917a255afd610bf66598372b51edc2dc37ea3f9521d044403d13",
+    "size": 400084,
+    "description": "SDK Kotogram 0.4.9 (Host versionCode 113): C/C++ ABI 3 и Lua 5.4, поддержка Live Action Flush, автоматическая защита от переполнения подписей, мультиязычность (RU/EN), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.18",
-  "version_code": 112,
-  "sha256": "903e90491c672a8b5ce0c28ac14ba8b642b036c9b18103dbe3db6ea16ca5ed93",
-  "size": 17572708,
-  "version_name": "0.4.18"
+  "version": "0.4.19",
+  "version_code": 113,
+  "sha256": "8f61f3520973e26ba4c72e91f278cb4c1b73bb8699aa8806f6c1575d46e1b30d",
+  "size": 17618060,
+  "version_name": "0.4.19"
 }

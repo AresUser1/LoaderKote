@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.18](https://img.shields.io/badge/APK-0.4.18-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.19](https://img.shields.io/badge/APK-0.4.19-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0418--код-112) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0419--код-113) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.18 (код 112)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.8 (Host 112)`** | Полный набор под Host 112 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.4.19 (код 113)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.9 (Host 113)`** | Полный набор под Host 113 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,22 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.19 / код 113)
+
+* ⚡ **Универсальный мгновенный сброс действий (Live Action Flush / `OP_FLUSH_ACTION`)**:
+  * Теперь любые действия модулей (`c_edit`, `c_reply`, `c_send`, `delete_msg`, `react`, отправка файлов/медиа) немедленно отправляются в чат и применяются на экране прямо во время выполнения команды модуля, до перехода к долгим синхронным и фоновым операциям (скачивание медиа, сетевые HTTP-запросы, парсинг данных).
+  * Реализовано универсально на уровне ядра, JNI-моста и рантайма без привязки к конкретным командам: поддержано как для нативных модулей на C/C++ (ABI 3), так и для скриптовых модулей на Lua 5.4.
+  * Пользователь моментально видит смену статуса сообщения (например, *"⏳ Обработка..."*), исключая задержки и ощущение зависания.
+* ✂️ **Автоматическая нормализация и защита от лимита подписей MTProto (Safe Caption Truncation)**:
+  * Устранена ошибка Telegram RPC `400: MEDIA_CAPTION_TOO_LONG` при отправке фото, видео, файлов и альбомов с длинными описаниями из внешних источников.
+  * Движок производит строгий подсчёт длины текста в UTF-16 code units (лимит Telegram 1024 / 1020 символов с многоточием `...`) и автоматически валидирует и корректирует границы сущностей форматирования (`sanitize_message_entities`), гарантируя бесперебойную доставку медиа.
+* 🛡️ **Стабильность многопоточного моста и жизненного цикла ядра**:
+  * Оптимизирована синхронизация между рабочими потоками JNI, сервисом и очередью команд ядра, предотвращающая дедлоки и подвисания интерфейса при старте и перезапуске хоста.
+* 🧩 **Обновления встроенных и поддерживаемых модулей**:
+  * Повышена общая стабильность загрузки медиа, обработки ответов на сообщения (reply) и взаимодействия с внешними API.
+* 🧰 **Kote Module SDK 0.4.9 (Host versionCode 113)**:
+  * Внедрена поддержка Live Action Flush для C++ и Lua модулей, автоматическая защита от переполнения подписей, обновлен архив `kote-module-sdk.zip`.
 
 ## 📋 Список изменений (v0.4.18 / код 112)
 
