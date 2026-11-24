@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.19](https://img.shields.io/badge/APK-0.4.19-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.20](https://img.shields.io/badge/APK-0.4.20-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0419--код-113) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0420--код-114) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.19 (код 113)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.9 (Host 113)`** | Полный набор под Host 113 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.4.20 (код 114)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.10 (Host 114)`** | Полный набор под Host 114 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,25 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.20 / код 114)
+
+* ⚡ **Приоритетный пул команд/кнопок (`command_workers`) и разгрузка сетевого потока `epoll`**:
+  * В хост добавлен выделенный высокоприоритетный пул `command_workers` (8 потоков), а общий пул `module_workers` увеличен до 12 потоков — команды и inline-кнопки выполняются сразу без ожидания фоновых обработчиков.
+  * Авторизованные команды идут по быстрому пути до фоновых watcher'ов; удалены лишние синхронные предзапросы профилей и добавлена прямая маршрутизация системных callback-префиксов (`help:`, `al_res:` и др.).
+  * Выгрузка обработки событий удаления сообщений (`__KOTO_DELETED__`) в `module_workers` и неблокирующая асинхронная загрузка входящих медиафайлов с дедупликацией между аккаунтами и строгой проверкой активности обработчиков.
+* 📦 **Чанковый Binder IPC песочницы (`:modsandbox`) и HTTP-стек**:
+  * Крупные ответы `OP_HTTP_GET` и `OP_HTTP_POST` (>256 КБ) теперь передаются чанками без обрыва (`TransactionTooLargeException`).
+  * В `NativeBridge` / `NetworkHelper` расширена обработка HTTP-редиректов (до 7 шагов), добавлен лёгкий маркер финального URL (`<!--KOTO_FINAL_URL:...-->`) и улучшен сетевой фоллбэк.
+* 🛡️ **Изоляция `access_hash` каналов, backoff и стабильность файловых соединений**:
+  * Хэши доступа каналов (`account_hashes`) разделены строго по `user_id` каждого аккаунта (исключено смешивание между основным аккаунтом, твинками и ботом и вызванные этим ошибки `CHANNEL_INVALID`).
+  * Добавлен 5–10-минутный negative backoff для недоступных чатов без шторма повторных `get_dialogs` по всем аккаунтам, а также автоудаление оборвавшихся файловых клиентов в `Client::get_file_client` (`kote::Client: not connected`).
+* 📱 **Автономность фона 24/7, интерфейс и встроенные системные функции**:
+  * В `KotoService` удержание `PARTIAL_WAKE_LOCK` + `WifiLock` сохраняется непрерывно в течение всего активного состояния `RUNNING`, оптимизирован фоновый опрос в `AutoUpdateManager`.
+  * Добавлена настройка кастомного отображаемого имени в интерфейсе приложения (`Settings`, `DashboardTab`) без изменения профиля Telegram.
+  * Встроенный системный модуль `.help` (`help.c`) возвращает компактный оригинальный список модулей в сворачиваемых цитатах с автоматической постраничной навигацией и детальными карточками команд; расширен Lua 5.4 рантайм (`lua_module.cpp`).
+* 🧰 **Kote Module SDK 0.4.10 (Host versionCode 114)**:
+  * Актуализировано руководство `LUA_GUIDE.md` (v0.4.20, ABI 3: inline-кнопки, баннеры, `on_callback`, настройки `.cfg`), обновлены примеры модулей и архив `kote-module-sdk.zip`.
 
 ## 📋 Список изменений (v0.4.19 / код 113)
 
@@ -616,7 +635,7 @@ eady_: отменённые таймеры больше не возобновл�
 * 👤 **Исправление карточки профиля Telegram User (v0.3.4)**:
   * Устранена регрессия, из-за которой в карточке аккаунта на главном экране при отсутствии username отображалась заглушка «Telegram user». Хост теперь корректно кэширует и отображает имя пользователя.
 * 🖼️ **Переключаемые баннеры-картинки `c_banner` (v0.3.3)**:
-  * Нативные модули могут прикреплять баннер (link-preview) к via-bot сообщению с кнопками (аналог `inline.form` у Hikka/FHeta) с флагами `KOTO_BANNER_ABOVE` и `KOTO_BANNER_LARGE`.
+  * Нативные модули могут прикреплять баннер (link-preview) к via-bot сообщению с кнопками (инлайн-баннеры с превью по ссылке) с флагами `KOTO_BANNER_ABOVE` и `KOTO_BANNER_LARGE`.
 * 🔔 **Фоновые уведомления о новых версиях (v0.2.9)**:
   * Приложение само проверяет обновления в фоне (раз в несколько часов) и присылает уведомление, когда вышла новая версия — больше не нужно вручную открывать вкладку «Модули» и жать «Проверить».
   * Тап по уведомлению сразу открывает экран обновления с подробным Changelog и кнопкой установки.

@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-18",
+  "updated": "2026-11-24",
   "latest_apk": {
-    "version_name": "0.4.19",
-    "version_code": 113,
+    "version_name": "0.4.20",
+    "version_code": 114,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "8f61f3520973e26ba4c72e91f278cb4c1b73bb8699aa8806f6c1575d46e1b30d",
-    "size": 17618060,
-    "notes": "Kotogram v0.4.19 (код 113): универсальный мгновенный сброс действий (Live Action Flush) для C++ и Lua модулей до ухода в долгие синхронные операции; автоматическая защита от переполнения подписей Telegram MTProto (Safe Caption Truncation, UTF-16 лимит) с автокоррекцией разметки (sanitize_message_entities); оптимизация JNI-моста и очереди задач; обновления встроенных и поддерживаемых модулей."
+    "sha256": "c6ce7e47f1bea305a6252307447e58bc589f672db48332cfd934cd0e7519fb0e",
+    "size": 17964227,
+    "notes": "Kotogram v0.4.20 (код 114): чанковая передача крупных HTTP-ответов (>256 КБ) в IPC песочницы :modsandbox; выделенный приоритетный пул command_workers (8 потоков) и прямая маршрутизация команд и inline-кнопок без ожидания фоновых watcher'ов; разгрузка epoll-потока при удалении сообщений и асинхронное неблокирующее кэширование входящих медиа с проверкой активности обработчиков; изоляция channel access_hash по user_id с 5–10 мин backoff (CHANNEL_INVALID) и автоочисткой отвалившихся file_clients_ (not connected); непрерывное удержание WakeLock/WifiLock в фоне 24/7, настройка кастомного имени в приложении, обновлённый системный .help и Lua 5.4 рантайм."
   },
   "latest_core": {
-    "version_name": "0.4.19",
-    "version_code": 113,
+    "version_name": "0.4.20",
+    "version_code": 114,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "d04a0ab2d62e6ab37e2c7e71ac003d2c71cbbe35f91870456b28532c86ad8086",
-    "sha256_arm32": "33f3af00e7a4f0307ab48da9e2d3f488bc5450b5fd79eda9e121d61049c120c2",
-    "size_arm64": 30926880,
-    "size_arm32": 16547792,
-    "notes": "C++20 MTProto ядро v0.4.19 (код 113): немедленный сброс действий OP_FLUSH_ACTION в реальном времени, безопасная обрезка длинных подписей медиа, устранение дедлоков при рестарте."
+    "sha256_arm64": "6fbd3cd4f1680526e0bada77568a780a8fdb00e2d037f34ce5c9d7871aaf551d",
+    "sha256_arm32": "c3fbdc2c1a6804480587b52d311acfadb605d021843a836139f8f70f895d9cb1",
+    "size_arm64": 31498488,
+    "size_arm32": 16899792,
+    "notes": "C++20 MTProto ядро v0.4.20 (код 114): приоритетный пул command_workers и быстрый путь команд/кнопок; выгрузка __KOTO_DELETED__ из epoll, неблокирующее кэширование входящих медиа с дедупликацией; изоляция channel access_hash по аккаунту и negative backoff для недоступных чатов, автоочистка разорванных file_clients_, оригинальный системный .help и обновлённый Lua 5.4 рантайм."
   },
   "sdk": {
-    "version": "0.4.9",
+    "version": "0.4.10",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "476e522dbdea917a255afd610bf66598372b51edc2dc37ea3f9521d044403d13",
-    "size": 400084,
-    "description": "SDK Kotogram 0.4.9 (Host versionCode 113): C/C++ ABI 3 и Lua 5.4, поддержка Live Action Flush, автоматическая защита от переполнения подписей, мультиязычность (RU/EN), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "9613c40fbe3a0b62da3da4df0ec6fb4a0a110605c62de227213881517bb8046e",
+    "size": 415770,
+    "description": "SDK Kotogram 0.4.10 (Host versionCode 114): чанковый HTTP Binder IPC, приоритетный пул command_workers, обновлённый Lua 5.4 гайд (inline-кнопки, баннеры, on_callback, .cfg), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
   },
-  "version": "0.4.19",
-  "version_code": 113,
-  "sha256": "8f61f3520973e26ba4c72e91f278cb4c1b73bb8699aa8806f6c1575d46e1b30d",
-  "size": 17618060,
-  "version_name": "0.4.19"
+  "version": "0.4.20",
+  "version_code": 114,
+  "sha256": "c6ce7e47f1bea305a6252307447e58bc589f672db48332cfd934cd0e7519fb0e",
+  "size": 17964227,
+  "version_name": "0.4.20"
 }
