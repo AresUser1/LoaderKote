@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![APK 0.4.20](https://img.shields.io/badge/APK-0.4.20-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
+[![APK 0.4.21](https://img.shields.io/badge/APK-0.4.21-7F52FF?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![Architecture](https://img.shields.io/badge/Arch-universal%20(arm64%20%2B%20arm32)-blue?style=for-the-badge)](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -11,7 +11,7 @@
 **Автономный нативный юзербот-клиент Telegram для Android с плавающим HUD и поддержкой модулей**  
 *Высокоскоростное C++20 ядро MTProto v2.0 • Модули на Lua 5.4 и C • Онлайн-обновления OTA • Защита сессий*
 
-[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0420--код-114) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
+[📥 Скачать APK](#-быстрый-старт-и-скачивание) • [✨ Возможности](#-основные-возможности) • [🧩 Модули](#-управление-и-разработка-модулей) • [📋 Что нового](#-список-изменений-v0421--код-118) • [📦 Все релизы](https://github.com/AresUser1/LoaderKote/releases)
 
 </div>
 
@@ -21,8 +21,8 @@
 
 | Файл | Версия | Описание | Ссылка для загрузки |
 | :--- | :---: | :--- | :--- |
-| 📱 **KoteLoader APK** | **`v0.4.20 (код 114)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
-| 🧰 **Kote Module SDK Kit** | **`v0.4.10 (Host 114)`** | Полный набор под Host 114 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
+| 📱 **KoteLoader APK** | **`v0.4.21 (код 118)`** | Универсальное приложение Android 8.0+ (`arm64-v8a` + `armeabi-v7a` 32-bit) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/koteloader.apk) |
+| 🧰 **Kote Module SDK Kit** | **`v0.4.11 (Host 118)`** | Полный набор под Host 118 для сборки модулей под 32-бит и 64-бит (.so C ABI 3 & .lua) | [**GitHub**](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip) • [**GitFlic (РФ)**](https://gitflic.ru/project/koteyka/koteloader/blob/raw?file=dist/kote-module-sdk.zip) |
 
 ### 📱 Инструкция по установке APK:
 1. Скачайте файл **`koteloader.apk`** по ссылке выше.
@@ -140,6 +140,14 @@ end
 Полное руководство по разработке: 📖 `LUA_GUIDE.md` и `README.md` внутри архива SDK [kote-module-sdk.zip](https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip).
 
 ---
+
+## 📋 Список изменений (v0.4.21 / код 118)
+
+* 🛡️ **Исправление падений и засыпания юзербота в фоне**:
+  * Устранены падения и «тихие» обрывы соединения в фоне, улучшена стабильность 24/7-работы сервиса и автоматического переподключения.
+* 🚀 **Обновление Kotogram и нативного ядра (Host 118 / SDK 0.4.11)**:
+  * Обновлено ядро Kotogram и C-ABI для модулей (голосовые сообщения, автоконвертация фото WebP→PNG, управление reply, расширенный HTTP-стек и RPC каналов/юзернеймов).
+  * Обновлены APK, нативное ядро (`libkotocore.so`), архив `kote-module-sdk.zip` и каталог модулей.
 
 ## 📋 Список изменений (v0.4.20 / код 114)
 

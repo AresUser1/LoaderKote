@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updated": "2026-11-24",
+  "updated": "2026-11-26",
   "latest_apk": {
-    "version_name": "0.4.20",
-    "version_code": 114,
+    "version_name": "0.4.21",
+    "version_code": 118,
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/koteloader.apk",
-    "sha256": "c6ce7e47f1bea305a6252307447e58bc589f672db48332cfd934cd0e7519fb0e",
-    "size": 17964227,
-    "notes": "Kotogram v0.4.20 (код 114): чанковая передача крупных HTTP-ответов (>256 КБ) в IPC песочницы :modsandbox; выделенный приоритетный пул command_workers (8 потоков) и прямая маршрутизация команд и inline-кнопок без ожидания фоновых watcher'ов; разгрузка epoll-потока при удалении сообщений и асинхронное неблокирующее кэширование входящих медиа с проверкой активности обработчиков; изоляция channel access_hash по user_id с 5–10 мин backoff (CHANNEL_INVALID) и автоочисткой отвалившихся file_clients_ (not connected); непрерывное удержание WakeLock/WifiLock в фоне 24/7, настройка кастомного имени в приложении, обновлённый системный .help и Lua 5.4 рантайм."
+    "sha256": "9e38823f0c2d5e4fe5a062957e3a1242fa5b2785387d729792f50f1a73c63ec0",
+    "size": 18218233,
+    "notes": "Kotogram v0.4.21 (код 118): исправлены падения и засыпание юзербота в фоне, обновлены Kotogram и нативное ядро."
   },
   "latest_core": {
-    "version_name": "0.4.20",
-    "version_code": 114,
+    "version_name": "0.4.21",
+    "version_code": 118,
     "url_arm64": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-arm64-v8a.so",
     "url_arm32": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/libkotocore-armeabi-v7a.so",
-    "sha256_arm64": "6fbd3cd4f1680526e0bada77568a780a8fdb00e2d037f34ce5c9d7871aaf551d",
-    "sha256_arm32": "c3fbdc2c1a6804480587b52d311acfadb605d021843a836139f8f70f895d9cb1",
-    "size_arm64": 31498488,
-    "size_arm32": 16899792,
-    "notes": "C++20 MTProto ядро v0.4.20 (код 114): приоритетный пул command_workers и быстрый путь команд/кнопок; выгрузка __KOTO_DELETED__ из epoll, неблокирующее кэширование входящих медиа с дедупликацией; изоляция channel access_hash по аккаунту и negative backoff для недоступных чатов, автоочистка разорванных file_clients_, оригинальный системный .help и обновлённый Lua 5.4 рантайм."
+    "sha256_arm64": "ab04269f0123f2755a68eecac2df2cf94526b8f560ce195924a8b396ed9214e7",
+    "sha256_arm32": "3112086a96350127aab90178e02fcf34e28655ae864b542fe4849eee406841b8",
+    "size_arm64": 32033392,
+    "size_arm32": 17202344,
+    "notes": "C++20 MTProto ядро v0.4.21 (код 118): исправлены падения юзербота в фоне, обновлены Kotogram и нативное ядро."
   },
   "sdk": {
-    "version": "0.4.10",
+    "version": "0.4.11",
     "url": "https://raw.githubusercontent.com/AresUser1/LoaderKote/main/dist/kote-module-sdk.zip",
-    "sha256": "9613c40fbe3a0b62da3da4df0ec6fb4a0a110605c62de227213881517bb8046e",
-    "size": 415770,
-    "description": "SDK Kotogram 0.4.10 (Host versionCode 114): чанковый HTTP Binder IPC, приоритетный пул command_workers, обновлённый Lua 5.4 гайд (inline-кнопки, баннеры, on_callback, .cfg), 32-бит (armeabi-v7a) и 64-бит (arm64-v8a)."
+    "sha256": "885afc3d558d7bf8c365deb4a3f9a4e43bdbe7a1e82b175f964574ccce85c2e2",
+    "size": 417327,
+    "description": "SDK Kotogram 0.4.11 (Host versionCode 118): KOTO_SEND_AS_VOICE, KOTO_SEND_AS_PHOTO (WebP→PNG), KOTO_REPLY_TO_TARGET, http_get_ex и RPC каналов/юзернеймов (arm64-v8a + armeabi-v7a)."
   },
-  "version": "0.4.20",
-  "version_code": 114,
-  "sha256": "c6ce7e47f1bea305a6252307447e58bc589f672db48332cfd934cd0e7519fb0e",
-  "size": 17964227,
-  "version_name": "0.4.20"
+  "version": "0.4.21",
+  "version_code": 118,
+  "sha256": "9e38823f0c2d5e4fe5a062957e3a1242fa5b2785387d729792f50f1a73c63ec0",
+  "size": 18218233,
+  "version_name": "0.4.21"
 }
